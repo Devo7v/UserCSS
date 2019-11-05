@@ -1,0 +1,269 @@
+/* ==UserStyle==
+@name        Google Bar - Dark Style
+@namespace   Devo7v
+@version     0.1.0
+@homepageURL https://github.com/Devo7v/UserCSS
+@updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css
+@license     CC-BY-SA-4.0
+@author      Devo7v
+
+@var color gbar-accent-color "Accent Color" #CCCCCC
+
+@var color gbar-main-background-color "Primary Background Color" #111111
+@var color gbar-light-background-color "Light Background Color" #333333
+
+@var color gbar-button-color "Button Primary Color" #222222
+@var color gbar-button-color-2 "Button Secondary Color" #777777
+
+@var color gbar-border-color "Border Primary Color" #555555
+@var color gbar-border-color-2 "Border Secondary Color" #999999
+
+@var color gbar-text-color "Text Color" #FFFFFF
+
+
+@var checkbox GCalendar "Apply to Google Calendar" 1
+@var checkbox GContacts "Apply to Google Contacts" 1
+@var checkbox GDocs "Apply to Google Docs" 1
+@var checkbox GDrive "Apply to Google Drive" 1
+@var checkbox GHangouts "Apply to Google Hangouts" 1
+@var checkbox GMail "Apply to Gmail" 1
+@var checkbox GMyAccount "Apply to Google MyAccount" 1
+@var checkbox GNews "Apply to Google News" 1
+@var checkbox GPlay "Apply to Google Play" 1
+@var checkbox GPlus "Apply to Google Plus" 1
+@var checkbox GTranslate "Apply to Google Translate" 1
+@var checkbox GVoice "Apply to Google Voice" 1
+@var checkbox GWallet "Apply to Google Wallet" 1
+
+@var dropdown IconColor "Icon Color"{
+WIconColor "White" 
+BIconColor "Black"
+}
+@var dropdown AppsPopup "Theme Google Button Popups"{
+YesAppsPopup "Enable"
+NoAppsPopup "Disable"
+}
+==/UserStyle== */
+
+
+if IconColor == "White"{
+    /*Logo Text Color*/
+    .gb_Zc, .NkK3Fc span[role="heading"]{
+        color: var(--gbar-text-color) !important;
+    }
+
+    /*Coloring for svg icons in new Google Bar*/
+    .gb_ja svg{
+	    fill: var(--gbar-text-color) !important;
+	    color: var(--gbar-button-color-2) !important;
+    }
+
+    /*Remove right border when selecting a button in the Google Bar*/
+    .gb_g{
+        border-right: 0px solid var(--gbar-border-color) !important;
+    }
+}
+        
+else if IconColor =="Black"{
+/*To change the color of the icons in the Google Bar, configure the options of this style.*/
+}
+
+if AppsPopup == "Enable"{
+    /*========================Apps Button Popup========================*/
+    /*Triangle icon at top when popup is opened*/
+    .gb_Qa{
+        border-bottom-color: var(--gbar-light-background-color) !important;
+        z-index: 3 !important;
+    }
+
+    /*Main background color*/
+    .gb_H{
+        border: 0px solid var(--gbar-border-color-2) !important;
+        background-color: var(--gbar-light-background-color) !important;
+    }
+
+    /*Individual apps button text color*/
+    .gb_r{
+        color: var(--gbar-button-color-2) !important;
+        border: none !important;
+    }
+
+    /*Hides the border when hovering over an individual app icon*/
+    .gb_i:hover a{
+        border: none !important;
+    }
+
+    /*Text color when hovering over an individual app icon*/
+    .gb_r:hover{
+        color: var(--gbar-border-color-2) !important;
+        text-decoration: underline !important;
+    }
+
+    /*Background color behind app label*/
+    .gb_i:hover .gb_r{
+        background: var(--gbar-light-background-color) !important;
+    }
+
+    /*Text color for the service in the box to add a new shortcut*/
+    .gb_V{
+        color: var(--gbar-border-color-2) !important;
+    }
+
+    /*Shadow around the box to add a new shortcut*/
+    .gb_U{
+        box-shadow: var(--gbar-box-shadow2) !important;
+    }
+
+    /*Background color for "More" link at bottom of popup*/
+    .gb_1f, .gb_I{
+        background-color: var(--gbar-light-background-color) !important;
+        color: var(--gbar-border-color-2) !important;
+    }
+    .gb_I:hover{
+        text-decoration: underline !important;
+    }
+
+    /*Small bottom border on the first page of apps that shows up when you scroll to the second page of apps*/
+    .gb_J{
+        border-bottom: 0px solid var(--gbar-button-color-2) !important;
+    }
+
+    /*=========================User Popup=========================*/
+    /*Main Background color*/
+    .gb_D{
+        background: var(--gbar-light-background-color) !important;
+        box-shadow: var(--gbar-box-shadow2) !important;
+    }
+
+    /*Picture icon background*/
+    .gb_cb{
+        background: var(--gbar-main-background-color) !important;
+    }
+    .gb_db:hover{
+        background: var(--gbar-button-color-2) !important;
+    }
+
+    /*User name*/
+    .gb_gb{
+        color: var(--gbar-border-color-2) !important;
+    }
+
+    /*Buttons background color*/
+    .gb_pb{
+        background: var(--gbar-button-color) !important;
+        border-color: var(--gbar-button-color) !important;
+        color: var(--gbar-border-color-2) !important;
+    }
+    .gb_pb:hover{
+        background: var(--gbar-main-background-color) !important;
+    }
+
+    /*Secondary user background*/
+    .gb_Kb:hover{
+        background: var(--gbar-main-background-color) !important;
+    }
+
+    /*Secondary user text color*/
+    .gb_1b{
+        color: var(--gbar-border-color-2) !important;
+    }
+
+    /*All Brand accounts background*/
+    .gb_sb{
+        background: var(--gbar-light-background-color) !important;
+        border-top: 0px solid var(--gbar-border-color) !important;
+    }
+    .gb_Ob:hover{
+        background: var(--gbar-main-background-color) !important;
+    }
+
+    /*All Brand accounts text*/
+    .gb_cc, .gb_sb{
+        color: var(--gbar-border-color-2) !important;
+    }
+
+    /*Add another account background*/
+    .gb_sb:hover, .gb_nb:hover{
+        background: var(--gbar-main-background-color) !important;
+    }
+
+    /*Dividing Lines*/
+    .gb_Eb, .gb_yb{
+        border-top: 0px solid var(--gbar-border-color) !important;
+        border-bottom: 0px solid var(--gbar-border-color) !important;
+    }
+}
+
+else if AppsPopup == "Disable"{
+    /*To add theming of the Google Apps button and User popup, configure the options of this style.*/
+}
+
+@-moz-document
+url-prefix("http://www.google.com/calendar/"), url-prefix("https://www.google.com/calendar/"),url-prefix("http://calendar.google.com/"),url-prefix("https://calendar.google.com/"),
+url-prefix("http://www.google.com/contacts/"), url-prefix("https://www.google.com/contacts/"),url-prefix("http://contacts.google.com/"),url-prefix("https://contacts.google.com/"),
+url-prefix("http://www.google.com/docs/"), url-prefix("https://www.google.com/docs/"),url-prefix("http://docs.google.com/"),url-prefix("https://docs.google.com/"),
+url-prefix("http://www.google.com/drive/"), url-prefix("https://www.google.com/drive/"),url-prefix("http://drive.google.com/"),url-prefix("https://drive.google.com/"),
+url-prefix("http://www.google.com/hangouts/"), url-prefix("https://www.google.com/hangouts/"),url-prefix("http://hangouts.google.com/"),url-prefix("https://hangouts.google.com/"),
+url-prefix("http://www.google.com/mail/"), url-prefix("https://www.google.com/mail/"),url-prefix("http://mail.google.com/"),url-prefix("https://mail.google.com/"),
+url-prefix("http://www.google.com/myaccount/"), url-prefix("https://www.google.com/myaccount/"),url-prefix("http://myaccount.google.com/"),url-prefix("https://myaccount.google.com/"),
+url-prefix("http://www.google.com/news/"), url-prefix("https://www.google.com/news/"),url-prefix("http://news.google.com/"),url-prefix("https://news.google.com/"),
+url-prefix("http://www.google.com/play/"), url-prefix("https://www.google.com/play/"),url-prefix("http://play.google.com/store"),url-prefix("https://play.google.com/store"),
+url-prefix("http://www.google.com/plus/"), url-prefix("https://www.google.com/plus/"),url-prefix("http://plus.google.com/"),url-prefix("https://plus.google.com/"),
+url-prefix("http://www.google.com/translate/"), url-prefix("https://www.google.com/translate/"),url-prefix("http://translate.google.com/"),url-prefix("https://translate.google.com/"),
+url-prefix("http://www.google.com/wallet/"), url-prefix("https://www.google.com/wallet/"),url-prefix("http://wallet.google.com/"),url-prefix("https://wallet.google.com/"),url-prefix("http://www.google.com/pay/"),url-prefix("https://www.google.com/pay/"),url-prefix("http://pay.google.com/"),url-prefix("https://pay.google.com/"),
+url-prefix("http://www.google.com/voice"), url-prefix("https://www.google.com/voice"),url-prefix("http://voice.google.com/"),url-prefix("https://voice.google.com/"),
+url-prefix("http://www.google.com/notifications/"), url-prefix("https://www.google.com/notifications/"),url-prefix("http://notifications.google.com/"),url-prefix("https://notifications.google.com/"),
+url-prefix("example.com"){
+:root{
+    --gbar-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    /*creates a shadow on the bottom and right, comment out this line to remove*/
+
+    --gbar-box-shadow2: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23), 0 -10px 20px rgba(0,0,0,0.19), 0 -6px 6px rgba(0,0,0,0.23);
+    /*creates a shadow on all sides, comment out this line to remove*/
+}
+
+/*========================Google Bar at the top========================*/
+/*Reminder to Vote above the Google Bar*/
+/*.gb_Bc{background: var(--main-background-color) !important;}*/
+
+/*Text color for the "Reminder to Vote" popup above the Google Bar*/
+/*.gb_Fc{color: var(--text-color) !important;}
+.gb_Hc{color: var(--accent-color) !important;}*/
+
+/*Background color for the Google bar*/
+header#gb /*New Google Bar*/
+{
+    background: var(--gbar-main-background-color) !important;
+}
+
+/*Background color for Search box*/
+#gbqfqw, .gb_Se{
+    /*background: var(--gbar-light-background-color) !important;*/
+    background: none !important;
+    background: rgba(255,255,255,0.16) !important;
+    border: none !important;
+}
+.gb_lf{
+    box-shadow: var(--gbar-box-shadow2) !important;
+}
+
+/*Text color for Search box*/
+.gbqfif, .gb_df, .gb_df::placeholder{
+    color: var(--gbar-accent-color) !important;
+}
+
+/*Background color for Search box popup*/
+.gssb_m, .gssb_e, #\:0, #nngdp31, #nngdp12{
+    background: var(--gbar-light-background-color) !important;
+    box-shadow: var(--gbar-box-shadow) !important;
+}
+.oKubKe[aria-selected="true"], .VOEIyf .jBmls{
+    background: var(--gbar-main-background-color) !important;
+}
+
+/*Text color for Search box popup*/
+.cTa, .WSa, .vqNupe-MZArnb, .gssb_m, .md_subhead, gv-omnibar-contact, gv-annotation.md-subhead, .gvPageRoot .grey-900, .uCK4Db, .v4vX6d, .KfXsid{
+    color: var(--gbar-button-color-2) !important;
+}
+
+}
