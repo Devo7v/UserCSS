@@ -1,5 +1,5 @@
 /* ==UserStyle==
-@name        Swappa - Dark
+@name        Swappa.com - Dark Style
 @namespace   Devo7v
 @version     0.1.0
 @homepageURL https://github.com/Devo7v/UserCSS
@@ -19,13 +19,6 @@
 
 @-moz-document domain("swappa.com"){
     
-        if swappa-box-shadow-check {
-		    --swappa-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-	    }
-	
-/**/
-
-
 /*Top bar*/
 .navbar-default{
     background-color: var(--swappa-primary-background-color) !important;
