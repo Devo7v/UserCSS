@@ -1,0 +1,230 @@
+/* ==UserStyle==
+@name        Swappa - Dark
+@namespace   Devo7v
+@version     0.1.0
+@homepageURL https://github.com/Devo7v/UserCSS
+@updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/Swappa-Dark.css
+@license     CC-BY-SA-4.0
+@author      Devo7v
+@var color swappa-accent-color "Accent Color" #009A44
+@var color swappa-primary-background-color "Primary Background Color" #333333
+@var color swappa-light-background-color "Lighter Background Color" #555555
+@var color swappa-dark-background-color "Darker Background Color" #222222
+@var color swappa-primary-text-color "Main Text Color" #CCCCCC
+@var color swappa-primary-line-color "Color for Borders & Lines" #777777
+@var checkbox swappa-box-shadow-check "Show Shadow Behind Elements" 1
+==/UserStyle== */
+
+
+
+@-moz-document domain("swappa.com"){
+    
+        if swappa-box-shadow-check {
+		    --swappa-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	    }
+	
+/**/
+
+
+/*Top bar*/
+.navbar-default{
+    background-color: var(--swappa-primary-background-color) !important;
+    border: 1px solid var(--swappa-primary-line-color) !important;
+    box-shadow: var(--swappa-box-shadow) !important;
+}
+
+/*Search Box*/
+.navbar .form-control{
+    background-color: var(--swappa-light-background-color) !important;
+    color: var(--swappa-primary-text-color) !important;
+}
+
+/*Search box dropdown*/
+.dropdown-menu{
+    background-color: var(--swappa-light-background-color) !important;
+    border: 1px solid var(--swappa-primary-line-color) !important;
+}
+.dropdown-menu > li > a{
+    color: var(--swappa-primary-text-color) !important;
+}
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > .a:focus, .dropdown-menu > li > a:hover{
+    background-color: var(--swappa-primary-background-color) !important;
+}
+
+/*Buttons*/
+.btn-default{
+    background: var(--swappa-light-background-color) !important;
+    color: var(--swappa-primary-text-color) !important;
+    border: 1px solid var(--swappa-primary-line-color) !important;
+    box-shadow: var(--swappa-box-shadow) !important;
+}
+.btn-primary, .btn-success{
+    background-color: var(--swappa-accent-color) !important;
+    border-color: var(--swappa-accent-color) !important;
+}
+
+/*Main page background and text*/
+body,  .well{
+    background-color: var(--swappa-primary-background-color) !important;
+    color: var(--swappa-primary-text-color) !important;
+}
+a{
+    color: var(--swappa-primary-text-color) !important;
+}
+
+/*Device pictures*/
+.cell_product{
+    border: 1px solid var(--swappa-primary-line-color) !important;
+    box-shadow: var(--swappa-box-shadow) !important;
+}
+
+/*Links*/
+a:hover, a:focus, .listing_row a:hover{
+	text-decoration: none !important;
+	color: var(--swappa-accent-color) !important;
+}
+.title_link, .row_cell_model .price, .listing_row a{
+    color: var(--swappa-primary-text-color) !important;
+}
+
+/*Other Text*/
+.speclabel, .speclabel-platform, .speclabel-small{
+    color: var(--swappa-primary-text-color)
+}
+
+/*Recently sold text and prices*/
+.price_marker_swappa{
+    color: var(--swappa-accent-color) !important;
+}
+
+/*Current listing price*/
+.listing_price_active{
+    color: var(--swappa-accent-color) !important;
+}
+
+/*Navigation bar*/
+.breadcrumb{
+    background-color: var(--swappa-dark-background-color) !important;
+    border: 1px solid var(--swappa-primary-line-color) !important;
+    box-shadow: var(--swappa-box-shadow) !important;
+}
+.breadcrumb > .active{
+    color: var(--swappa-primary-text-color)
+}
+
+/*Table headings*/
+.table th{
+    background-color: var(--swappa-dark-background-color) !important;
+    color: var(--swappa-primary-text-color) !important;
+}
+
+/*Listings of different models of one device and their prices*/
+div.col-sm-6:hover{
+    box-shadow: var(--swappa-box-shadow) !important;
+}
+
+/*Number of comments*/
+.badge, .active .badge, a.list-group-item.active > .badge, .nav-pills > .active > a > .badge{
+    background-color: var(--swappa-accent-color) !important;
+}
+
+/*Star icons*/
+.text-success{
+    color: var(--swappa-accent-color) !important;
+}
+
+/*Random Lines*/
+hr{
+    border-top: 1px solid var(--swappa-accent-color) !important;
+}
+.dropdown-menu .divider{
+    background-color: var(--swappa-primary-line-color) !important;
+}
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td{
+    border: 1px solid var(--swappa-primary-line-color) !important;
+}
+.nav-tabs{
+    border-bottom: 1px solid var(--swappa-primary-line-color) !important;
+}
+
+/*Login Page*/
+.panel{
+    background-color: var(--swappa-primary-background-color) !important;
+    color: var(--swappa-primary-text-color) !important;
+    border: 1px solid var(--swappa-primary-line-color) !important;
+    box-shadow: var(--swappa-box-shadow) !important;
+}
+.form-control{
+    background-color: var(--swappa-dark-background-color) !important;
+    color: var(--swappa-primary-text-color) !important;
+    border: 1px solid var(--swappa-primary-line-color) !important;
+}
+.btn-google, .btn-xda{
+    background-color: var(--swappa-light-background-color) !important;
+    color: var(--swappa-primary-text-color) !important;
+}
+div.text-center:nth-child(3) > span:nth-child(1){
+    color: var(--swappa-primary-text-color) !important;
+}
+.btn-google img, .btn-xda img{
+    background: none !important;
+}
+
+/*My Swappa side navigation*/
+.list-group .list-group-item{
+    background-color: var(--swappa-primary-background-color) !important;
+    color: var(--swappa-primary-text-color) !important;
+    border-color: var(--swappa-primary-line-color) !important;
+}
+
+/*My Profile Page*/
+/*Panel headers and footers*/
+.panel-heading, .panel-footer{
+    background-color: var(--swappa-dark-background-color) !important;
+    color: var(--swappa-primary-text-color) !important;
+    border-color: var(--swappa-primary-line-color) !important;
+}
+#id_email{
+    background-color: var(--swappa-dark-background-color) !important;
+}
+
+/*My Buying Tabs*/
+#my-swappa-tabs > li.active > a, .nav-tabs > li.active > a:focus{
+    background-color: var(--swappa-light-background-color) !important;
+    color: var(--swappa-primary-text-color) !important;
+    border: 1px solid var(--swappa-primary-line-color) !important;
+}
+.nav-tabs > li > a{
+    color: var(--swappa-primary-text-color)
+}
+#my-swappa-tabs > li > a:hover, #my-swappa-tabs > li > a:focus{
+    background-color: var(--swappa-dark-background-color) !important;
+    /*border: 1px solid transparent !important;*/
+}
+
+/*Hide the site reviews widget at the bottom of the main page*/
+.trustpilot-widget{
+    display: none !important;
+}
+
+/*Swappa Footer*/
+footer, footer a{
+    background: var(--swappa-light-background-color) !important;
+    color: var(--swappa-primary-text-color) !important;
+}
+
+/*Recolor some third party logos*/
+/*#footer_logo,*/
+#press_row .img-responsive{
+    filter: invert(80%) !important;
+}
+
+/*Overwrites the above*/ /*I cannot figure out how to get this if statement to work correctly, help would be appreciated*/
+/*if swappa-box-shadow-check{*/
+	.navbar-default, .btn-default, .cell_product, .breadcrumb, div.col-sm-6:hover, .panel{
+		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23) !important;
+    }
+
+/**/
+
+}
