@@ -23,10 +23,11 @@
 @var color gcal-dull-line-color #555555
 ==/UserStyle== */
 
-/*If you want to fully theme the Google Bar at the top, install the Google Bar - Dark Style (https://userstyles.org/styles/120351/google-bar-dark-style)*/
 
 @-moz-document url-prefix("http://www.google.com/calendar/"), url-prefix("https://www.google.com/calendar/"),url-prefix("http://calendar.google.com/"),url-prefix("https://calendar.google.com/")
 {
+/*If you want to fully theme the Google Bar at the top, install the Google Bar - Dark Style (https://userstyles.org/styles/120351/google-bar-dark-style)*/
+	
 /*Google Bar Color*/
   #gb
   {
@@ -965,9 +966,9 @@ body[data-viewfamily="EVENT"] .SGWAac/*, body[data-viewfamily="SCHEDULE"] .SGWAa
 }
 }
 
-/*=============Formatting for the Calendar widget in Gmail=============*/
 @-moz-document url-prefix("http://www.google.com/mail/"), url-prefix("https://www.google.com/mail/"),url-prefix("http://mail.google.com/"),url-prefix("https://mail.google.com/"){
 
+/*=============Formatting for the Calendar widget in Gmail=============*/
 /*Loading Screen Background*/
 .brC-brG, .brC-brG-Jz-bBA{
     background-color: var(--gcal-primary-background-color) !important;
