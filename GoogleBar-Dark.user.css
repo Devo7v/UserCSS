@@ -35,16 +35,84 @@
 @var checkbox GVoice "Apply to Google Voice" 1
 @var checkbox GWallet "Apply to Google Wallet" 1
 
-@var dropdown IconColor "Icon Color"{
-WIconColor "White" 
-BIconColor "Black"
+@var select IconColor "Icon Color"{
+"WIconColor": "White" ,
+"BIconColor": "Black"
 }
-@var dropdown AppsPopup "Theme Google Button Popups"{
-YesAppsPopup "Enable"
-NoAppsPopup "Disable"
+@var select AppsPopup "Theme Google Button Popups"{
+"YesAppsPopup": "Enable",
+"NoAppsPopup": "Disable"
 }
 ==/UserStyle== */
 
+
+@-moz-document
+url-prefix("http://www.google.com/calendar/"), url-prefix("https://www.google.com/calendar/"),url-prefix("http://calendar.google.com/"),url-prefix("https://calendar.google.com/"),
+url-prefix("http://www.google.com/contacts/"), url-prefix("https://www.google.com/contacts/"),url-prefix("http://contacts.google.com/"),url-prefix("https://contacts.google.com/"),
+url-prefix("http://www.google.com/docs/"), url-prefix("https://www.google.com/docs/"),url-prefix("http://docs.google.com/"),url-prefix("https://docs.google.com/"),
+url-prefix("http://www.google.com/drive/"), url-prefix("https://www.google.com/drive/"),url-prefix("http://drive.google.com/"),url-prefix("https://drive.google.com/"),
+url-prefix("http://www.google.com/hangouts/"), url-prefix("https://www.google.com/hangouts/"),url-prefix("http://hangouts.google.com/"),url-prefix("https://hangouts.google.com/"),
+url-prefix("http://www.google.com/mail/"), url-prefix("https://www.google.com/mail/"),url-prefix("http://mail.google.com/"),url-prefix("https://mail.google.com/"),
+url-prefix("http://www.google.com/myaccount/"), url-prefix("https://www.google.com/myaccount/"),url-prefix("http://myaccount.google.com/"),url-prefix("https://myaccount.google.com/"),
+url-prefix("http://www.google.com/news/"), url-prefix("https://www.google.com/news/"),url-prefix("http://news.google.com/"),url-prefix("https://news.google.com/"),
+url-prefix("http://www.google.com/play/"), url-prefix("https://www.google.com/play/"),url-prefix("http://play.google.com/store"),url-prefix("https://play.google.com/store"),
+url-prefix("http://www.google.com/plus/"), url-prefix("https://www.google.com/plus/"),url-prefix("http://plus.google.com/"),url-prefix("https://plus.google.com/"),
+url-prefix("http://www.google.com/translate/"), url-prefix("https://www.google.com/translate/"),url-prefix("http://translate.google.com/"),url-prefix("https://translate.google.com/"),
+url-prefix("http://www.google.com/wallet/"), url-prefix("https://www.google.com/wallet/"),url-prefix("http://wallet.google.com/"),url-prefix("https://wallet.google.com/"),url-prefix("http://www.google.com/pay/"),url-prefix("https://www.google.com/pay/"),url-prefix("http://pay.google.com/"),url-prefix("https://pay.google.com/"),
+url-prefix("http://www.google.com/voice"), url-prefix("https://www.google.com/voice"),url-prefix("http://voice.google.com/"),url-prefix("https://voice.google.com/"),
+url-prefix("http://www.google.com/notifications/"), url-prefix("https://www.google.com/notifications/"),url-prefix("http://notifications.google.com/"),url-prefix("https://notifications.google.com/"),
+url-prefix("example.com"){
+:root{
+    --gbar-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    /*creates a shadow on the bottom and right, comment out this line to remove*/
+
+    --gbar-box-shadow2: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23), 0 -10px 20px rgba(0,0,0,0.19), 0 -6px 6px rgba(0,0,0,0.23);
+    /*creates a shadow on all sides, comment out this line to remove*/
+}
+
+/*========================Google Bar at the top========================*/
+/*Reminder to Vote above the Google Bar*/
+/*.gb_Bc{background: var(--main-background-color) !important;}*/
+
+/*Text color for the "Reminder to Vote" popup above the Google Bar*/
+/*.gb_Fc{color: var(--text-color) !important;}
+.gb_Hc{color: var(--accent-color) !important;}*/
+
+/*Background color for the Google bar*/
+header#gb /*New Google Bar*/
+{
+    background: var(--gbar-main-background-color) !important;
+}
+
+/*Background color for Search box*/
+#gbqfqw, .gb_Se{
+    /*background: var(--gbar-light-background-color) !important;*/
+    background: none !important;
+    background: rgba(255,255,255,0.16) !important;
+    border: none !important;
+}
+.gb_lf{
+    box-shadow: var(--gbar-box-shadow2) !important;
+}
+
+/*Text color for Search box*/
+.gbqfif, .gb_df, .gb_df::placeholder{
+    color: var(--gbar-accent-color) !important;
+}
+
+/*Background color for Search box popup*/
+.gssb_m, .gssb_e, #\:0, #nngdp31, #nngdp12{
+    background: var(--gbar-light-background-color) !important;
+    box-shadow: var(--gbar-box-shadow) !important;
+}
+.oKubKe[aria-selected="true"], .VOEIyf .jBmls{
+    background: var(--gbar-main-background-color) !important;
+}
+
+/*Text color for Search box popup*/
+.cTa, .WSa, .vqNupe-MZArnb, .gssb_m, .md_subhead, gv-omnibar-contact, gv-annotation.md-subhead, .gvPageRoot .grey-900, .uCK4Db, .v4vX6d, .KfXsid{
+    color: var(--gbar-button-color-2) !important;
+}
 
 if IconColor == "White"{
     /*Logo Text Color*/
@@ -196,74 +264,6 @@ if AppsPopup == "Enable"{
 
 else if AppsPopup == "Disable"{
     /*To add theming of the Google Apps button and User popup, configure the options of this style.*/
-}
-
-@-moz-document
-url-prefix("http://www.google.com/calendar/"), url-prefix("https://www.google.com/calendar/"),url-prefix("http://calendar.google.com/"),url-prefix("https://calendar.google.com/"),
-url-prefix("http://www.google.com/contacts/"), url-prefix("https://www.google.com/contacts/"),url-prefix("http://contacts.google.com/"),url-prefix("https://contacts.google.com/"),
-url-prefix("http://www.google.com/docs/"), url-prefix("https://www.google.com/docs/"),url-prefix("http://docs.google.com/"),url-prefix("https://docs.google.com/"),
-url-prefix("http://www.google.com/drive/"), url-prefix("https://www.google.com/drive/"),url-prefix("http://drive.google.com/"),url-prefix("https://drive.google.com/"),
-url-prefix("http://www.google.com/hangouts/"), url-prefix("https://www.google.com/hangouts/"),url-prefix("http://hangouts.google.com/"),url-prefix("https://hangouts.google.com/"),
-url-prefix("http://www.google.com/mail/"), url-prefix("https://www.google.com/mail/"),url-prefix("http://mail.google.com/"),url-prefix("https://mail.google.com/"),
-url-prefix("http://www.google.com/myaccount/"), url-prefix("https://www.google.com/myaccount/"),url-prefix("http://myaccount.google.com/"),url-prefix("https://myaccount.google.com/"),
-url-prefix("http://www.google.com/news/"), url-prefix("https://www.google.com/news/"),url-prefix("http://news.google.com/"),url-prefix("https://news.google.com/"),
-url-prefix("http://www.google.com/play/"), url-prefix("https://www.google.com/play/"),url-prefix("http://play.google.com/store"),url-prefix("https://play.google.com/store"),
-url-prefix("http://www.google.com/plus/"), url-prefix("https://www.google.com/plus/"),url-prefix("http://plus.google.com/"),url-prefix("https://plus.google.com/"),
-url-prefix("http://www.google.com/translate/"), url-prefix("https://www.google.com/translate/"),url-prefix("http://translate.google.com/"),url-prefix("https://translate.google.com/"),
-url-prefix("http://www.google.com/wallet/"), url-prefix("https://www.google.com/wallet/"),url-prefix("http://wallet.google.com/"),url-prefix("https://wallet.google.com/"),url-prefix("http://www.google.com/pay/"),url-prefix("https://www.google.com/pay/"),url-prefix("http://pay.google.com/"),url-prefix("https://pay.google.com/"),
-url-prefix("http://www.google.com/voice"), url-prefix("https://www.google.com/voice"),url-prefix("http://voice.google.com/"),url-prefix("https://voice.google.com/"),
-url-prefix("http://www.google.com/notifications/"), url-prefix("https://www.google.com/notifications/"),url-prefix("http://notifications.google.com/"),url-prefix("https://notifications.google.com/"),
-url-prefix("example.com"){
-:root{
-    --gbar-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    /*creates a shadow on the bottom and right, comment out this line to remove*/
-
-    --gbar-box-shadow2: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23), 0 -10px 20px rgba(0,0,0,0.19), 0 -6px 6px rgba(0,0,0,0.23);
-    /*creates a shadow on all sides, comment out this line to remove*/
-}
-
-/*========================Google Bar at the top========================*/
-/*Reminder to Vote above the Google Bar*/
-/*.gb_Bc{background: var(--main-background-color) !important;}*/
-
-/*Text color for the "Reminder to Vote" popup above the Google Bar*/
-/*.gb_Fc{color: var(--text-color) !important;}
-.gb_Hc{color: var(--accent-color) !important;}*/
-
-/*Background color for the Google bar*/
-header#gb /*New Google Bar*/
-{
-    background: var(--gbar-main-background-color) !important;
-}
-
-/*Background color for Search box*/
-#gbqfqw, .gb_Se{
-    /*background: var(--gbar-light-background-color) !important;*/
-    background: none !important;
-    background: rgba(255,255,255,0.16) !important;
-    border: none !important;
-}
-.gb_lf{
-    box-shadow: var(--gbar-box-shadow2) !important;
-}
-
-/*Text color for Search box*/
-.gbqfif, .gb_df, .gb_df::placeholder{
-    color: var(--gbar-accent-color) !important;
-}
-
-/*Background color for Search box popup*/
-.gssb_m, .gssb_e, #\:0, #nngdp31, #nngdp12{
-    background: var(--gbar-light-background-color) !important;
-    box-shadow: var(--gbar-box-shadow) !important;
-}
-.oKubKe[aria-selected="true"], .VOEIyf .jBmls{
-    background: var(--gbar-main-background-color) !important;
-}
-
-/*Text color for Search box popup*/
-.cTa, .WSa, .vqNupe-MZArnb, .gssb_m, .md_subhead, gv-omnibar-contact, gv-annotation.md-subhead, .gvPageRoot .grey-900, .uCK4Db, .v4vX6d, .KfXsid{
-    color: var(--gbar-button-color-2) !important;
 }
 
 }
