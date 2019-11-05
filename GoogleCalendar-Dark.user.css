@@ -7,20 +7,20 @@
 @license     CC-BY-SA-4.0
 @author      Devo7v
 
-@var color gcal-accent-color #4284F4
+@var color gcal-accent-color "Accent Color" #4284F4
 
-@var color gcal-primary-background-color #111111
-@var color gcal-enhanced-background-color #333333
-@var color gcal-enhanced2-background-color #555555
-@var color gcal-dark-background-color #000000
+@var color gcal-primary-background-color "Primary Background Color" #111111
+@var color gcal-enhanced-background-color "Light Background Color" #333333
+@var color gcal-enhanced2-background-color "Light Background Color 2" #555555
+@var color gcal-dark-background-color "Dark Background Color" #000000
 
-@var color gcal-primary-text-color #CCCCCC
-@var color gcal-enhanced-text-color #FFFFFF
-@var color gcal-dull-text-color #999999
+@var color gcal-primary-text-color "Primary Text Color" #CCCCCC
+@var color gcal-enhanced-text-color "Light Text Color" #FFFFFF
+@var color gcal-dull-text-color "Dark Text Color" #999999
 
-@var color gcal-primary-line-color #999999
-@var color gcal-enhanced-line-color #FFFFFF
-@var color gcal-dull-line-color #555555
+@var color gcal-primary-line-color "Primary Line Color" #999999
+@var color gcal-enhanced-line-color "Light Line Color" #FFFFFF
+@var color gcal-dull-line-color "Dark Line Color" #555555
 ==/UserStyle== */
 
 
@@ -966,26 +966,26 @@ body[data-viewfamily="EVENT"] .SGWAac/*, body[data-viewfamily="SCHEDULE"] .SGWAa
 }
 }
 
-/*@-moz-document url-prefix("http://www.google.com/mail/"), url-prefix("https://www.google.com/mail/"),url-prefix("http://mail.google.com/"),url-prefix("https://mail.google.com/"){
+@-moz-document url-prefix("http://www.google.com/mail/"), url-prefix("https://www.google.com/mail/"),url-prefix("http://mail.google.com/"),url-prefix("https://mail.google.com/"){
 
 /*=============Formatting for the Calendar widget in Gmail=============*/
 /*Loading Screen Background*/
-/*.brC-brG, .brC-brG-Jz-bBA{
+.brC-brG, .brC-brG-Jz-bBA{
     background-color: var(--gcal-primary-background-color) !important;
 }
 
 /*Header Background*/
-/*.brC-brG-avC{
+.brC-brG-avC{
     background-color: var(--gcal-primary-background-color) !important;
 }
 
 /*Day and Date Text*/
-/*.brC-brG-a1P-bAa-a5b{
+.brC-brG-a1P-bAa-a5b{
     color: var(--gcal-accent-color) !important;
 }
 
 /*Fix icons*/
-/*.brC-brG-avC-bta-atM .brC-brG-avC-bBo-JX{
+.brC-brG-avC-bta-atM .brC-brG-avC-bBo-JX{
     fill: var(--gcal-primary-text-color) !important;
 }
 }
