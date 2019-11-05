@@ -966,26 +966,26 @@ body[data-viewfamily="EVENT"] .SGWAac/*, body[data-viewfamily="SCHEDULE"] .SGWAa
 }
 }
 
-@-moz-document url-prefix("http://www.google.com/mail/"), url-prefix("https://www.google.com/mail/"),url-prefix("http://mail.google.com/"),url-prefix("https://mail.google.com/"){
+/*@-moz-document url-prefix("http://www.google.com/mail/"), url-prefix("https://www.google.com/mail/"),url-prefix("http://mail.google.com/"),url-prefix("https://mail.google.com/"){
 
 /*=============Formatting for the Calendar widget in Gmail=============*/
 /*Loading Screen Background*/
-.brC-brG, .brC-brG-Jz-bBA{
+/*.brC-brG, .brC-brG-Jz-bBA{
     background-color: var(--gcal-primary-background-color) !important;
 }
 
 /*Header Background*/
-.brC-brG-avC{
+/*.brC-brG-avC{
     background-color: var(--gcal-primary-background-color) !important;
 }
 
 /*Day and Date Text*/
-.brC-brG-a1P-bAa-a5b{
+/*.brC-brG-a1P-bAa-a5b{
     color: var(--gcal-accent-color) !important;
 }
 
 /*Fix icons*/
-.brC-brG-avC-bta-atM .brC-brG-avC-bBo-JX{
+/*.brC-brG-avC-bta-atM .brC-brG-avC-bBo-JX{
     fill: var(--gcal-primary-text-color) !important;
 }
 }
