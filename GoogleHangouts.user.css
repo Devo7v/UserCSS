@@ -64,9 +64,19 @@
   border-bottom: none !important;
 }
 
+/*Message List Text*/
+.lPNGt, .qCUW5d{
+    color: #999999 !important;
+}
+
 /*Message list border*/
 .gsl0xd{
   border-left: 0px solid #444444 !important;
+}
+
+/*Hovering over items in message list*/
+.KgaIJb:hover, .HfhnEf:hover{
+    background-color: #444444 !important;
 }
 
 /*Conversations background color*/
