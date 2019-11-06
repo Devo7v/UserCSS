@@ -114,7 +114,7 @@ header#gb /*New Google Bar*/
     color: var(--gbar-button-color-2) !important;
 }
 
-if IconColor == "White"{
+/*if IconColor == "White"{
     /*Logo Text Color*/
     .gb_Zc, .NkK3Fc span[role="heading"]{
         color: var(--gbar-text-color) !important;
@@ -130,13 +130,13 @@ if IconColor == "White"{
     .gb_g{
         border-right: 0px solid var(--gbar-border-color) !important;
     }
-}
+/*}
         
 else if IconColor =="Black"{
 /*To change the color of the icons in the Google Bar, configure the options of this style.*/
-}
+/*}
 
-if AppsPopup == "Enable"{
+/*if AppsPopup == "Enable"{
     /*========================Apps Button Popup========================*/
     /*Triangle icon at top when popup is opened*/
     .gb_Qa{
@@ -260,10 +260,10 @@ if AppsPopup == "Enable"{
         border-top: 0px solid var(--gbar-border-color) !important;
         border-bottom: 0px solid var(--gbar-border-color) !important;
     }
-}
+/*}
 
-else if AppsPopup == "Disable"{
+/*else if AppsPopup == "Disable"{
     /*To add theming of the Google Apps button and User popup, configure the options of this style.*/
-}
+/*}*/
 
 }
