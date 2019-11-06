@@ -8,15 +8,15 @@
 @author      Devo7v
 
 @var color gcontacts-accent-color "Accent Color" #dd4b39
-Blue from Preview version: #2a56c6
-Blue from Material Version: #1a73e8
-Red from Old Version: #dd4b39
+	Blue from Preview version: #2a56c6
+	Blue from Material Version: #1a73e8
+	Red from Old Version: #dd4b39
 @var color gcontacts-background-color "Primary Background Color" #111111
 @var color gcontacts-text-color "Text Color" #555555
 @var color gcontacts-light-text-color "Text Color" #FFFFFF
 ==/UserStyle== */
 
-@-moz-document url-prefix("http://www.google.com/contacts/"), url-prefix("https://www.google.com/contacts/"), url-prefix("http://contacts.google.com/"), url-prefix("http://contacts.google.com/"){
+@-moz-document url-prefix("http://www.google.com/contacts/"), url-prefix("https://www.google.com/contacts/"), url-prefix("http://contacts.google.com/"), url-prefix("https://contacts.google.com/"){
 /*Search Bar Background*/
 .gb_Se{
     background: none !important;
