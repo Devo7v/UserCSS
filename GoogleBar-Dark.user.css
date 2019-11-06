@@ -8,18 +8,13 @@
 @author      Devo7v
 
 @var color gbar-accent-color "Accent Color" #CCCCCC
-
 @var color gbar-main-background-color "Primary Background Color" #111111
 @var color gbar-light-background-color "Light Background Color" #333333
-
 @var color gbar-button-color "Button Primary Color" #222222
 @var color gbar-button-color-2 "Button Secondary Color" #777777
-
 @var color gbar-border-color "Border Primary Color" #555555
 @var color gbar-border-color-2 "Border Secondary Color" #999999
-
 @var color gbar-text-color "Text Color" #FFFFFF
-
 
 @var checkbox GCalendar "Apply to Google Calendar" 1
 @var checkbox GContacts "Apply to Google Contacts" 1
@@ -36,12 +31,12 @@
 @var checkbox GWallet "Apply to Google Wallet" 1
 
 @var select IconColor "Icon Color"{
-"WIconColor": "White" ,
-"BIconColor": "Black"
+"White": "WIconColor" ,
+"Black": "BIconColor"
 }
 @var select AppsPopup "Theme Google Button Popups"{
-"YesAppsPopup": "Enable",
-"NoAppsPopup": "Disable"
+"Enable": "YesAppsPopup",
+"Disable": "NoAppsPopup"
 }
 ==/UserStyle== */
 
@@ -85,18 +80,18 @@ header#gb /*New Google Bar*/
 }
 
 /*Background color for Search box*/
-#gbqfqw, .gb_Se{
+#gbqfqw, .gb_Ue{
     /*background: var(--gbar-light-background-color) !important;*/
     background: none !important;
     background: rgba(255,255,255,0.16) !important;
     border: none !important;
 }
-.gb_lf{
+.gb_nf{
     box-shadow: var(--gbar-box-shadow2) !important;
 }
 
 /*Text color for Search box*/
-.gbqfif, .gb_df, .gb_df::placeholder{
+.gbqfif, .gb_ff, .gb_ff::placeholder{
     color: var(--gbar-accent-color) !important;
 }
 
@@ -116,12 +111,12 @@ header#gb /*New Google Bar*/
 
 /*if IconColor == "White"{
     /*Logo Text Color*/
-    .gb_Zc, .NkK3Fc span[role="heading"]{
+    .gb_1c, .NkK3Fc span[role="heading"]{
         color: var(--gbar-text-color) !important;
     }
 
     /*Coloring for svg icons in new Google Bar*/
-    .gb_ja svg{
+    .gb_la svg{
 	    fill: var(--gbar-text-color) !important;
 	    color: var(--gbar-button-color-2) !important;
     }
@@ -132,7 +127,7 @@ header#gb /*New Google Bar*/
     }
 /*}
         
-else if IconColor =="Black"{
+else if IconColor == "Black"{
 /*To change the color of the icons in the Google Bar, configure the options of this style.*/
 /*}
 
@@ -141,34 +136,33 @@ else if IconColor =="Black"{
     /*Triangle icon at top when popup is opened*/
     .gb_Qa{
         border-bottom-color: var(--gbar-light-background-color) !important;
-        z-index: 3 !important;
     }
 
     /*Main background color*/
-    .gb_H{
+    .gb_J{
         border: 0px solid var(--gbar-border-color-2) !important;
         background-color: var(--gbar-light-background-color) !important;
     }
 
     /*Individual apps button text color*/
-    .gb_r{
+    .gb_t{
         color: var(--gbar-button-color-2) !important;
         border: none !important;
     }
 
     /*Hides the border when hovering over an individual app icon*/
-    .gb_i:hover a{
+    .gb_k:hover a{
         border: none !important;
     }
 
     /*Text color when hovering over an individual app icon*/
-    .gb_r:hover{
+    .gb_t:hover{
         color: var(--gbar-border-color-2) !important;
         text-decoration: underline !important;
     }
 
     /*Background color behind app label*/
-    .gb_i:hover .gb_r{
+    .gb_k:hover .gb_t{
         background: var(--gbar-light-background-color) !important;
     }
 
@@ -183,80 +177,88 @@ else if IconColor =="Black"{
     }
 
     /*Background color for "More" link at bottom of popup*/
-    .gb_1f, .gb_I{
+    .gb_K{
         background-color: var(--gbar-light-background-color) !important;
         color: var(--gbar-border-color-2) !important;
     }
-    .gb_I:hover{
+    .gb_K:hover{
         text-decoration: underline !important;
+    }
+    
+    /*Background color for "Even more from Google" link at bottom of popup*/
+    .gb_F{
+        background-color: var(--gbar-light-background-color) !important;
+    }
+    .gb_3f{
+        color: var(--gbar-border-color-2) !important;
     }
 
     /*Small bottom border on the first page of apps that shows up when you scroll to the second page of apps*/
-    .gb_J{
+    .gb_L{
         border-bottom: 0px solid var(--gbar-button-color-2) !important;
     }
 
     /*=========================User Popup=========================*/
     /*Main Background color*/
-    .gb_D{
+    /*.gb_{
         background: var(--gbar-light-background-color) !important;
         box-shadow: var(--gbar-box-shadow2) !important;
     }
 
     /*Picture icon background*/
-    .gb_cb{
+    .gb_eb{
         background: var(--gbar-main-background-color) !important;
     }
-    .gb_db:hover{
+    .gb_fb:hover{
         background: var(--gbar-button-color-2) !important;
     }
 
     /*User name*/
-    .gb_gb{
+    .gb_ib{
         color: var(--gbar-border-color-2) !important;
     }
 
     /*Buttons background color*/
-    .gb_pb{
+    .gb_rb{
         background: var(--gbar-button-color) !important;
         border-color: var(--gbar-button-color) !important;
         color: var(--gbar-border-color-2) !important;
     }
-    .gb_pb:hover{
-        background: var(--gbar-main-background-color) !important;
+    .gb_rb:hover, .gb_pb:hover{
+        background-color: var(--gbar-main-background-color) !important;
     }
 
     /*Secondary user background*/
-    .gb_Kb:hover{
+    .gb_Mb:hover{
         background: var(--gbar-main-background-color) !important;
     }
 
     /*Secondary user text color*/
-    .gb_1b{
+    .gb_3b{
         color: var(--gbar-border-color-2) !important;
     }
 
     /*All Brand accounts background*/
-    .gb_sb{
+    .gb_ub{
         background: var(--gbar-light-background-color) !important;
         border-top: 0px solid var(--gbar-border-color) !important;
     }
-    .gb_Ob:hover{
+    .gb_Qb:hover{
         background: var(--gbar-main-background-color) !important;
     }
 
     /*All Brand accounts text*/
-    .gb_cc, .gb_sb{
+    .gb_ec, .gb_zb{
         color: var(--gbar-border-color-2) !important;
     }
 
     /*Add another account background*/
-    .gb_sb:hover, .gb_nb:hover{
+    .gb_ub:hover, .gb_nb:hover{
         background: var(--gbar-main-background-color) !important;
     }
 
     /*Dividing Lines*/
-    .gb_Eb, .gb_yb{
+    .gb_Db, .gb_Ab{
         border-top: 0px solid var(--gbar-border-color) !important;
         border-bottom: 0px solid var(--gbar-border-color) !important;
     }
