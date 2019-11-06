@@ -11,6 +11,8 @@ The following userstyles are in this repository, select any of the links below t
 ## Google Bar - Dark Style
 *Similar to the Swappa style below, I need some help figuring out how to get 'if statements' working properly.  I need help starting with lines 112 and 134.  Please submit a pull request if you can help.*
 
+![alt text](https://raw.githubusercontent.com/Devo7v/UserCSS/master/Screenshots/GoogleBar.png "Google Bar - Dark Style Screenshot (Screenshot needs to be updated)")
+
 This user style currently themes the Google Bar and Apps/User popup buttons across the following services:
 - [Google Calendar](https://calendar.google.com/)
 - [Google Contacts](https://contacts.google.com/)
@@ -33,6 +35,7 @@ This user style currently themes the Google Bar and Apps/User popup buttons acro
 
 ## Google Calendar - Dark Style
 In order to fully theme the Google Bar within Google Calendar, install the Google Bar - Dark Style above.
+![alt text](https://raw.githubusercontent.com/Devo7v/UserCSS/master/Screenshots/GoogleCalendar.jpeg "Google Calendar - Dark Style Screenshot (Screenshot needs to be updated)")
 [![Install Google Calendar - Dark Style with Stylus][badge]][style]
 
 [badge]: https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=for-the-badge
@@ -40,6 +43,7 @@ In order to fully theme the Google Bar within Google Calendar, install the Googl
 
 ## Google Contacts - Dark Style
 In order to fully theme the Google Bar within Google Contacts, install the Google Bar - Dark Style above.
+![alt text](https://raw.githubusercontent.com/Devo7v/UserCSS/master/Screenshots/GoogleContacts.png "Google Contacts - Dark Style Screenshot (Screenshot needs to be updated)")
 [![Install Google Contacts - Dark Style with Stylus][badge]][style]
 
 [badge]: https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=for-the-badge
@@ -47,7 +51,7 @@ In order to fully theme the Google Bar within Google Contacts, install the Googl
 
 ## Swappa.com - Dark Style
 *I need a little help with this style getting the drop shadow checkbox option to work properly.  See line 215.*
-
+![alt text](https://raw.githubusercontent.com/Devo7v/UserCSS/master/Screenshots/Swappa.png "Swappa.com - Dark Style Screenshot")
 [![Install Swappa.com - Dark Style with Stylus][badge]][style]
 
 [badge]: https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=for-the-badge
