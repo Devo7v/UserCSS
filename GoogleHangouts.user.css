@@ -1,0 +1,298 @@
+/* ==UserStyle==
+@name        Google Hangouts - Dark Style
+@namespace   Devo7v
+@version     0.1.0
+@homepageURL https://github.com/Devo7v/UserCSS
+@updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleHangouts-Dark.user.css
+@license     CC-BY-SA-4.0
+@author      Devo7v
+
+@var color ghangouts-accent-color "Accent Color" #53A93F
+==/UserStyle== */
+
+
+@-moz-document url-prefix("http://www.google.com/hangouts/"), url-prefix("https://www.google.com/hangouts/"), url-prefix("http://hangouts.google.com/"), url-prefix("https://hangouts.google.com/"){
+/*Loading Background*/
+.g-Ue-kc{
+    background-color: #111111 !important;
+}
+
+/*=========================Left slide out menu=========================*/
+/*Left slide out menu background*/
+.JPdR6b{
+  background: #222222 !important;
+}
+
+/*Text color*/
+.g-Ue-we, .z80M1{
+  color: #999999 !important;
+}
+
+/*Selected and Hovered Over item*/
+.bdXzDb .z80M1.FwR7Pc, .bdXzDb .z80M1.skHzY{
+  background: #444444 !important;
+}
+
+/*Invert the color of dark icons*/
+.bdXzDb .RY89vd .pTh3n {
+	fill: rgba(255, 255, 255, 0.87);
+}
+
+ /*Contacts icon*/
+ /*Conversations icon*/
+ /*Phone Calls icon*/
+ /*Invites icon*/
+ /*Android icon*/
+ /*iOS icon*/
+ /*Chrome icon*/
+ /*Hangouts Dialer icon*/
+ /*Settings icon*/
+ /*Help & Feedback icon*//*{
+    filter: invert(100%) !important;
+    -webkit-filter: invert(100%) !important;*/
+    /*-moz-filter: invert(100%) !important;*/
+    /*-o-filter: invert(100%) !important;
+    -ms-filter: invert(100%) !important;
+}*/
+
+
+
+/*=========================Main Message List=========================*/
+/*Message list background*/
+.Yo, .aOY59, .x1bKod{
+  background: #111111 !important;
+  border-bottom: none !important;
+}
+
+/*Message list border*/
+.gsl0xd{
+  border-left: 0px solid #444444 !important;
+}
+
+/*Conversations background color*/
+.Bb, .Ahnnze{
+  background: #111111 !important;
+  border-bottom: 0px solid #444444 !important;
+}
+
+/*Input text boxes*/
+input, textarea{
+  background: #444444 !important;
+  color: #999999 !important;
+}
+
+/*Text color for Message list*/
+.ik, .ng, /*span,*/ .rNeXgf, .ZmcSxe, .FzSsbb, .VqBtHf, .pghO0c{
+  color: #CCCCCC !important;
+}
+
+/*Search results text color*/
+.cj{
+   color: #CCCCCC !important;
+}
+
+/*Search results hover background color*/
+.eh.c-P-p{
+  background: #333333 !important;
+}
+
+/*Search results section background color*/
+.Wkchmf{
+  background: #333333 !important;
+  border: none !important;
+}
+
+/*Search results section text color*/
+.Wkchmf .kp{
+  color: #CCCCCC !important;
+}
+
+/*"Invite" text color*/
+.wWbu5e{
+  color: #0288D1 !important;
+}
+
+/*=======Chat Window=======*/
+/*Header background color*/
+.Ik{
+  background-color: #333333 !important;
+}
+
+/*New Chat Header background color*/
+.uB{
+  background-color: var(--ghangouts-accent-color) !important;
+}
+/*Header buttons background color*/
+.EV{
+  background: #333333 !important;
+}
+
+/*Header text color*/
+.Ob2Lud, .O1vsec, .xP{
+  color: #CCCCCC !important;
+}
+
+/*Message window background*/
+.iN{
+  background-color: #222222 !important;
+}
+
+/*======Chat Bubble Colors======*/
+/*Sent by User*/
+.pj .KRQuhe{
+  background-color: #444444 !important;
+  border-radius: 0px !important; /*Fully rounded chat bubbles have a radius of 15px*/
+  border-top-right-radius: 0px !important;
+}
+.pj .jHldnd{
+  border: 8px solid #444444 !important;
+}
+/*Text Color*/
+.pj .JL{
+  color: #CCCCCC !important;
+}
+.pj .JL a{
+  color: #BBBBBB !important;
+}
+
+/*Sent by others*/
+.Sn .KRQuhe{
+  background-color: var(--ghangouts-accent-color) !important;
+  border-radius: 0px !important; /*Fully rounded chat bubbles have a radius of 15px*/
+  border-top-left-radius: 0px !important;
+}
+.Sn .jHldnd{
+  border: 8px solid var(--ghangouts-accent-color) !important;
+}
+/*Text Color*/
+.Sn .JL{
+  color: #FFFFFF !important;
+}
+.Sn .JL a/*Hyperlink*/{
+  color: #EEEEEE !important;
+}
+  
+/*Chat text color*/
+.TsiDff, .mopgBe{
+  color: #DDDDDD !important;
+}
+
+/*Message contact name, timestamp, status color*/
+.sV, .TlvAYc, .bI{
+  color: #999999 !important;
+}
+
+/*Message text input box background and layering*/
+.My{
+  background-color: #333333 !important;
+}
+
+/*Remove text entry box borders*/
+.My{
+  border-style: none !important;
+}
+
+/*Invert the color of dark icons*/
+.Px, /*Carat icon*/
+.kL, button.ydob5c, /*Bell icon*/
+.zDiulc, /*Phone icon*/
+.rYvKwe, /*Phone icon*/
+.wkIdsc, /*Hangouts icon*/
+.vR, /*Gear icon*/
+.Cyynpc, /*Emoji icon*/
+.yq6mRd, /*Picture icon*/
+.Tnn80c, /*Pencil icon*/
+.HxMcae, /*SMS icon*/
+.Xv, /*Video camera icon*/
+.PK, /*People icon*/
+.BboKFb, /*Bell icon*/
+.OK, /*Add person icon*/
+.Tikynd, /*Back arrow icon*/
+.mnIV2e /*Check box in chat options*/
+/*.Dkouue /*SMS icon*/{
+    filter: invert(100%) !important;
+    -webkit-filter: invert(100%) !important;
+    /*-moz-filter: invert(100%) !important;*/
+    -o-filter: invert(100%) !important;
+    -ms-filter: invert(100%) !important;
+}
+
+/*Background color for Phone icon next to chat bubble picture*/
+.iF9mle{
+  background: none !important;
+}
+
+
+/*Play button icon for listening to voicemails*/
+.Ip00db{
+  background-image: url("https://ssl.gstatic.com/chat/babble/sprites/common-517bca7f07a37c64c3263a1411e266a5.png") !important;
+  background-position: -722px -51px !important;
+    filter: invert(90%) !important;
+    -webkit-filter: invert(90%) !important;
+    /*-moz-filter: invert(90%) !important;*/
+    -o-filter: invert(90%) !important;
+    -ms-filter: invert(90%) !important;
+}
+
+/*=======Emoji Popup=======*/
+/*Emoji stickers background*/
+.HM, .bC7CXb, .IaF29d, .vf6xyf, .Hy.Th96Ob, .gr4xCd{
+  background-color: #222222 !important;
+}
+
+/*Emoji types background*/
+.Hy.Th96Ob .IM{
+  background-color: #222222 !important;
+  border: 1px solid #777777 !important;
+}
+
+/*invert emoji types images*/
+.rE, .Gy{
+  filter: invert(100%) !important;
+  -webkit-filter: invert(100%) !important;
+}
+
+/*Remove emoji stickers border*/
+.bC7CXb{
+  border: none !important;
+}
+
+
+/*=======Draw an Image!=======*/
+
+  
+/*=======Settings=======*/
+/*Window background color*/
+.uJ .Ih{
+  background: #222222 !important;
+}
+
+/*Icons*/
+.z-b-G{
+  background: #444444 !important;
+  border: none !important;
+  color: #999999 !important;
+}
+
+/*Text color*/
+.uJ .Ih, .ahRshd .wxPY, .NLK4Q{
+  color: #999999 !important;
+  text-shadow: none !important;
+}
+
+/*Buttons area background color*/
+.RU, .IRDqje, .Su{
+  background: #333333 !important;
+  border: none !important;
+}
+
+/*=======People in conversation=======*/
+/*Background color*/
+ .zS{
+  background: #222222 !important;
+}
+.rI{
+  border: none !important;
+}
+
+}
