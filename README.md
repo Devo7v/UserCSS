@@ -28,31 +28,21 @@ This user style currently themes the Google Bar and Apps/User popup buttons acro
 - [Google Voice](https://voice.google.com/)
 - [Google Pay/Wallet](https://pay.google.com/)
 
-[![Install Google Bar - Dark Style with Stylus][badge]][style]
-
-[badge]: https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=for-the-badge
-[style]: https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=for-the-badge)](https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css)
 
 ## Google Calendar - Dark Style
 In order to fully theme the Google Bar within Google Calendar, install the Google Bar - Dark Style above.
 ![alt text](https://raw.githubusercontent.com/Devo7v/UserCSS/master/Screenshots/GoogleCalendar.jpeg "Google Calendar - Dark Style Screenshot (Screenshot needs to be updated)")
-[![Install Google Calendar - Dark Style with Stylus][badge]][style]
-
-[badge]: https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=for-the-badge
-[style]: https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleCalendar-Dark.user.css
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=for-the-badge)](https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleCalendar-Dark.user.css)
 
 ## Google Contacts - Dark Style
 In order to fully theme the Google Bar within Google Contacts, install the Google Bar - Dark Style above.
 ![alt text](https://raw.githubusercontent.com/Devo7v/UserCSS/master/Screenshots/GoogleContacts.png "Google Contacts - Dark Style Screenshot (Screenshot needs to be updated)")
-[![Install Google Contacts - Dark Style with Stylus][badge]][style]
 
-[badge]: https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=for-the-badge
-[style]: https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleContacts-Dark.user.css
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=for-the-badge)](https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleContacts-Dark.user.css)
 
 ## Swappa.com - Dark Style
 *I need a little help with this style getting the drop shadow checkbox option to work properly.  See line 215.*
 ![alt text](https://raw.githubusercontent.com/Devo7v/UserCSS/master/Screenshots/Swappa.png "Swappa.com - Dark Style Screenshot")
-[![Install Swappa.com - Dark Style with Stylus][badge]][style]
 
-[badge]: https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=for-the-badge
-[style]: https://raw.githubusercontent.com/Devo7v/UserCSS/master/Swappa-Dark.user.css
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=for-the-badge)](https://raw.githubusercontent.com/Devo7v/UserCSS/master/Swappa-Dark.user.css)
