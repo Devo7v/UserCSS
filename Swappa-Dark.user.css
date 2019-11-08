@@ -23,7 +23,15 @@
 
 
 @-moz-document domain("swappa.com"){
-    
+:root{
+    --swappa-accent-color: swappa-accent-color;
+    --swappa-primary-background-color: swappa-primary-background-color;
+    --swappa-light-background-color: swappa-light-background-color;
+    --swappa-dark-background-color: swappa-dark-background-color;
+    --swappa-primary-text-color: swappa-primary-text-color;
+    --swappa-primary-line-color: swappa-primary-line-color;
+}
+
 /*Top bar*/
 .navbar-default{
     background-color: var(--swappa-primary-background-color) !important;
