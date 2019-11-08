@@ -1,11 +1,14 @@
 /* ==UserStyle==
 @name        Swappa.com - Dark Style
 @namespace   Devo7v
-@version     0.1.0
+@version     0.1.1
 @homepageURL https://github.com/Devo7v/UserCSS
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/Swappa-Dark.user.css
 @license     CC-BY-SA-4.0
 @author      Devo7v
+
+@preprocessor stylus
+
 @var color swappa-accent-color "Accent Color" #009A44
 @var color swappa-primary-background-color "Primary Background Color" #333333
 @var color swappa-light-background-color "Lighter Background Color" #555555
@@ -212,12 +215,10 @@ footer, footer a{
     filter: invert(80%) !important;
 }
 
-/*Overwrites the above*/ /*I cannot figure out how to get this if statement to work correctly, help would be appreciated*/
-/*if swappa-box-shadow-check{*/
+/*Overwrites the above*/
+if swappa-box-shadow-check{
 	.navbar-default, .btn-default, .cell_product, .breadcrumb, div.col-sm-6:hover, .panel{
 		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23) !important;
     }
-
-/**/
 
 }
