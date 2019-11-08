@@ -18,7 +18,8 @@
 
 @-moz-document url-prefix("http://www.google.com/hangouts/"), url-prefix("https://www.google.com/hangouts/"), url-prefix("http://hangouts.google.com/"), url-prefix("https://hangouts.google.com/"){
 :root{
-    --ghangouts-accent-color: #53A93F;
+    --ghangouts-accent-color: #0F9D58;
+    /*Original Hangouts accent color #53A93F*/
     if ghangouts-accent-color-custom{
         --ghangouts-accent-color: ghangouts-accent-color;
     }
