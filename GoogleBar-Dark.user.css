@@ -20,7 +20,17 @@
 @var color gbar-border-color-2 "Border Secondary Color" #999999
 @var color gbar-text-color "Text Color" #FFFFFF
 
-'@var checkbox GCalendar "Apply to Google Calendar" 1
+@var select IconColor "Icon Color"[
+"White" ,
+"Black",
+"Custom"
+]
+@var color gbar-icon-color-custom "Custom Icon Color" #33B679
+@var checkbox AppsPopup "Theme Google Button Popups" 1
+
+
+==/UserStyle== */
+/*@var checkbox GCalendar "Apply to Google Calendar" 1
 @var checkbox GContacts "Apply to Google Contacts" 1
 @var checkbox GDocs "Apply to Google Docs" 1
 @var checkbox GDrive "Apply to Google Drive" 1
@@ -32,18 +42,7 @@
 @var checkbox GPlus "Apply to Google Plus" 1
 @var checkbox GTranslate "Apply to Google Translate" 1
 @var checkbox GVoice "Apply to Google Voice" 1
-@var checkbox GWallet "Apply to Google Wallet" 1'
-
-@var select IconColor "Icon Color"[
-"White" ,
-"Black"
-]
-@var select AppsPopup "Theme Google Button Popups"[
-"Enable",
-"Disable"
-]
-==/UserStyle== */
-
+@var checkbox GWallet "Apply to Google Wallet" 1*/
 
 @-moz-document url-prefix("http://www.google.com/calendar/"), url-prefix("https://www.google.com/calendar/"),url-prefix("http://calendar.google.com/"),url-prefix("https://calendar.google.com/"),
 url-prefix("http://www.google.com/contacts/"), url-prefix("https://www.google.com/contacts/"),url-prefix("http://contacts.google.com/"),url-prefix("https://contacts.google.com/"),
@@ -69,6 +68,7 @@ url-prefix("https://example.com/"){
     --gbar-border-color: gbar-border-color;
     --gbar-border-color-2: gbar-border-color-2;
     --gbar-text-color: gbar-text-color;
+    --gbar-icon-color-custom: gbar-icon-color-custom;
     --gbar-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     /*creates a shadow on the bottom and right, comment out this line to remove*/
 
@@ -138,6 +138,24 @@ if IconColor == "White"{
     }
 }
         
+if IconColor == "Custom"{
+    /*Logo Text Color*/
+    .gb_1c, .NkK3Fc span[role="heading"]{
+        color: var(--gbar-icon-color-custom) !important;
+    }
+
+    /*Coloring for svg icons in new Google Bar*/
+    .gb_la svg{
+	    fill: var(--gbar-icon-color-custom) !important;
+	    color: var(--gbar-button-color-2) !important;
+    }
+
+    /*Remove right border when selecting a button in the Google Bar*/
+    .gb_g{
+        border-right: 0px solid var(--gbar-border-color) !important;
+    }
+}
+
 else if IconColor == "Black"{
 /*To change the color of the icons in the Google Bar, configure the options of this style.*/
 }
