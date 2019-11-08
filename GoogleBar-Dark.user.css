@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Bar - Dark Style
 @namespace   Devo7v
-@version     0.1.0
+@version     0.1.1
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css
@@ -160,7 +160,7 @@ else if IconColor == "Black"{
 /*To change the color of the icons in the Google Bar, configure the options of this style.*/
 }
 
-if AppsPopup == "Enable"{
+if AppsPopup {
     /*========================Apps Button Popup========================*/
     /*Triangle icon at top when popup is opened*/
     .gb_Sa{
@@ -291,10 +291,6 @@ if AppsPopup == "Enable"{
         border-top: 0px solid var(--gbar-border-color) !important;
         border-bottom: 0px solid var(--gbar-border-color) !important;
     }
-}
-
-else if AppsPopup == "Disable"{
-    /*To add theming of the Google Apps button and User popup, configure the options of this style.*/
 }
 
 }
