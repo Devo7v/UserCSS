@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Hangouts - Dark Style
 @namespace   Devo7v
-@version     0.1.1
+@version     0.1.2
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleHangouts-Dark.user.css
@@ -44,6 +44,10 @@
 .bdXzDb .z80M1.FwR7Pc, .bdXzDb .z80M1.skHzY{
   background: #444444 !important;
 }
+.bdXzDb .skHzY .jO7h3c, .bdXzDb .skHzY .pTh3n{
+    color: var(--ghangouts-accent-color) !important;
+    fill: var(--ghangouts-accent-color) !important;
+}
 
 /*Invert the color of dark icons*/
 .bdXzDb .RY89vd .pTh3n {
@@ -76,6 +80,11 @@
   border-bottom: none !important;
 }
 
+/*New conversation icon*/
+.wK9ELb{
+    background-color: var(--ghangouts-accent-color) !important;
+}
+
 /*Message List Text*/
 .lPNGt, .qCUW5d{
     color: #999999 !important;
@@ -87,7 +96,7 @@
 }
 
 /*Hovering over items in message list*/
-.KgaIJb:hover, .HfhnEf:hover{
+.KgaIJb:hover, .Bb:hover{
     background-color: #444444 !important;
 }
 
