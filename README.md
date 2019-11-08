@@ -11,8 +11,6 @@ The following userstyles are in this repository, select any of the links below t
 - [Swappa.com - Dark Style](https://github.com/Devo7v/UserCSS/#swappacom---dark-style)
 
 ## Google Bar - Dark Style
-*Similar to the Swappa style below, I need some help figuring out how to get 'if statements' working properly.  I need help starting with lines 112 and 134.  Please submit a pull request if you can help.*
-
 ![alt text](https://raw.githubusercontent.com/Devo7v/UserCSS/master/Screenshots/GoogleBar.png "Google Bar - Dark Style Screenshot (Screenshot needs to be updated)")
 
 This user style currently themes the Google Bar and Apps/User popup buttons across the following services:
@@ -55,7 +53,6 @@ In order to fully theme the Google Bar within Google Voice, install the [Google 
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=for-the-badge)](https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css)
 
 ## Swappa.com - Dark Style
-*I need a little help with this style getting the drop shadow checkbox option to work properly.  See line 215.*
 ![alt text](https://raw.githubusercontent.com/Devo7v/UserCSS/master/Screenshots/Swappa.png "Swappa.com - Dark Style Screenshot")
 
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=for-the-badge)](https://raw.githubusercontent.com/Devo7v/UserCSS/master/Swappa-Dark.user.css)
