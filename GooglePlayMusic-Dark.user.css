@@ -26,7 +26,7 @@
 /*=====================ADDED CODE=====================*/
 :root {
     --gmusic-accent-color: gmusic-accent-color;
-    /*Original Orange Accent Color: #FB8521*/
+    /*Original Orange Accent Color: #FB8521 (251, 133, 33)*/
     /*--gmusic-accent-color: red;/*For testing accent color, do not uncomment*/
     --gmusic-primary-background-color: gmusic-primary-background-color;
     --gmusic-enhanced-background-color: #333333;
