@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Play Music - Dark Style
 @namespace   Devo7v
-@version     0.1.0
+@version     0.1.1
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GooglePlayMusic-Dark.user.css
@@ -16,6 +16,8 @@
     "Square",
     "Squircle"
 ]
+@var color gmusic-accent-color "Accent Color" #FF5722
+@var color gmusic-primary-background-color "Primary Background Color" #111111
 ==/UserStyle== */
 
 
@@ -23,10 +25,10 @@
 
 /*=====================ADDED CODE=====================*/
 :root {
-    --gmusic-accent-color: #FB8521/*#FB8521*/
-    /*Google Play Music Orange: #FF5722*/;
+    --gmusic-accent-color: gmusic-accent-color;
+    /*Original Orange Accent Color: #FB8521*/
     /*--gmusic-accent-color: red;/*For testing accent color, do not uncomment*/
-    --gmusic-primary-background-color: #333333;
+    --gmusic-primary-background-color: gmusic-primary-background-color;
     --gmusic-enhanced-background-color: #333333;
     --gmusic-enhanced2-background-color: #555555;
     --gmusic-dull-background-color: #333333;
