@@ -11,6 +11,7 @@ The following userstyles are in this repository, select any of the links below t
 - [Swappa.com - Dark Style](https://github.com/Devo7v/UserCSS/#swappacom---dark-style)
 
 ## Google Bar - Dark Style
+**If anybody knows how to make the sites user-configurable please submit a pull request.  Functionally this is the last thing I'd like to add to this style.**
 ![alt text](https://raw.githubusercontent.com/Devo7v/UserCSS/master/Screenshots/GoogleBar.png "Google Bar - Dark Style Screenshot (Screenshot needs to be updated)")
 
 This user style currently themes the Google Bar and Apps/User popup buttons across the following services:
