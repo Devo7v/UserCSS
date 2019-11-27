@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Play Music - Dark Style
 @namespace   Devo7v
-@version     0.1.1
+@version     0.1.2
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GooglePlayMusic-Dark.user.css
@@ -2157,7 +2157,7 @@ core-header-panel#nav-container #nav {
 }
 
 /*Apps icon in Google bar*/
-.gb_D.gb_rc {
+.gb_D.gb_wc {
     border: none !important;
     /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
     background-position: -0px -138px !important;
@@ -2172,7 +2172,7 @@ core-header-panel#nav-container #nav {
 
 /*========================Apps Button Popup========================*/
     /*Triangle icon at top when popup is opened*/
-    .gb_Sa{
+    .gb_Xa{
         border-bottom-color: var(--gbar-light-background-color) !important;
     }
 
@@ -2227,7 +2227,7 @@ core-header-panel#nav-container #nav {
     .gb_F{
         background-color: var(--gbar-light-background-color) !important;
     }
-    .gb_3f{
+    .gb_6f{
         color: var(--gbar-border-color-2) !important;
     }
 
@@ -2244,59 +2244,69 @@ core-header-panel#nav-container #nav {
     }
 
     /*Picture icon background*/
-    .gb_eb{
+    .gb_fb{
         background: var(--gbar-main-background-color) !important;
     }
-    .gb_fb:hover{
+    .gb_kb:hover{
         background: var(--gbar-button-color-2) !important;
     }
 
     /*User name*/
-    .gb_ib{
+    .gb_mb{
         color: var(--gbar-border-color-2) !important;
     }
 
     /*Buttons background color*/
-    .gb_rb{
+    .gb_wb{
         background: var(--gbar-button-color) !important;
         border-color: var(--gbar-button-color) !important;
         color: var(--gbar-border-color-2) !important;
     }
-    .gb_rb:hover, .gb_pb:hover{
+    .gb_wb:hover, .gb_ub:hover{
         background-color: var(--gbar-main-background-color) !important;
     }
 
     /*Secondary user background*/
-    .gb_2b:hover{
+    .gb_Rb:hover{
         background: var(--gbar-button-color) !important;
     }
 
     /*Secondary user text color*/
-    .gb_3b{
+    .gb_8b{
         color: var(--gbar-border-color-2) !important;
     }
 
     /*All Brand accounts background*/
-    .gb_ub{
+    .gb_vb{
         background: var(--gbar-light-background-color) !important;
         border-top: 0px solid var(--gbar-border-color) !important;
     }
-    .gb_Qb:hover{
+    .gb_Vb:hover{
         background: var(--gbar-button-color) !important;
     }
 
     /*All Brand accounts text*/
-    .gb_ec, .gb_zb{
+    .gb_ic{
         color: var(--gbar-border-color-2) !important;
     }
 
     /*Add another account background*/
-    .gb_ub:hover{
+    .gb_zb{
+        background: var(--gbar-light-background-color) !important;
+        border-top: 0px solid var(--gbar-border-color) !important;
+    }
+    
+    .gb_zb:hover{
         background: var(--gbar-button-color) !important;
+    }
+    
+    /*Add another account text*/
+    .gb_Eb{
+        color: var(--gbar-border-color-2) !important;
     }
 
     /*Dividing Lines*/
-    .gb_Db, .gb_Ab{
+    .gb_Mb, .gb_Fb{
         border-top: 0px solid var(--gbar-border-color) !important;
         border-bottom: 0px solid var(--gbar-border-color) !important;
     }
