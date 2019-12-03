@@ -11,10 +11,9 @@
 
 @preprocessor stylus
 
-@var color AndroidPoice-primary-background "Primary Background Color" #333333
+@var color AndroidPolice-primary-background "Primary Background Color" #333333
 @var color AndroidPolice-dark-background "Dark Background Color" #111111
 @var color AndroidPolice-light-background "Light Background Color" #777777
-@var color gcontacts-light-text-color "Text Color" #FFFFFF
 ==/UserStyle== */
 
 @-moz-document domain("androidpolice.com"){
