@@ -45,11 +45,22 @@ In order to fully theme the Google Bar within Google Contacts, install the [Goog
 ## Google Hangouts - Dark Style
 A theme to make hangouts dark while retaining the accent colors.
 
+![alt text](https://raw.githubusercontent.com/Devo7v/UserCSS/master/Screenshots/Hangouts.png "Google Hangouts - Dark Style Screenshot")
+
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=for-the-badge)](https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleHangouts-Dark.user.css)
 
 
+## Google Music - Dark Style
+A dark style for Google Music.  This style allows you to customize the background color, accent color, and the roundness of the Artist pictures.
+
+![alt text](https://raw.githubusercontent.com/Devo7v/UserCSS/master/Screenshots/GoogleMusic.png "Google Music - Dark Style Screenshot")
+
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=for-the-badge)](https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleMusic-Dark.user.css)
+
 ## Google Voice - Dark Style
 In order to fully theme the Google Bar within Google Voice, install the [Google Bar - Dark Style](https://github.com/Devo7v/UserCSS/#google-bar---dark-style) above.
+
+![alt text](https://raw.githubusercontent.com/Devo7v/UserCSS/master/Screenshots/GoogleVoice.png "Google Voice - Dark Style Screenshot")
 
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=for-the-badge)](https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css)
 
