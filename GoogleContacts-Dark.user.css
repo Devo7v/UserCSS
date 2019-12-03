@@ -501,7 +501,7 @@ div.UloUpf:nth-child(1) > div:nth-child(2) > a:nth-child(1){
 /*Background Color*/
 body{
   background: var(--gcontacts-background-color) !important;
-  color: #999999 !important;
+  color: var(--gcontacts-text-color) !important;
 }
 
 /*Contacts logo*/
