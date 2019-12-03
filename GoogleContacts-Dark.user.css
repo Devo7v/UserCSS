@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Contacts - Dark Style
 @namespace   Devo7v
-@version     0.1.0
+@version     0.1.1
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleContacts-Dark.user.css
@@ -19,7 +19,7 @@
 ]
 @var color gcontacts-accent-color-custom "Custom Accent Color" #33B679
 @var color gcontacts-background-color "Primary Background Color" #111111
-@var color gcontacts-text-color "Text Color" #555555
+@var color gcontacts-text-color "Text Color" #CCCCCC
 @var color gcontacts-light-text-color "Text Color" #FFFFFF
 ==/UserStyle== */
 
@@ -37,6 +37,9 @@
     else if gcontacts-accent-color == "Custom"{
         --gcontacts-accent-color: gcontacts-accent-color-custom;
     }
+	--gcontacts-background-color: gcontacts-background-color;
+	--gcontacts-text-color: gcontacts-text-color;
+	--gcontacts-light-text-color: gcontacts-light-text-color;
 }
 
 
@@ -49,12 +52,12 @@
 
 /*Logo Text Color*/
 .gb_Zc{
-    color: #FFFFFF !important;
+    color: var(--gcontacts-light-text-color) !important;
 }
 
 /*Coloring for svg icons in new Google Bar*/
 .gb_ja svg{
-	fill: #FFFFFF !important;
+	fill: var(--gcontacts-light-text-color) !important;
 	color: #777777 !important;
 }
 
@@ -67,17 +70,17 @@ header#gb{
 
 /*Search Bar text color*/
 .gb_rc svg, .Ax4B8, .yNVtPc{
-  color: #FFFFFF !important;
+  color: var(--gcontacts-light-text-color) !important;
 }
 
 /*Main Background Color*/
 body{
-  background: #111111 !important;
+  background: var(--gcontacts-background-color) !important;
 }
 
 /*General Text color*/
 .jqJLq.jqJLq a{
-  color: #CCCCCC !important;
+  color: var(--gcontacts-text-color) !important;
 }
 
 /*"Undo" text color in popup*/
@@ -100,13 +103,13 @@ body{
 /*=========================Navigation Panel on Left=========================*/
 /*Background color for navigation panel*/
 .ANsHhf, .k831u, .tuQOVc{
-  background: #111111 !important;
+  background: var(--gcontacts-background-color) !important;
 }
 
 /*Create Contact button*/
 .bgpk6e{
     background-color: #333333 !important;
-    color: #CCCCCC !important;
+    color: var(--gcontacts-text-color) !important;
 }
 
 /*Dividing Lines*/
@@ -153,7 +156,7 @@ body{
 
 /*Edit and Trash Icon color*/
 .jaWtS{
-  color: #CCCCCC !important;
+  color: var(--gcontacts-text-color) !important;
 }
 
 
@@ -161,13 +164,13 @@ body{
 /*=========================Contacts Panel=========================*/
 /*Background color*/
 .zYQnTe, .zQTmif, .dFPtBe{
-  background: #111111 !important;
+  background: var(--gcontacts-background-color) !important;
   border-bottom: 1px solid #333333 !important;
 }
 
 /*Name text color*/
 body{
-  color: #CCCCCC !important;
+  color: var(--gcontacts-text-color) !important;
 }
 
 /*=====Change column order popup=====*/
@@ -322,7 +325,7 @@ color: #666666 !important;
 /*Labels background color*/
 .jnnKcb{
   background: var(--gcontacts-accent-color) !important;
-  color: #CCCCCC !important;
+  color: var(--gcontacts-text-color) !important;
 }
 
 /*Popup background color*/
@@ -406,7 +409,7 @@ color: #666666 !important;
 /*=================Edit Contact=================*/
 /*Text Color*/
 .zH791 .zHQkBf, .zH791 .ZAGvjd, .zH791 .tL9Q4c{
-  color: #CCCCCC !important;
+  color: var(--gcontacts-text-color) !important;
 }
 
 /*Add a note text color*/
@@ -497,7 +500,7 @@ div.UloUpf:nth-child(1) > div:nth-child(2) > a:nth-child(1){
 /*=====================Header=====================*/
 /*Background Color*/
 body{
-  background: #111111 !important;
+  background: var(--gcontacts-background-color) !important;
   color: #999999 !important;
 }
 
@@ -547,7 +550,7 @@ body{
 /*Text Area*/
 .kEL8Ee{
   background: #333333 !important;
-  color: #CCCCCC !important;
+  color: var(--gcontacts-text-color) !important;
 }
 
 /*Text Area Popup Background Color*/
@@ -573,7 +576,7 @@ body{
 
 /*Selected Items*/
 .VIpgJd-wQNmvb-gk6SMd .VIpgJd-j7LFlb-bN97Pc{
-  color: #CCCCCC !important;
+  color: var(--gcontacts-text-color) !important;
 }
 
 /*Check Mark Icon*/
@@ -602,7 +605,7 @@ body{
 
 /*Selected Item Text Color*/
 .iVqZ0d.Alfa2e .ceRIQe{
-  color: #CCCCCC !important;
+  color: var(--gcontacts-text-color) !important;
 }
 
 /*New Contact Button*/
@@ -672,7 +675,7 @@ body{
 
 /*General Text Color*/
 .zUbbFf{
-  color: #CCCCCC !important;
+  color: var(--gcontacts-text-color) !important;
 }
 
 /*Connected Profiles Text Color*/
@@ -698,14 +701,14 @@ body{
 
 /*Dropdown list highlight color*/
 .VIpgJd-j7LFlb-sn54Q{
-  background: #111111 !important;
-  border-top: 1px solid #111111 !important;
-  border-bottom: 1px solid #111111 !important;
+  background: var(--gcontacts-background-color) !important;
+  border-top: 1px solid var(--gcontacts-background-color) !important;
+  border-bottom: 1px solid var(--gcontacts-background-color) !important;
 }
 
 /*Dropdown list highlighted text color*/
 .VIpgJd-j7LFlb-sn54Q .VIpgJd-j7LFlb-bN97Pc{
-  color: #CCCCCC !important;
+  color: var(--gcontacts-text-color) !important;
 }
 
 /*Flag background when hovering*/
@@ -762,7 +765,7 @@ body{
 /*=====================Settings Popup=====================*/
 /*Mask over page*/
 .XKSfm-Sx9Kwc-xJ5Hnf{
-  background: #111111 !important;
+  background: var(--gcontacts-background-color) !important;
 }
 
 /*Background*/
