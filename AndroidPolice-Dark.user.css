@@ -17,7 +17,7 @@
 @var color gcontacts-light-text-color "Text Color" #FFFFFF
 ==/UserStyle== */
 
-@-moz-document url-domain("androidpolice.com"){
+@-moz-document domain("androidpolice.com"){
 :root{
     --AndroidPolice-primary-background: AndroidPolice-primary-background;
     --AndroidPolice-dark-background: AndroidPolice-dark-background;
