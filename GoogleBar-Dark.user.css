@@ -39,6 +39,7 @@
 @var checkbox GMyAccount "Apply to Google MyAccount" 1
 @var checkbox GNews "Apply to Google News" 1
 @var checkbox GPlay "Apply to Google Play" 1
+@var checkbox GMusic "Apply to Google Play Music" 1
 @var checkbox GPlus "Apply to Google Plus" 1
 @var checkbox GTranslate "Apply to Google Translate" 1
 @var checkbox GVoice "Apply to Google Voice" 1
@@ -58,6 +59,7 @@ url-prefix("http://www.google.com/translate/"), url-prefix("https://www.google.c
 url-prefix("http://www.google.com/wallet/"), url-prefix("https://www.google.com/wallet/"),url-prefix("http://wallet.google.com/"),url-prefix("https://wallet.google.com/"),url-prefix("http://www.google.com/pay/"),url-prefix("https://www.google.com/pay/"),url-prefix("http://pay.google.com/"),url-prefix("https://pay.google.com/"),
 url-prefix("http://www.google.com/voice"), url-prefix("https://www.google.com/voice"),url-prefix("http://voice.google.com/"),url-prefix("https://voice.google.com/"),
 url-prefix("http://www.google.com/notifications/"), url-prefix("https://www.google.com/notifications/"),url-prefix("http://notifications.google.com/"),url-prefix("https://notifications.google.com/"),
+url-prefix("https://play.google.com/music/listen"),
 url-prefix("https://example.com/"){
 :root{
     --gbar-accent-color: gbar-accent-color;
