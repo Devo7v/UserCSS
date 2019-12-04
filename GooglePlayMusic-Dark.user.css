@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Play Music - Dark Style
 @namespace   Devo7v
-@version     0.1.2
+@version     0.1.3
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GooglePlayMusic-Dark.user.css
@@ -51,6 +51,14 @@
     else if gmusic-shape == "Squircle"{
         --gmusic-shape: 18.75%;
     }
+}
+
+/*Apps icon in Google bar*/
+.gb_D.gb_oc {
+    border: none !important;
+    /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
+    background-position: -0px -138px !important;
+    opacity: 1.00 !important;
 }
 
 /*Auto-hide Header*/
@@ -2124,192 +2132,6 @@ core-header-panel#nav-container #nav {
 #static-sidebar {
     content: 'off';
 }
-
-}
-
-@-moz-document url-prefix("https://play.google.com/music/listen"){
-:root{
-    --gbar-main-background-color: #111111;
-    --gbar-light-background-color: #333333;
-    --gbar-button-color: #222222;
-    --gbar-button-color-2: #777777;
-    --gbar-border-color: #555555;
-    --gbar-border-color-2: #999999;
-    --gbar-text-color: #FFFFFF;
-    --gbar-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    /*creates a shadow on the bottom and right, comment out this line to remove*/
-    --gbar-box-shadow2: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23), 0 -10px 20px rgba(0, 0, 0, 0.19), 0 -6px 6px rgba(0, 0, 0, 0.23);
-    /*creates a shadow on all sides, comment out this line to remove*/
-}
-
-/*Bell icon in Google bar (with unread notifications)*/
-.gb_yc {
-    background-color: var(--gmusic-enhanced-text-color) !important;
-    background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;
-    background-position: -0px -2147px !important;
-    opacity: 1.00 !important;
-    z-index: -3 !important;
-}
-
-/*Text color when there is a notification in the Google Bar*/
-.gb_Mc .gb_Tc.gb_Tc {
-    color: var(--gmusic-accent-color) !important;
-}
-
-/*Apps icon in Google bar*/
-.gb_D.gb_wc {
-    border: none !important;
-    /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
-    background-position: -0px -138px !important;
-    opacity: 1.00 !important;
-}
-/*Remove right border when selecting a button in the Google Bar*/
-.gb_g{
-    border-right: 0px solid var(--gmusic-border-color) !important;
-}
-
-
-
-/*========================Apps Button Popup========================*/
-    /*Triangle icon at top when popup is opened*/
-    .gb_Xa{
-        border-bottom-color: var(--gbar-light-background-color) !important;
-    }
-
-    /*Main background color*/
-    .gb_J{
-        border: 0px solid var(--gbar-border-color-2) !important;
-        background-color: var(--gbar-light-background-color) !important;
-    }
-
-    /*Individual apps button text color*/
-    .gb_t{
-        color: var(--gbar-button-color-2) !important;
-        border: none !important;
-    }
-
-    /*Hides the border when hovering over an individual app icon*/
-    .gb_k:hover a{
-        border: none !important;
-    }
-
-    /*Text color when hovering over an individual app icon*/
-    .gb_t:hover{
-        color: var(--gbar-border-color-2) !important;
-        text-decoration: underline !important;
-    }
-
-    /*Background color behind app label*/
-    .gb_k:hover .gb_t{
-        background: var(--gbar-light-background-color) !important;
-    }
-
-    /*Text color for the service in the box to add a new shortcut*/
-    .gb_V{
-        color: var(--gbar-border-color-2) !important;
-    }
-
-    /*Shadow around the box to add a new shortcut*/
-    .gb_U{
-        box-shadow: var(--gbar-box-shadow2) !important;
-    }
-
-    /*Background color for "More" link at bottom of popup*/
-    .gb_K{
-        background-color: var(--gbar-light-background-color) !important;
-        color: var(--gbar-border-color-2) !important;
-    }
-    .gb_K:hover{
-        text-decoration: underline !important;
-    }
-    
-    /*Background color for "Even more from Google" link at bottom of popup*/
-    .gb_F{
-        background-color: var(--gbar-light-background-color) !important;
-    }
-    .gb_6f{
-        color: var(--gbar-border-color-2) !important;
-    }
-
-    /*Small bottom border on the first page of apps that shows up when you scroll to the second page of apps*/
-    .gb_L{
-        border-bottom: 0px solid var(--gbar-button-color-2) !important;
-    }
-
-    /*=========================User Popup=========================*/
-    /*Main Background color*/
-    /*.gb_{
-        background: var(--gbar-light-background-color) !important;
-        box-shadow: var(--gbar-box-shadow2) !important;
-    }
-
-    /*Picture icon background*/
-    .gb_fb{
-        background: var(--gbar-main-background-color) !important;
-    }
-    .gb_kb:hover{
-        background: var(--gbar-button-color-2) !important;
-    }
-
-    /*User name*/
-    .gb_mb{
-        color: var(--gbar-border-color-2) !important;
-    }
-
-    /*Buttons background color*/
-    .gb_wb{
-        background: var(--gbar-button-color) !important;
-        border-color: var(--gbar-button-color) !important;
-        color: var(--gbar-border-color-2) !important;
-    }
-    .gb_wb:hover, .gb_ub:hover{
-        background-color: var(--gbar-main-background-color) !important;
-    }
-
-    /*Secondary user background*/
-    .gb_Rb:hover{
-        background: var(--gbar-button-color) !important;
-    }
-
-    /*Secondary user text color*/
-    .gb_8b{
-        color: var(--gbar-border-color-2) !important;
-    }
-
-    /*All Brand accounts background*/
-    .gb_vb{
-        background: var(--gbar-light-background-color) !important;
-        border-top: 0px solid var(--gbar-border-color) !important;
-    }
-    .gb_Vb:hover{
-        background: var(--gbar-button-color) !important;
-    }
-
-    /*All Brand accounts text*/
-    .gb_ic{
-        color: var(--gbar-border-color-2) !important;
-    }
-
-    /*Add another account background*/
-    .gb_zb{
-        background: var(--gbar-light-background-color) !important;
-        border-top: 0px solid var(--gbar-border-color) !important;
-    }
-    
-    .gb_zb:hover{
-        background: var(--gbar-button-color) !important;
-    }
-    
-    /*Add another account text*/
-    .gb_Eb{
-        color: var(--gbar-border-color-2) !important;
-    }
-
-    /*Dividing Lines*/
-    .gb_Mb, .gb_Fb{
-        border-top: 0px solid var(--gbar-border-color) !important;
-        border-bottom: 0px solid var(--gbar-border-color) !important;
-    }
 
 }
 
