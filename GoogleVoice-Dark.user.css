@@ -89,7 +89,7 @@
 }
 
 /*Google Voice Logo*/
-img.gb_oa {
+img.gb_ua {
     filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
     -webkit-filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
     -o-filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
