@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Bar - Dark Style
 @namespace   Devo7v
-@version     0.1.5
+@version     0.1.6
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css
@@ -164,15 +164,13 @@ else if IconColor == "Black"{
 
 if AppsPopup {
     /*========================Apps Button Popup========================*/
-    /*Triangle icon at top when popup is opened*/
-    .gb_1a{
-        border-bottom-color: var(--gbar-light-background-color) !important;
-    }
-
     /*Main background color*/
     .gb_J{
-        border: 0px solid var(--gbar-border-color-2) !important;
         background-color: var(--gbar-light-background-color) !important;
+    }
+    .gb_F{
+        background-color: var(--gbar-light-background-color) !important;
+        border: 0px solid var(--gbar-border-color) !important;
     }
 
     /*Individual apps button text color*/
@@ -182,46 +180,23 @@ if AppsPopup {
     }
 
     /*Hides the border when hovering over an individual app icon*/
-    .gb_k:hover a{
+    .gb_l.gb_k:hover a{
         border: none !important;
-    }
-
-    /*Text color when hovering over an individual app icon*/
-    .gb_t:hover{
+        background: var(--gbar-dark-background-color) !important;
         color: var(--gbar-border-color-2) !important;
         text-decoration: underline !important;
-    }
-
-    /*Background color behind app label*/
-    .gb_k:hover .gb_t{
-        background: var(--gbar-light-background-color) !important;
-    }
-
-    /*Text color for the service in the box to add a new shortcut*/
-    .gb_V{
-        color: var(--gbar-border-color-2) !important;
-    }
-
-    /*Shadow around the box to add a new shortcut*/
-    .gb_U{
-        box-shadow: var(--gbar-box-shadow2) !important;
     }
 
     /*Background color for "More" link at bottom of popup*/
-    .gb_K{
-        background-color: var(--gbar-light-background-color) !important;
+    a.gb_P{
+        background-color: var(--gbar-button-color) !important;
+        border-color: var(--gbar-button-color) !important;
         color: var(--gbar-border-color-2) !important;
+        
     }
-    .gb_K:hover{
+    .gb_Zf:hover{
         text-decoration: underline !important;
-    }
-    
-    /*Background color for "Even more from Google" link at bottom of popup*/
-    .gb_F{
-        background-color: var(--gbar-light-background-color) !important;
-    }
-    .gb_Zf{
-        color: var(--gbar-border-color-2) !important;
+        background-color: var(--gbar-main-background-color) !important;
     }
 
     /*Small bottom border on the first page of apps that shows up when you scroll to the second page of apps*/
@@ -230,12 +205,6 @@ if AppsPopup {
     }
 
     /*=========================User Popup=========================*/
-    /*Main Background color*/
-    /*.gb_{
-        background: var(--gbar-light-background-color) !important;
-        box-shadow: var(--gbar-box-shadow2) !important;
-    }
-
     /*Picture icon background*/
     .gb_lb{
         background: var(--gbar-main-background-color) !important;
@@ -266,20 +235,6 @@ if AppsPopup {
 
     /*Secondary user text color*/
     .gb_3b{
-        color: var(--gbar-border-color-2) !important;
-    }
-
-    /*All Brand accounts background*/
-    /*.gb_yb{
-        background: var(--gbar-light-background-color) !important;
-        border-top: 0px solid var(--gbar-border-color) !important;
-    }
-    .gb_yb:hover{
-        background: var(--gbar-button-color) !important;
-    }
-
-    /*All Brand accounts text*/
-    /*.gb_Db{
         color: var(--gbar-border-color-2) !important;
     }
 
