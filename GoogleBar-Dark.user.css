@@ -171,6 +171,7 @@ if AppsPopup {
     .gb_F{
         background-color: var(--gbar-light-background-color) !important;
         border: 0px solid var(--gbar-border-color) !important;
+	box-shadow: var(--gbar-box-shadow2) !important;
     }
 
     /*Individual apps button text color*/
