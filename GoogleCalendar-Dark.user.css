@@ -606,7 +606,7 @@
     }
 
     /*Save Button*/
-    .e3Duub {
+    .Y5sE8d {
         background: var(--gcal-accent-color) !important;
         color: var(--gcal-enhanced-text-color) !important;
     }
@@ -642,11 +642,16 @@
         border: 7px solid var(--gcal-enhanced-background-color) !important;
     }
 
-    /*[aria-checked="true"] > .rq8Mwb, [aria-checked="mixed"] > .rq8Mwb{
-    background-color: var(--gcal-enhanced-background-color) !important;
-  }
-    
-  /*Other drop down boxes*/
+    /*[aria-checked="true"] > .rq8Mwb, [aria-checked="mixed"] > .rq8Mwb {
+        background-color: var(--gcal-enhanced-background-color) !important;
+    }
+
+    /*Event Details, Find a Time, and Guest text*/
+    .DvZJme.KKjvXb .VZhFab {
+        color: var(--gcal-accent-color) !important;
+    }
+
+    /*Other drop down boxes*/
     .jZ0DTb {
         background-color: var(--gcal-enhanced-background-color) !important;
         border: 1px solid var(--gcal-dark-line-color) !important;
@@ -993,7 +998,7 @@
 
     /*All day checkbox*/
     #xAlDaCbx {
-        border: 9px solid var(--gcal-dull-text-color) !important;
+        border: 9px solid var(--gcal-accent-color) !important;
         opacity: 0.54 !important;
     }
 
