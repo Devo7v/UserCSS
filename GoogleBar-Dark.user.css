@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Bar - Dark Style
 @namespace   Devo7v
-@version     0.1.6
+@version     0.1.7
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css
@@ -59,6 +59,7 @@ url-prefix("http://www.google.com/translate/"), url-prefix("https://www.google.c
 url-prefix("http://www.google.com/wallet/"), url-prefix("https://www.google.com/wallet/"),url-prefix("http://wallet.google.com/"),url-prefix("https://wallet.google.com/"),url-prefix("http://www.google.com/pay/"),url-prefix("https://www.google.com/pay/"),url-prefix("http://pay.google.com/"),url-prefix("https://pay.google.com/"),
 url-prefix("http://www.google.com/voice"), url-prefix("https://www.google.com/voice"),url-prefix("http://voice.google.com/"),url-prefix("https://voice.google.com/"),
 url-prefix("http://www.google.com/notifications/"), url-prefix("https://www.google.com/notifications/"),url-prefix("http://notifications.google.com/"),url-prefix("https://notifications.google.com/"),
+url-prefix("http://www.google.com/ogs/"), url-prefix("https://www.google.com/ogs/"),url-prefix("http://ogs.google.com/"),url-prefix("https://ogs.google.com/"),
 url-prefix("https://play.google.com/music/listen"),
 url-prefix("https://example.com/"){
 :root{
@@ -165,47 +166,55 @@ else if IconColor == "Black"{
 if AppsPopup {
     /*========================Apps Button Popup========================*/
     /*Main background color*/
-    .gb_J{
-        background-color: var(--gbar-light-background-color) !important;
-    }
-    .gb_F{
+    .EHzcec{
         background-color: var(--gbar-light-background-color) !important;
         border: 0px solid var(--gbar-border-color) !important;
-	box-shadow: var(--gbar-box-shadow2) !important;
+	    box-shadow: var(--gbar-box-shadow2) !important;
     }
 
     /*Individual apps button text color*/
-    .gb_t{
+    .Rq5Gcb{
         color: var(--gbar-button-color-2) !important;
         border: none !important;
     }
-
+    
     /*Hides the border when hovering over an individual app icon*/
-    .gb_l.gb_k:hover a{
+    .j1ei8c:hover a{
         border: none !important;
         background: var(--gbar-dark-background-color) !important;
         color: var(--gbar-border-color-2) !important;
         text-decoration: underline !important;
     }
 
+    /*Background of app button text when hovering over an icon*/
+    .tX9u1b:hover .Rq5Gcb {
+	    background-color: var(--gbar-dark-background-color) !important;
+    }
+    
     /*Background color for "More" link at bottom of popup*/
-    a.gb_P{
+    .NQV3m{
         background-color: var(--gbar-button-color) !important;
         border-color: var(--gbar-button-color) !important;
         color: var(--gbar-border-color-2) !important;
         
     }
-    .gb_Zf:hover{
+    .NQV3m:hover{
         text-decoration: underline !important;
         background-color: var(--gbar-main-background-color) !important;
     }
 
     /*Small bottom border on the first page of apps that shows up when you scroll to the second page of apps*/
-    .gb_L{
+    .dGrefb{
         border-bottom: 0px solid var(--gbar-button-color-2) !important;
     }
 
     /*=========================User Popup=========================*/
+    /*Main background color*/
+    .gb_na{
+        background: var(--gbar-light-background-color) !important;
+        box-shadow: var(--gbar-box-shadow2) !important;
+    }
+    
     /*Picture icon background*/
     .gb_lb{
         background: var(--gbar-main-background-color) !important;
