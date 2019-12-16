@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.1.1
+@version     0.1.2
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -491,6 +491,14 @@ md-input-container .md-input {
 /* new contact name input box label */
 md-input-container label {
     color: #FFFFFF !important;
+}
+
+/* new contact buttons */
+.gmat-button .mat-button:not([disabled]), .gmat-button.mat-button:not([disabled]){
+    color: var(--gvoice-accent-color) !important;
+}
+.mat-button.mat-primary .mat-button-focus-overlay, .mat-icon-button.mat-primary .mat-button-focus-overlay, .mat-stroked-button.mat-primary .mat-button-focus-overlay, .gmat-button .mat-flat-button:not([disabled]), .gmat-button.mat-flat-button:not([disabled]){
+    background: var(--gvoice-accent-color) !important;
 }
 
 /* new message recipient text input box */
