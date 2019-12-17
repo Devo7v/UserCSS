@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Bar - Dark Style
 @namespace   Devo7v
-@version     0.1.7
+@version     0.1.8
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css
@@ -217,10 +217,10 @@ if AppsPopup {
     
     /*Picture icon background*/
     .gb_lb{
-        background: var(--gbar-main-background-color) !important;
+        background: var(--gbar-button-color) !important;
     }
     .gb_hb:hover{
-        background: var(--gbar-button-color-2) !important;
+        background: var(--gbar-main-background-color) !important;
     }
 
     /*User name*/
