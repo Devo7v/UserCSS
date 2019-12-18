@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Bar - Dark Style
 @namespace   Devo7v
-@version     0.1.8
+@version     0.1.9
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css
@@ -166,20 +166,24 @@ else if IconColor == "Black"{
 if AppsPopup {
     /*========================Apps Button Popup========================*/
     /*Main background color*/
-    .EHzcec{
+    .EHzcec, .gb_J, .gb_Q{
         background-color: var(--gbar-light-background-color) !important;
+        /*border: 0px solid var(--gbar-border-color) !important;*/
+	    /*box-shadow: var(--gbar-box-shadow2) !important;*/
+    }
+    .gb_I{
         border: 0px solid var(--gbar-border-color) !important;
 	    box-shadow: var(--gbar-box-shadow2) !important;
     }
 
     /*Individual apps button text color*/
-    .Rq5Gcb{
+    .Rq5Gcb, .gb_t{
         color: var(--gbar-button-color-2) !important;
         border: none !important;
     }
     
     /*Hides the border when hovering over an individual app icon*/
-    .j1ei8c:hover a{
+    .j1ei8c:hover a, .gb_l.gb_k:hover a{
         border: none !important;
         background: var(--gbar-dark-background-color) !important;
         color: var(--gbar-border-color-2) !important;
@@ -192,25 +196,25 @@ if AppsPopup {
     }
     
     /*Background color for "More" link at bottom of popup*/
-    .NQV3m{
+    .NQV3m, .gb_P{
         background-color: var(--gbar-button-color) !important;
         border-color: var(--gbar-button-color) !important;
         color: var(--gbar-border-color-2) !important;
         
     }
-    .NQV3m:hover{
+    .NQV3m:hover, .gb_P:hover{
         text-decoration: underline !important;
         background-color: var(--gbar-main-background-color) !important;
     }
 
     /*Small bottom border on the first page of apps that shows up when you scroll to the second page of apps*/
-    .dGrefb{
+    .dGrefb, .gb_L{
         border-bottom: 0px solid var(--gbar-button-color-2) !important;
     }
 
     /*=========================User Popup=========================*/
     /*Main background color*/
-    .gb_4a.gb_na{
+    .gb_4a.gb_na, .gb_F{
         background: var(--gbar-light-background-color) !important;
         box-shadow: var(--gbar-box-shadow2) !important;
     }
