@@ -122,12 +122,6 @@ sj-home #quickNavContainer.sj-home{
     fill: var(--gmusic-accent-color) !important;
 }
 
-/*Volume Knob*/
-.paper-slider-1 .slider-knob-inner.paper-slider {
-    background-color: var(--gmusic-accent-color) !important;
-    border: var(--gmusic-accent-color) !important;
-}
-
 /*Track progress remaining bar*/
 #player:not(:hover) #material-player-progress #progressContainer {
     background-color: transparent !important;
@@ -142,40 +136,19 @@ sj-home #quickNavContainer.sj-home{
     opacity: 1 !important;
 }
 
-
-/*Modify search colors*/
-.sj-search-box-0 {
-    background-color: var(--gmusic-accent-color) !important;
-}
-
-.sj-search-box-1 {
-    background-color: var(--gmusic-accent-color) !important;
-}
-
-.sj-search-box-0[opened] {
-    background-color: var(--gmusic-dull-background-color) !important;
-}
-
-.sj-search-box-1[opened] {
-    background-color: var(--gmusic-dull-background-color) !important;
-}
-
-.sj-search-box-0[has-query] {
-    background-color: var(--gmusic-dull-background-color) !important;
-}
-
-*[id^='suggestion-']:hover {
-    background-color: var(--gmusic-dull-background-color) !important;
-}
-
+/*Modify box search colors*/
 #material-one-middle, .sj-search-box{
     background-color: var(--gmusic-accent-color) !important;
 }
-
 *[id^='suggestion-'], #suggestionList{
     background-color: var(--gmusic-enhanced2-background-color) !important;
 }
-
+sj-search-box sj-entity-suggestion.sj-search-box:last-of-type{
+    border-bottom: 0px solid var(--gmusic-enhanced2-background-color) !important;
+}
+*[id^='suggestion-']:hover {
+    background-color: var(--gmusic-dull-background-color) !important;
+}
 #input, .sj-search-box-0, sj-search-suggestion #queryText.sj-search-suggestion .sub-match.sj-search-suggestion, sj-entity-suggestion #title.sj-entity-suggestion {
     color: var(--gmusic-enhanced-text-color) !important;
 }
@@ -241,8 +214,8 @@ iron-icon.paper-fab {
     background-color: var(--gmusic-dull-background-color) !important;
 }
 
-/*Fix progress slider color*/
-.paper-progress-0[disabled] #primaryProgress.paper-progress, .paper-progress-1[disabled] #primaryProgress.paper-progress, .paper-slider-0 .slider-knob-inner.paper-slider, .paper-progress-2[disabled] #primaryProgress.paper-progress {
+
+/*.paper-progress-0[disabled] #primaryProgress.paper-progress, .paper-progress-1[disabled] #primaryProgress.paper-progress, .paper-slider-0 .slider-knob-inner.paper-slider, .paper-progress-2[disabled] #primaryProgress.paper-progress {
     background: var(--gmusic-accent-color) !important;
 }
 
@@ -252,11 +225,8 @@ iron-icon.paper-fab {
 
 .paper-slider-0 paper-ripple.paper-slider {
     color: var(--gmusic-accent-color) !important;
-}
+}*/
 
-#player:hover #material-player-progress:not([disabled]) #progressContainer {
-    background-color: var(--gmusic-enhanced2-background-color) !important;
-}
 
 /*Gray box on bottom right of card when in Artists view*/
 body.qp .fade-out.gray::after {
@@ -320,22 +290,6 @@ paper-button.upsell-button:not([style-scope]):not(.style-scope) {
     color: var(--gmusic-primary-text-color) !important;
 }
 
-/*Play Button next to artist name*/
-.sj-play-button-2, .sj-play-button-10 #buttonContent.sj-play-button, .sj-play-button-11 #buttonContent.sj-play-button, .sj-play-button-12 {
-    background-color: var(--gmusic-accent-color) !important;
-}
-
-.sj-play-button-2, .sj-play-button-10, .sj-play-button-11, .sj-play-button-12 {
-    color: var(--gmusic-enhanced-text-color) !important;
-}
-
-/*Play Button on album cover*/
-.material-card .play-button-container paper-icon-button.play-button, .material-card .play-button-container paper-icon-button.play-indicator {
-    background-color: var(--gmusic-accent-color) !important;
-    opacity: 1 !important;
-    border-radius: 0.5 !important;
-}
-
 /*Background overlay when opening a popup box*/
 .iron-overlay-backdrop-0 {
     background-color: var(--gmusic-dark-background-color) !important;
@@ -377,13 +331,43 @@ paper-button.upsell-button:not([style-scope]):not(.style-scope) {
     width: 200px !important;
 }
 
+/*Text in the header bar when in Music library view*/
+.bottom.material-header-bar{
+    color: var(--gmusic-enhanced-text-color) !important;
+}
+
+/*Header information on individual pages*/
+gpm-detail-page-header div.gpm-detail-page-header > [slot="title"], gpm-detail-page-header div.gpm-detail-page-header > [slot="subtitle"], gpm-detail-page-header div.gpm-detail-page-header > [slot="description"], gpm-detail-page-header div.gpm-detail-page-header > [slot="metadata"], gpm-detail-page-header div.gpm-detail-page-header > [slot="buttons"]{
+    color: var(--gmusic-primary-text-color) !important;
+}
+
+/*Fix progress slider color*/
+.material paper-slider #sliderKnobInner.paper-slider, .material paper-progress #primaryProgress.paper-progress {
+    background-color: var(--gmusic-accent-color) !important;
+}
+#player:hover #material-player-progress:not([disabled]) #progressContainer {
+    background-color: var(--gmusic-enhanced2-background-color) !important;
+}
+
+/*Slider Knobs*/
+.slider-knob-inner.paper-slider {
+    background-color: var(--gmusic-accent-color) !important;
+    border: var(--gmusic-accent-color) !important;
+}
+
+/*Play/Pause Button throughout site*/
+.material-card .play-button-container paper-icon-button.play-button, .material-card .play-button-container paper-icon-button.play-indicator, sj-play-button{
+    background-color: var(--gmusic-accent-color) !important;
+}
+sj-play-button #icon.sj-play-button {
+	fill: var(--gmusic-enhanced-line-color) !important;
+}
+
 /*White lines for Pause icon*/
 .material #player.material .material-player-middle sj-icon-button[data-id="play-pause"]:not([disabled]), .material #player.material .material-player-middle paper-icon-button[data-id="play-pause"]:not([disabled]) iron-icon:after {
     content: "" !important;
     position: absolute !important;
     z-index: -1 !important;
-    top: 10% !important;
-    left: 10% !important;
     height: 80% !important;
     width: 80% !important;
     background: white !important;
@@ -725,10 +709,6 @@ core-icon[icon="sj:subscribed"] svg path:nth-child(3), iron-icon[icon="sj:subscr
     background: var(--gmusic-accent-color)
 }
 
-.material paper-slider #sliderKnobInner.paper-slider, .material paper-progress #primaryProgress.paper-progress {
-    background-color: var(--gmusic-accent-color)
-}
-
 .material #current-loading-progress {
     background: var(--gmusic-accent-color)
 }
@@ -785,10 +765,6 @@ core-icon[icon="sj:subscribed"] svg path:nth-child(3), iron-icon[icon="sj:subscr
 
 .material #player.material sj-icon-button[data-id="cast"]::shadow core-icon[aria-label="cast-connected"], .material #player.material sj-icon-button[data-id="cast"]::shadow iron-icon[aria-label="cast-connected"] {
     color: var(--gmusic-accent-color) !important
-}
-
-.material #player.material .material-player-middle sj-icon-button[data-id="play-pause"]:not([disabled]), .material #player.material .material-player-middle paper-icon-button[data-id="play-pause"]:not([disabled]) iron-icon {
-    color: var(--gmusic-accent-color)
 }
 
 .material .top-charts-view .song-row [data-col="index"] .content, .material .top-charts-view .song-row [data-col="index"] .column-content, .material .material-card .details .left-items .index {
@@ -2174,7 +2150,7 @@ paper-toolbar.medium-tall ~ #mainPanel #quick-nav-container{
 }/*Shift left side navigation to account for the autohide of header*/
 /*Shrink the Google Bar to a more reasonable height*/
 :root {
-    --gmusic-GooBarHeight: 48px !important;
+    --gmusic-GooBarHeight: 60px !important;
 }
 
 .music-logo-link, #material-one-middle, #material-one-right {
@@ -2190,7 +2166,7 @@ paper-toolbar.medium-tall ~ #mainPanel #quick-nav-container{
     z-index: 2 !important;
 }
 
-#material-one-left, .paper-toolbar-1 .toolbar-tools.paper-toolbar, .paper-toolbar-1, .paper-tabs-1 #tabsContainer.paper-tabs {
+paper-toolbar.medium-tall {
     height: var(--gmusic-GooBarHeight) !important
 }
 
