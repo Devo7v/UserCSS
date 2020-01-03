@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Play Music - Dark Style
 @namespace   Devo7v
-@version     0.1.3
+@version     0.1.4
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GooglePlayMusic-Dark.user.css
@@ -168,8 +168,16 @@ sj-home #quickNavContainer.sj-home{
     background-color: var(--gmusic-dull-background-color) !important;
 }
 
-#input, .sj-search-box-0, sj-search-suggestion #queryText.sj-search-suggestion .sub-match.sj-search-suggestion {
-    color: var(--gmusic-text-color) !important;
+#material-one-middle, .sj-search-box{
+    background-color: var(--gmusic-accent-color) !important;
+}
+
+*[id^='suggestion-'], #suggestionList{
+    background-color: var(--gmusic-enhanced2-background-color) !important;
+}
+
+#input, .sj-search-box-0, sj-search-suggestion #queryText.sj-search-suggestion .sub-match.sj-search-suggestion, sj-entity-suggestion #title.sj-entity-suggestion {
+    color: var(--gmusic-enhanced-text-color) !important;
 }
 
 /*Line separating Google Bar from the rest of the window*/
