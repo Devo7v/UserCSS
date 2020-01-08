@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Bar - Dark Style
 @namespace   Devo7v
-@version     0.1.9
+@version     0.1.10
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css
@@ -94,18 +94,18 @@ header#gb /*New Google Bar*/
 }
 
 /*Background color for Search box*/
-#gbqfqw, .gb_Qe{
+#gbqfqw, .gb_Re{
     /*background: var(--gbar-light-background-color) !important;*/
     background: none !important;
     background: rgba(255,255,255,0.16) !important;
     border: none !important;
 }
-.gb_jf{
+.gb_kf{
     box-shadow: var(--gbar-box-shadow2) !important;
 }
 
 /*Text color for Search box*/
-.gbqfif, .gb_bf, .gb_bf::placeholder{
+.gbqfif, .gb_cf, .gb_cf::placeholder{
     color: var(--gbar-accent-color) !important;
 }
 
@@ -220,7 +220,7 @@ if AppsPopup {
     }
     
     /*Picture icon background*/
-    .gb_lb{
+    .gb_hb{
         background: var(--gbar-button-color) !important;
     }
     .gb_hb:hover{
@@ -233,12 +233,12 @@ if AppsPopup {
     }
 
     /*Buttons background color*/
-    .gb_Ne{
+    .gb_Oe{
         background: var(--gbar-button-color) !important;
         border-color: var(--gbar-button-color) !important;
         color: var(--gbar-border-color-2) !important;
     }
-    .gb_Ne:hover, .gb_wb:hover{
+    .gb_Oe:hover, .gb_wb:hover{
         background-color: var(--gbar-main-background-color) !important;
     }
 
@@ -280,7 +280,7 @@ if AppsPopup {
     url-prefix("https://example.com"){
 
 /*Background color for the Google bar*/
-.gb_Rf{
+.gb_Sf{
     background: var(--gbar-main-background-color) !important;
 }
 
@@ -290,7 +290,7 @@ if AppsPopup {
 }
 
 /*Apps icon in Google bar*/
-.gb_D.gb_oc{
+.gb_D.gb_pc{
     border: none !important;
     /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
     background-position: -0px -138px !important;
@@ -301,7 +301,7 @@ if AppsPopup {
 .gb_ua{
     display: none !important;    
 }
-.gb_ge{
+.gb_he{
     width: 183px !important;
     height: 39px !important;
     /*https://i.imgur.com/QgS6N1E.png*/
@@ -314,7 +314,7 @@ if AppsPopup {
     url-prefix("https://example.com/"){
 
 /*Apps icon in Google bar*/
-.gb_D.gb_oc{
+.gb_D.gb_pc{
     border: none !important;
     /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
     background-position: -0px -138px !important;
