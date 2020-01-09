@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Contacts - Dark Style
 @namespace   Devo7v
-@version     0.1.1
+@version     0.1.2
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleContacts-Dark.user.css
@@ -366,12 +366,12 @@ color: #666666 !important;
 }
 
 /*Interactions text color*/
-.mks9mf, .qV7Uuf::after{
-  color: #777777 !important;
+/*.mks9mf, .qV7Uuf::after,*/ .zgXFde, .JrNrqb{
+  color: #999999 !important;
 }
 
 /*Interactions hover background color*/
-.qV7Uuf:hover{
+/*.qV7Uuf:hover,*/ .zgXFde:hover{
   background: #555555 !important;
 }
 
