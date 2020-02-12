@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Bar - Dark Style
 @namespace   Devo7v
-@version     0.1.12
+@version     0.1.13
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css
@@ -171,23 +171,24 @@ if AppsPopup {
         /*border: 0px solid var(--gbar-border-color) !important;*/
 	    /*box-shadow: var(--gbar-box-shadow2) !important;*/
     }
-    .gb_I{
+    .EHzcec{
         border: 0px solid var(--gbar-border-color) !important;
 	    box-shadow: var(--gbar-box-shadow2) !important;
     }
 
     /*Individual apps button text color*/
     .Rq5Gcb, .gb_t{
-        color: var(--gbar-button-color-2) !important;
+        color: var(--gbar-border-color-2) !important;
         border: none !important;
     }
     
     /*Hides the border when hovering over an individual app icon*/
     .j1ei8c:hover a, .gb_l.gb_k:hover a{
         border: none !important;
-        background: var(--gbar-dark-background-color) !important;
+        background: var(--gbar-button-color) !important;
         color: var(--gbar-border-color-2) !important;
         text-decoration: underline !important;
+        box-shadow: var(--gbar-box-shadow) !important;
     }
 
     /*Background of app button text when hovering over an icon*/
