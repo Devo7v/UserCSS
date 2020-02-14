@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.1.3
+@version     0.1.4
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -256,6 +256,14 @@ md-autocomplete input, .BN08bf-pex4lc, .B3EWm-YPqjbf.B3EWm-YPqjbf {
 /*Messages More Options*/
 md-menu-content {
     background-color: var(--gvoice-background-color-dark) !important;
+}
+
+/*Message Search*/
+/*Send a message box at bottom*/
+.q2hAhb-OjaX2e.q2hAhb-OjaX2e.q2hAhb-OjaX2e{
+    border-radius: var(--gvoice-corner-radius) !important;
+    background-color: var(--gvoice-background-color-dark) !important;
+    color: var(--gvoice-text-color) !important;
 }
 
 /*Table Headers*/
