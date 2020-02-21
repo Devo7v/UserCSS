@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.1.4
+@version     0.1.5
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -190,9 +190,9 @@ md-autocomplete input, .BN08bf-pex4lc, .B3EWm-YPqjbf.B3EWm-YPqjbf {
     color: #FFFFFF !important;
 }
 
-/* send message text */
-.GYQtq-XTYNyb {
-    color: #FFFFFF !important;
+/* type message text */
+[contenteditable="true"]:empty::before {
+    color: #777777 !important;
 }
 
 /* new message suggested contacts background */
