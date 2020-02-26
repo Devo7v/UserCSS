@@ -334,8 +334,8 @@ color: #666666 !important;
 }
 
 /*Drop shadow for Picture*/
-.YpExIf{
-  box-shadow: 0 0 1px 1px #666666 !important;
+.YpExIf, .HfynVe{
+  /*box-shadow: 0 0 1px 1px #666666 !important;*/
   border-radius: var(--gcontacts-corner-radius) !important;
 }
 
