@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Contacts - Dark Style
 @namespace   Devo7v
-@version     0.1.2
+@version     0.1.3
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleContacts-Dark.user.css
@@ -16,6 +16,11 @@
     "Blue-from-Preview-Version",
     "Red-from-Old-Version",
     "Custom"
+]
+@var select gcontacts-corner "Round/Square Elements"[
+    "Round",
+    "Square",
+    "Squircle"
 ]
 @var color gcontacts-accent-color-custom "Custom Accent Color" #33B679
 @var color gcontacts-background-color "Primary Background Color" #111111
@@ -36,6 +41,15 @@
     }
     else if gcontacts-accent-color == "Custom"{
         --gcontacts-accent-color: gcontacts-accent-color-custom;
+    }
+     if gcontacts-corner == "Round"{
+            --gcontacts-corner-radius: 2.0rem;
+    }
+    else if gcontacts-corner == "Square"{
+            --gcontacts-corner-radius: 0.0rem;
+    }
+    else if gcontacts-corner == "Squircle"{
+            --gcontacts-corner-radius: 0.75rem;
     }
 	--gcontacts-background-color: gcontacts-background-color;
 	--gcontacts-text-color: gcontacts-text-color;
@@ -110,6 +124,7 @@ body{
 .bgpk6e{
     background-color: #333333 !important;
     color: var(--gcontacts-text-color) !important;
+    border-radius: var(--gcontacts-corner-radius) !important;
 }
 
 /*Dividing Lines*/
@@ -123,6 +138,7 @@ body{
 /*Selected navigation item background color*/
 .ncJ6qe.jqJLq{
   background: #333333 !important;
+  border-radius: var(--gcontacts-corner-radius)
 }
 .UXNHp.jqJLq{
   background: none !important;
@@ -147,6 +163,7 @@ body{
 /*Background color when hovering over item*/
 .jqJLq:hover{
   background: #444444 !important;
+  border-radius: var(--gcontacts-corner-radius) !important;
 }
 
 /*Background behind edit and trash icons*/
@@ -231,6 +248,11 @@ body{
 
 
 /*=======Popup when adding new contact=======*/
+/*Header Background Color*/
+.PO4Br{
+    background-color: #222222 !important;
+}
+
 /*Background*/
 .e2txse, .PWsB5e{
     background-color: #222222 !important;
@@ -306,9 +328,15 @@ color: #666666 !important;
   background: #222222 !important;
 }
 
+/*Popup Shape*/
+.g3VIld.g3VIld{
+    border-radius: var(--gcontacts-corner-radius) !important;
+}
+
 /*Drop shadow for Picture*/
 .YpExIf{
   box-shadow: 0 0 1px 1px #666666 !important;
+  border-radius: var(--gcontacts-corner-radius) !important;
 }
 
 /*Drop shadow for Header*/
@@ -323,9 +351,14 @@ color: #666666 !important;
 }
 
 /*Labels background color*/
-.jnnKcb{
+.jnnKcb, .KshDhe{
   background: var(--gcontacts-accent-color) !important;
   color: var(--gcontacts-text-color) !important;
+  border: 1px solid var(--gcontacts-text-color) !important;
+  border-radius: var(--gcontacts-corner-radius) !important;
+}
+.GxALzd .VfPpkd-TfeOUb{
+    color: var(--gcontacts-text-color) !important;
 }
 
 /*Popup background color*/
