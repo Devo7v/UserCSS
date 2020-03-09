@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.1.5
+@version     0.1.6
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -186,7 +186,7 @@ md-divider {
 }
 
 /* name entry field text and "To" text for new message and message field text */
-md-autocomplete input, .BN08bf-pex4lc, .B3EWm-YPqjbf.B3EWm-YPqjbf {
+md-autocomplete input, .BN08bf-pex4lc, .B3EWm-YPqjbf.B3EWm-YPqjbf, .B3EWm-PWVi0d {
     color: #FFFFFF !important;
 }
 
