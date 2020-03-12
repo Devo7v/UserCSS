@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Play Music - Dark Style
 @namespace   Devo7v
-@version     0.1.5
+@version     0.1.6
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GooglePlayMusic-Dark.user.css
@@ -41,6 +41,11 @@
     --gmusic-primary-line-color: #999999;
     --gmusic-enhanced-line-color: #FFFFFF;
     --gmusic-dull-line-color: #555555;
+
+    --gmusic-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    /*creates a shadow on the bottom and right, comment out this line to remove*/
+    --gmusic-box-shadow2: 0 0 8px 5px rgba(0,0,0,0.23);
+    /*creates a shadow on all sides, comment out this line to remove*/
     
     if gmusic-shape == "Circle"{
         --gmusic-shape: 50%;
@@ -112,7 +117,7 @@ sj-home #quickNavContainer.sj-home{
 }
 
 /*Splash Screen progress bar*/
-#loading-progress-content > div:nth-child(2), .paper-progress-1 #progressContainer.paper-progress, .paper-progress-1 .indeterminate.paper-progress::after {
+#loading-progress-content > div:nth-child(2), #progressContainer.paper-progress, .indeterminate.paper-progress::after {
     background: var(--gmusic-primary-background-color) !important;
 }
 
@@ -242,6 +247,9 @@ body.qp .fade-out.gray::after {
     height: 100% !important;
     margin-top: 0% !important;
     margin-left: 0% !important;*/
+}
+.image, .material-card .image, .material-card .composite-wrapper[data-image-count="4"], #imageWrapper{
+    box-shadow: var(--gmusic-box-shadow2) !important;
 }
 
 /*Title in the header of "Recently played or added"*/
