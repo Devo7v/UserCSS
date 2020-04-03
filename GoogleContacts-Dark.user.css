@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Contacts - Dark Style
 @namespace   Devo7v
-@version     0.1.3
+@version     0.1.4
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleContacts-Dark.user.css
@@ -249,7 +249,7 @@ body{
 
 /*=======Popup when adding new contact=======*/
 /*Header Background Color*/
-.PO4Br{
+.PO4Br, .fbkutb{
     background-color: #222222 !important;
 }
 
