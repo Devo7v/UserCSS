@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Play Music - Dark Style
 @namespace   Devo7v
-@version     0.1.6
+@version     0.1.7
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GooglePlayMusic-Dark.user.css
@@ -59,10 +59,10 @@
 }
 
 /*Apps icon in Google bar*/
-.gb_D.gb_pc {
+.gb_D.gb_xc{
     border: none !important;
     /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
-    background-position: -0px -138px !important;
+    background-position: -0px -2580px !important;
     opacity: 1.00 !important;
 }
 
