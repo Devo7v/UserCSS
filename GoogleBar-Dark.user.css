@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Bar - Dark Style
 @namespace   Devo7v
-@version     0.1.17
+@version     0.1.18
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css
@@ -94,7 +94,7 @@ header#gb /*New Google Bar*/
 }
 
 /*Background color for Search box*/
-#gbqfqw, .gb_1e{
+#gbqfqw, .gb_3e{
     /*background: var(--gbar-light-background-color) !important;*/
     background: none !important;
     background: rgba(255,255,255,0.16) !important;
@@ -105,7 +105,7 @@ header#gb /*New Google Bar*/
 }
 
 /*Text color for Search box*/
-.gbqfif, .gb_lf, .gb_lf::placeholder{
+.gbqfif, .gb_nf, .gb_nf::placeholder{
     color: var(--gbar-accent-color) !important;
 }
 
@@ -125,7 +125,7 @@ header#gb /*New Google Bar*/
 
 if IconColor == "White"{
     /*Logo Text Color*/
-    .gb_5c, .NkK3Fc span[role="heading"]{
+    .gb_7c, .NkK3Fc span[role="heading"]{
         color: var(--gbar-text-color) !important;
     }
 
@@ -143,7 +143,7 @@ if IconColor == "White"{
         
 if IconColor == "Custom"{
     /*Logo Text Color*/
-    .gb_5c, .NkK3Fc span[role="heading"]{
+    .gb_7c, .NkK3Fc span[role="heading"]{
         color: var(--gbar-icon-color-custom) !important;
     }
 
@@ -235,12 +235,12 @@ if AppsPopup {
     }
 
     /*Buttons background color*/
-    .gb_Xe{
+    .gb_0e{
         background: var(--gbar-button-color) !important;
         border-color: var(--gbar-button-color) !important;
         color: var(--gbar-border-color-2) !important;
     }
-    .gb_Xe:hover, .gb_zb:hover{
+    .gb_0e:hover, .gb_zb:hover{
         background-color: var(--gbar-main-background-color) !important;
         box-shadow: var(--gbar-box-shadow) !important;
     }
@@ -283,7 +283,7 @@ if AppsPopup {
     url-prefix("https://example.com"){
 
 /*Background color for the Google bar*/
-.gb_2f{
+.gb_4f{
     background: var(--gbar-main-background-color) !important;
 }
 
@@ -293,7 +293,7 @@ if AppsPopup {
 }
 
 /*Apps icon in Google bar*/
-.gb_D.gb_vc{
+.gb_D.gb_xc{
     border: none !important;
     /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
     background-position: -0px -2580px !important;
@@ -304,7 +304,7 @@ if AppsPopup {
 .gb_ua{
     display: none !important;    
 }
-.gb_qe{
+.gb_se{
     width: 183px !important;
     height: 39px !important;
     /*https://i.imgur.com/QgS6N1E.png*/
@@ -317,7 +317,7 @@ if AppsPopup {
     url-prefix("https://example.com/"){
 
 /*Apps icon in Google bar*/
-.gb_D.gb_vc{
+.gb_D.gb_xc{
     border: none !important;
     /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
     background-position: -0px -2580px !important;
