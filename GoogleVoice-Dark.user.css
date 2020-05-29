@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.1.6
+@version     0.1.7
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -123,6 +123,7 @@ img.gb_ua {
     color: var(--gvoice-accent-color) !important;
 }
 
+/*=======Text Messages=======*/
 /*Outgoing Text messages*/
 .Bqxti-VCkuzd, .Bqxti-VCkuzd a {
     color: #FFFFFF !important;
@@ -449,9 +450,41 @@ md-select-menu md-content md-option:hover:not([disabled]) {
     border-color: #444444 !important;
 }
 
+/*=======SETTINGS=======*/
 /* settings left side background color */
 .layout-row.flex.Xkk8O-haAclf.Xkk8O-kYvABc {
     background-color: var(--gvoice-background-color) !important;
+}
+
+/*Button Colors*/
+.gmat-button .mat-stroked-button:not([disabled]), .gmat-button.mat-stroked-button:not([disabled]){
+    background: var(--gvoice-background-color-light) !important;
+    color: var(--gvoice-accent-color) !important;
+}
+
+/*===Messages===*/
+/*Header*/
+.sectionTitle, .header{
+    color: var(--gvoice-text-color) !important;
+}
+
+/*Device Labels*/
+.deviceLabel{
+    color: var(--gvoice-text-color)!important;
+}
+
+/*Sliders*/
+.mat-slide-toggle-bar /*slider background*/{
+    background-color: rgba(255,255,255,0.38) !important;
+}
+.mat-slide-toggle.mat-primary.mat-checked .mat-slide-toggle-thumb /*Enabled slider*/{
+    background-color: var(--gvoice-accent-color) !important;
+}
+
+/*===Calls===*/
+/*Subheadings*/
+.internalHeader{
+    color: var(--gvoice-text-color) !important;
 }
 
 .hOvp7c-jW1oEc, /* settings message icon */
@@ -460,16 +493,65 @@ md-select-menu md-content md-option:hover:not([disabled]) {
     background-color: var(--gvoice-accent-color) !important;
 }
 
+/*===Voicemail===*/
+/*Active greeting*/
+.active-title{
+    color: var(--gvoice-accent-color) !important;
+}
+
+/*Greeting name*/
+.name{
+    color: var(--gvoice-text-color) !important;
+}
+
+/*=Manage All Greetings=*/
+/*Background*/
+.gmat-dialog-panel .mat-dialog-container{
+    background-color: var(--gvoice-background-color-light) !important;
+}
+
+/*Headings*/
+.subtitle{
+    color: var(--gvoice-accent-color) !important;
+}
+
 /* settings voicemail greeting add button */
-.PFS3Eb-g6kmac {
+/*.PFS3Eb-g6kmac {
     border-color: var(--gvoice-accent-color) !important;
 }
 
-md-checkbox.md-checked .md-icon, /* settings checkbox buttons */
-md-switch.md-checked .md-thumb/* settings switch circles */
-{
+/*md-checkbox.md-checked .md-icon, /* settings checkbox buttons */
+/*md-switch.md-checked .md-thumb/* settings switch circles */
+/*{
     background-color: var(--gvoice-accent-color) !important;
 }
+
+/*===Web Notifications===*/
+.notificationText{
+    color: var(--gvoice-text-color) !important;
+}
+
+/*===Payments===*/
+/*Current Balance*/
+.creditSubheader{
+    color: var(--gvoice-accent-color) !important;
+}
+
+/*Auto-Recharge*/
+.mat-select-value{
+    color: var(--gvoice-text-color)
+}
+#mat-select-0-panel{
+    background-color: var(--gvoice-background-color-light) !important;
+}
+.mat-primary .mat-option.mat-selected:not(.mat-option-disabled){
+    color: var(--gvoice-accent-color) !important;
+}
+/*.mat-option-text{
+    color: var(--gvoice-text-color) !important;
+}
+
+
 
 /* settings switch background bar */
 md-switch .md-bar {
@@ -493,8 +575,24 @@ md-input-container .md-input {
 }
 
 /* Manage Greetings text background */
-.sMgtJb-tJHJj {
+/*.sMgtJb-tJHJj {
     background-color: unset !important;
+}
+
+/*=======Audio Settings=======*/
+/*Background*/
+.full-panel[_ngcontent-nnh-c44]{
+    background-color: var(--gvoice-background-color-light) !important;
+}
+
+/*Microphone Feedback*/
+.gvPageRoot [_nghost-nnh-c45] .bars[_ngcontent-nnh-c45]{
+    color: var(--gvoice-accent-color) !important;
+}
+
+/*Dropdown Lists*/
+.mat-select-panel{
+    background-color: var(--gvoice-background-color-dark)
 }
 
 /* new contact name input box label */
@@ -572,7 +670,7 @@ input.ng-valid {
 }
 
 /*Call as text*/
-.callAsLabel, .phoneNumber{
+.call-as-label, .phone-number{
     color: var(--gvoice-text-color) !important;
 }
 
