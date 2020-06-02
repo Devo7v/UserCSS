@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.1.7
+@version     0.1.8
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -581,18 +581,31 @@ md-input-container .md-input {
 
 /*=======Audio Settings=======*/
 /*Background*/
-.full-panel[_ngcontent-nnh-c44]{
+.full-panel{
     background-color: var(--gvoice-background-color-light) !important;
 }
 
 /*Microphone Feedback*/
-.gvPageRoot [_nghost-nnh-c45] .bars[_ngcontent-nnh-c45]{
+.gvPageRoot .bars{
     color: var(--gvoice-accent-color) !important;
 }
 
 /*Dropdown Lists*/
 .mat-select-panel{
     background-color: var(--gvoice-background-color-dark)
+}
+
+/*Dropdown List Text Color*/
+.mat-option.mat-focus-indicator.ng-star-inserted.mat-selected.mat-active{
+    color: var(--gvoice-accent-color) !important;
+}
+.mat-option.mat-focus-indicator.ng-star-inserted{
+    color: var(--gvoice-text-color) !important
+}
+
+/*Active Dropdown List*/
+.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick{
+    color: var(--gvoice-accent-color) !important;
 }
 
 /* new contact name input box label */
