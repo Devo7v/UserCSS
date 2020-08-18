@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Bar - Dark Style
 @namespace   Devo7v
-@version     0.1.23
+@version     0.1.24
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css
@@ -125,12 +125,12 @@ header#gb /*New Google Bar*/
 
 if IconColor == "White"{
     /*Logo Text Color*/
-    .gb_8c, .NkK3Fc span[role="heading"]{
+    .gb_9c, .NkK3Fc span[role="heading"]{
         color: var(--gbar-text-color) !important;
     }
 
     /*Coloring for svg icons in new Google Bar*/
-    .gb_sa svg{
+    .gb_ta svg{
 	    fill: var(--gbar-text-color) !important;
 	    color: var(--gbar-button-color-2) !important;
     }
@@ -143,12 +143,12 @@ if IconColor == "White"{
         
 if IconColor == "Custom"{
     /*Logo Text Color*/
-    .gb_8c, .NkK3Fc span[role="heading"]{
+    .gb_9c, .NkK3Fc span[role="heading"]{
         color: var(--gbar-icon-color-custom) !important;
     }
 
     /*Coloring for svg icons in new Google Bar*/
-    .gb_sa svg{
+    .gb_ta svg{
 	    fill: var(--gbar-icon-color-custom) !important;
 	    color: var(--gbar-button-color-2) !important;
     }
