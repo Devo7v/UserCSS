@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.1.8
+@version     0.1.9
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -84,13 +84,18 @@
     color: var(--gvoice-text-color) !important;
 }
 
+/*Greeting text color*/
+.greeting, .status{
+    color: var(--gvoice-text-color) !important;
+}
+
 /*Not connected notification at top*/
 .zQ5vdd-haAclf {
     background-color: var(--gvoice-background-color-light) !important;
 }
 
 /*Google Voice Logo*/
-img.gb_ua {
+img.gb_va {
     filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
     -webkit-filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
     -o-filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
