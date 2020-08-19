@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Bar - Dark Style
 @namespace   Devo7v
-@version     0.1.24
+@version     0.1.25
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css
@@ -221,10 +221,10 @@ if AppsPopup {
     }
     
     /*Picture icon background*/
-    .gb_mb{
+    .gb_nb{
         background: var(--gbar-button-color) !important;
     }
-    .gb_mb:hover{
+    .gb_nb:hover{
         background: var(--gbar-main-background-color) !important;
         box-shadow: var(--gbar-box-shadow2) !important;
     }
@@ -240,7 +240,7 @@ if AppsPopup {
         border-color: var(--gbar-button-color) !important;
         color: var(--gbar-border-color-2) !important;
     }
-    .gb_7e:hover, .gb_Bb:hover{
+    .gb_7e:hover, .gb_Cb:hover{
         background-color: var(--gbar-main-background-color) !important;
         box-shadow: var(--gbar-box-shadow) !important;
     }
@@ -256,22 +256,22 @@ if AppsPopup {
     }
 
     /*Add another account background*/
-    .gb_Db{
+    .gb_Eb{
         background: var(--gbar-light-background-color) !important;
         border-top: 0px solid var(--gbar-border-color) !important;
     }
     
-    .gb_Db:hover{
+    .gb_Eb:hover{
         background: var(--gbar-button-color) !important;
     }
     
     /*Add another account text*/
-    .gb_Jb{
+    .gb_Kb{
         color: var(--gbar-border-color-2) !important;
     }
 
     /*Dividing Lines*/
-    .gb_Nb, .gb_Kb{
+    .gb_Ob, .gb_Lb{
         border-top: 0px solid var(--gbar-border-color) !important;
         border-bottom: 0px solid var(--gbar-border-color) !important;
     }
