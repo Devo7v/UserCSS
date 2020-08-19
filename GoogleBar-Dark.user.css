@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Bar - Dark Style
 @namespace   Devo7v
-@version     0.1.25
+@version     0.1.26
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css
@@ -246,12 +246,12 @@ if AppsPopup {
     }
 
     /*Secondary user background*/
-    .gb_Tb:hover{
+    .gb_Ub:hover{
         background: var(--gbar-button-color) !important;
     }
 
     /*Secondary user text color*/
-    .gb_8b{
+    .gb_9b{
         color: var(--gbar-border-color-2) !important;
     }
 
@@ -293,15 +293,15 @@ if AppsPopup {
 }
 
 /*Apps icon in Google bar*/
-.gb_D.gb_zc{
+.gb_D.gb_Ac{
     border: none !important;
     /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
-    background-position: -0px -2580px !important;
+    background-position: -0px -3284px !important;
     opacity: 1.00 !important;
 }
 
 /*Fix for Google Play logo*/
-.gb_ua{
+.gb_va{
     display: none !important;    
 }
 .gb_ze{
@@ -317,10 +317,10 @@ if AppsPopup {
     url-prefix("https://example.com/"){
 
 /*Apps icon in Google bar*/
-.gb_D.gb_zc{
+.gb_D.gb_Ac{
     border: none !important;
     /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
-    background-position: -0px -2580px !important;
+    background-position: -0px -3284px !important;
     opacity: 1.00 !important;
 }
 
