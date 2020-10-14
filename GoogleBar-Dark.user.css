@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Bar - Dark Style
 @namespace   Devo7v
-@version     0.1.28
+@version     0.1.29
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css
@@ -260,6 +260,20 @@ if AppsPopup {
     .gb_5b{
         color: var(--gbar-border-color-2) !important;
     }
+    
+    /*All Brand Accounts background*/
+    .gb_bc{
+        background: var(--gbar-light-background-color) !important;
+    }
+    .gb_bc:hover{
+        background: var(--gbar-button-color) !important;
+        box-shadow: var(--gbar-box-shadow) !important;
+    }
+    
+    /*All Brand Accounts text color*/
+    .gb_fc{
+        color: var(--gbar-border-color-2) !important;
+    }
 
     /*Add another account background*/
     .gb_Ab{
@@ -303,7 +317,7 @@ if AppsPopup {
 .gb_D.gb_wc{
     border: none !important;
     /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
-    background-position: -0px -3284px !important;
+    background-position: -0px -378px !important;
     opacity: 1.00 !important;
 }
 
@@ -327,7 +341,7 @@ if AppsPopup {
 .gb_D.gb_wc{
     border: none !important;
     /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
-    background-position: -0px -3284px !important;
+    background-position: -0px -378px !important;
     opacity: 1.00 !important;
 }
 
