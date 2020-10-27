@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Contacts - Dark Style
 @namespace   Devo7v
-@version     0.1.4
+@version     0.1.5
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleContacts-Dark.user.css
@@ -58,19 +58,19 @@
 
 
 /*Search Bar Background*/
-.gb_Se{
+.gb_6e{
     background: none !important;
     background: rgba(255,255,255,0.16) !important;
     border: none !important;
 }
 
 /*Logo Text Color*/
-.gb_Zc{
+.gb_1c{
     color: var(--gcontacts-light-text-color) !important;
 }
 
 /*Coloring for svg icons in new Google Bar*/
-.gb_ja svg{
+.gb_ta svg{
 	fill: var(--gcontacts-light-text-color) !important;
 	color: #777777 !important;
 }
