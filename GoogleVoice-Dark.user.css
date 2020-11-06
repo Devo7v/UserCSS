@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.1.9
+@version     0.1.10
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -40,7 +40,7 @@
         }
         else if gvoice-accent == "Old"{
             --gvoice-accent-color: #4284F4;
-            --gvoice-accent-color-rotate: 43.37318deg;
+            --gvoice-accent-color-rotate: 93.37318deg;
         }
         else if gvoice-accent == "Custom"{
             --gvoice-accent-color: gvoice-accent-custom;
