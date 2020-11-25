@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Bar - Dark Style
 @namespace   Devo7v
-@version     0.1.32
+@version     0.1.33
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css
@@ -94,18 +94,18 @@ header#gb /*New Google Bar*/
 }
 
 /*Background color for Search box*/
-#gbqfqw, .gb_5e{
+#gbqfqw, .gb_6e{
     /*background: var(--gbar-light-background-color) !important;*/
     background: none !important;
     background: rgba(255,255,255,0.16) !important;
     border: none !important;
 }
-.gb_6e{
+.gb_7e{
     box-shadow: var(--gbar-box-shadow2) !important;
 }
 
 /*Text color for Search box*/
-.gbqfif, .gb_pf, .gb_pf::placeholder{
+.gbqfif, .gb_qf, .gb_qf::placeholder{
     color: var(--gbar-accent-color) !important;
 }
 
@@ -243,12 +243,12 @@ if AppsPopup {
     }
 
     /*Buttons background color*/
-    .gb_1e{
+    .gb_2e{
         background: var(--gbar-button-color) !important;
         border-color: var(--gbar-button-color) !important;
         color: var(--gbar-border-color-2) !important;
     }
-    .gb_1e:hover, .gb_xb:hover{
+    .gb_2e:hover, .gb_xb:hover{
         background-color: var(--gbar-main-background-color) !important;
         box-shadow: var(--gbar-box-shadow) !important;
     }
@@ -317,7 +317,7 @@ if AppsPopup {
     url-prefix("https://example.com"){
 
 /*Background color for the Google bar*/
-.gb_2f{
+.gb_3f{
     background: var(--gbar-main-background-color) !important;
 }
 
@@ -338,7 +338,7 @@ if AppsPopup {
 .gb_ua{
     display: none !important;    
 }
-.gb_te{
+.gb_ue{
     width: 183px !important;
     height: 39px !important;
     /*https://i.imgur.com/QgS6N1E.png*/
