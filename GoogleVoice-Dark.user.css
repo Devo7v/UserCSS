@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.1.11
+@version     0.1.12
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -95,7 +95,7 @@
 }
 
 /*Google Voice Logo*/
-img.gb_ua {
+img.gb_uc {
     filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
     -webkit-filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
     -o-filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
@@ -103,14 +103,14 @@ img.gb_ua {
 }
 
 /*Alternative menthod for recoloring the Google Voice Logo*/
-/*img.gb_pa{
+/*img.gb_uc{
     width: 0px !important;
     height: 0px !important;
     padding: 16px !important;
+    background-size: 32px 32px !important;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Voice_icon.svg") !important;
-    background-size: cover !important;
     fill: var(--gvoice-accent-color) !important;
-}*/
+}
 
 /*Highlight and hovering background*/
 .rkljfb-gk6SMd, .rkljfb-H9tDt:hover {
