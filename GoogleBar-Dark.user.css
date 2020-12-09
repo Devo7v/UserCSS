@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Bar - Dark Style
 @namespace   Devo7v
-@version     0.1.33
+@version     0.1.34
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css
@@ -94,18 +94,18 @@ header#gb /*New Google Bar*/
 }
 
 /*Background color for Search box*/
-#gbqfqw, .gb_6e{
+#gbqfqw, .gb_4e{
     /*background: var(--gbar-light-background-color) !important;*/
     background: none !important;
     background: rgba(255,255,255,0.16) !important;
     border: none !important;
 }
-.gb_7e{
+.gb_5e{
     box-shadow: var(--gbar-box-shadow2) !important;
 }
 
 /*Text color for Search box*/
-.gbqfif, .gb_qf, .gb_qf::placeholder{
+.gbqfif, .gb_of, .gb_of::placeholder{
     color: var(--gbar-accent-color) !important;
 }
 
@@ -130,12 +130,12 @@ header#gb /*New Google Bar*/
 
 if IconColor == "White"{
     /*Logo Text Color*/
-    .gb_0c, .NkK3Fc span[role="heading"]{
+    .gb_Xc, .NkK3Fc span[role="heading"]{
         color: var(--gbar-text-color) !important;
     }
 
     /*Coloring for svg icons in new Google Bar*/
-    .gb_sa svg{
+    .gb_qa svg{
 	    fill: var(--gbar-text-color) !important;
 	    color: var(--gbar-button-color-2) !important;
     }
@@ -148,12 +148,12 @@ if IconColor == "White"{
         
 if IconColor == "Custom"{
     /*Logo Text Color*/
-    .gb_0c, .NkK3Fc span[role="heading"]{
+    .gb_Xc, .NkK3Fc span[role="heading"]{
         color: var(--gbar-icon-color-custom) !important;
     }
 
     /*Coloring for svg icons in new Google Bar*/
-    .gb_sa svg{
+    .gb_qa svg{
 	    fill: var(--gbar-icon-color-custom) !important;
 	    color: var(--gbar-button-color-2) !important;
     }
@@ -226,10 +226,10 @@ if AppsPopup {
     }
     
     /*Picture icon background*/
-    .gb_ib{
+    .gb_fb{
         background: var(--gbar-button-color) !important;
     }
-    .gb_ib:hover{
+    .gb_fb:hover{
         background: var(--gbar-light-background-color) !important;
         box-shadow: var(--gbar-box-shadow2) !important;
     }
@@ -238,74 +238,74 @@ if AppsPopup {
     }
 
     /*User name*/
-    .gb_qb, .gb_rb{
+    .gb_nb, .gb_ob{
         color: var(--gbar-border-color-2) !important;
     }
 
     /*Buttons background color*/
-    .gb_2e{
+    .gb_0e{
         background: var(--gbar-button-color) !important;
         border-color: var(--gbar-button-color) !important;
         color: var(--gbar-border-color-2) !important;
     }
-    .gb_2e:hover, .gb_xb:hover{
+    .gb_0e:hover, .gb_ub:hover{
         background-color: var(--gbar-main-background-color) !important;
         box-shadow: var(--gbar-box-shadow) !important;
     }
 
     /*Secondary user background*/
-    .gb_Pb:hover{
+    .gb_Mb:hover{
         background: var(--gbar-button-color) !important;
         box-shadow: var(--gbar-box-shadow) !important;
     }
 
     /*Secondary user text color*/
-    .gb_4b{
+    .gb_1b{
         color: var(--gbar-border-color-2) !important;
     }
     
     /*All Brand Accounts background*/
-    .gb_ac{
+    .gb_Qb{
         background: var(--gbar-light-background-color) !important;
     }
-    .gb_ac:hover{
+    .gb_Qb:hover{
         background: var(--gbar-button-color) !important;
         box-shadow: var(--gbar-box-shadow) !important;
     }
     
     /*All Brand Accounts text color*/
-    .gb_ec{
+    .gb_bc{
         color: var(--gbar-border-color-2) !important;
     }
     
     /*All Brand Accounts icon*/
-    .gb_bc > svg:nth-child(1) > path:nth-child(1){
+    .gb_8b > svg:nth-child(1) > path:nth-child(1){
         fill: var(--gbar-border-color-2) !important;
     }
 
     /*Add another account background*/
-    .gb_zb{
+    .gb_wb{
         background: var(--gbar-light-background-color) !important;
         border-top: 0px solid var(--gbar-border-color) !important;
     }
     
-    .gb_zb:hover, .gb_Vb:hover{
+    .gb_wb:hover, .gb_Rb:hover{
         background: var(--gbar-button-color) !important;
         box-shadow: var(--gbar-box-shadow) !important;
     }
     
     /*Add another account icon*/
-    svg.gb_Bb{
+    svg.gb_yb{
         fill: var(--gbar-border-color-2) !important;
     }
 
     /*Add another account text*/
-    .gb_Eb{
+    .gb_Bb{
         color: var(--gbar-border-color-2) !important;
     }
 
     /*Dividing Lines*/
-    .gb_Fb, .gb_Mb{
+    .gb_Fb, .gb_Cb{
         border-top: 0px solid var(--gbar-border-color) !important;
         border-bottom: 0px solid var(--gbar-border-color) !important;
     }
@@ -317,7 +317,7 @@ if AppsPopup {
     url-prefix("https://example.com"){
 
 /*Background color for the Google bar*/
-.gb_3f{
+.gb_1f{
     background: var(--gbar-main-background-color) !important;
 }
 
@@ -327,7 +327,7 @@ if AppsPopup {
 }
 
 /*Apps icon in Google bar*/
-.gb_D.gb_vc{
+.gb_D.gb_sc{
     border: none !important;
     /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
     background-position: -0px -378px !important;
@@ -335,7 +335,7 @@ if AppsPopup {
 }
 
 /*Fix for Google Play logo*/
-.gb_ua{
+.gb_uc{
     display: none !important;    
 }
 .gb_ue{
@@ -351,7 +351,7 @@ if AppsPopup {
     url-prefix("https://example.com/"){
 
 /*Apps icon in Google bar*/
-.gb_D.gb_vc{
+.gb_D.gb_sc{
     border: none !important;
     /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
     background-position: -0px -378px !important;
@@ -388,7 +388,7 @@ a{
     url-prefix("https://example.com"){
 
 /*Apps icon in Google bar*/
-.gb_D.gb_vc{
+.gb_D.gb_sc{
     border: none !important;
     /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
     background-position: -0px -378px !important;
