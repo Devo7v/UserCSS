@@ -12,7 +12,7 @@
 @preprocessor stylus
 
 @var color gbar-accent-color "Accent Color" #CCCCCC
-@var color gbar-main-background-color "Primary Background Color" #333333
+@var color gbar-main-background-color "Primary Background Color" #111111
 @var color gbar-light-background-color "Light Background Color" #333333
 @var color gbar-button-color "Button Primary Color" #222222
 @var color gbar-button-color-2 "Button Secondary Color" #777777
