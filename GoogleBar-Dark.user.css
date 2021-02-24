@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Bar - Dark Style
 @namespace   Devo7v
-@version     0.1.35
+@version     0.1.36
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css
@@ -94,18 +94,18 @@ header#gb /*New Google Bar*/
 }
 
 /*Background color for Search box*/
-#gbqfqw, .gb_Ve{
+#gbqfqw, .gb_Ue{
     /*background: var(--gbar-light-background-color) !important;*/
     background: none !important;
     background: rgba(255,255,255,0.16) !important;
     border: none !important;
 }
-.gb_We{
+.gb_Ve{
     box-shadow: var(--gbar-box-shadow2) !important;
 }
 
 /*Text color for Search box*/
-.gbqfif, .gb_of, .gb_of::placeholder{
+.gbqfif, .gb_ff, .gb_ff::placeholder{
     color: var(--gbar-accent-color) !important;
 }
 
@@ -130,14 +130,14 @@ header#gb /*New Google Bar*/
 
 if IconColor == "White"{
     /*Logo Text Color*/
-    .gb_Xc, .NkK3Fc span[role="heading"]{
+    .gb_Wc, .NkK3Fc span[role="heading"]{
         color: var(--gbar-text-color) !important;
     }
 
     /*Coloring for svg icons in new Google Bar*/
     .gb_qa svg{
-	    fill: var(--gbar-text-color) !important;
-	    color: var(--gbar-button-color-2) !important;
+        fill: var(--gbar-text-color) !important;
+        color: var(--gbar-button-color-2) !important;
     }
 
     /*Remove right border when selecting a button in the Google Bar*/
@@ -148,14 +148,14 @@ if IconColor == "White"{
         
 if IconColor == "Custom"{
     /*Logo Text Color*/
-    .gb_Xc, .NkK3Fc span[role="heading"]{
+    .gb_Wc, .NkK3Fc span[role="heading"]{
         color: var(--gbar-icon-color-custom) !important;
     }
 
     /*Coloring for svg icons in new Google Bar*/
     .gb_qa svg{
-	    fill: var(--gbar-icon-color-custom) !important;
-	    color: var(--gbar-button-color-2) !important;
+        fill: var(--gbar-icon-color-custom) !important;
+        color: var(--gbar-button-color-2) !important;
     }
 
     /*Remove right border when selecting a button in the Google Bar*/
@@ -174,11 +174,11 @@ if AppsPopup {
     .EHzcec, .gb_J, .gb_Q{
         background-color: var(--gbar-light-background-color) !important;
         /*border: 0px solid var(--gbar-border-color) !important;*/
-	    /*box-shadow: var(--gbar-box-shadow2) !important;*/
+        /*box-shadow: var(--gbar-box-shadow2) !important;*/
     }
     .EHzcec{
         border: 0px solid var(--gbar-border-color) !important;
-	    box-shadow: var(--gbar-box-shadow2) !important;
+        box-shadow: var(--gbar-box-shadow2) !important;
     }
 
     /*Individual apps button text color*/
@@ -198,7 +198,7 @@ if AppsPopup {
 
     /*Background of app button text when hovering over an icon*/
     .tX9u1b:hover .Rq5Gcb {
-	    background-color: var(--gbar-dark-background-color) !important;
+        background-color: var(--gbar-dark-background-color) !important;
     }
     
     /*Background color for "More" link at bottom of popup*/
@@ -243,12 +243,12 @@ if AppsPopup {
     }
 
     /*Buttons background color*/
-    .gb_Re{
+    .gb_Qe{
         background: var(--gbar-button-color) !important;
         border-color: var(--gbar-button-color) !important;
         color: var(--gbar-border-color-2) !important;
     }
-    .gb_Re:hover, .gb_ub:hover{
+    .gb_Qe:hover, .gb_ub:hover{
         background-color: var(--gbar-main-background-color) !important;
         box-shadow: var(--gbar-box-shadow) !important;
     }
@@ -317,7 +317,7 @@ if AppsPopup {
     url-prefix("https://example.com"){
 
 /*Background color for the Google bar*/
-.gb_Sf{
+.gb_Rf{
     background: var(--gbar-main-background-color) !important;
 }
 
@@ -338,7 +338,7 @@ if AppsPopup {
 .gb_uc{
     display: none !important;    
 }
-.gb_ke{
+.gb_je{
     width: 183px !important;
     height: 39px !important;
     /*https://i.imgur.com/QgS6N1E.png*/
@@ -391,7 +391,7 @@ a{
 .gb_D.gb_sc{
     border: none !important;
     /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
-    background-position: -0px -378px !important;
+    background-position: -0px -1863px !important;
     opacity: 1.00 !important;
 }
 
