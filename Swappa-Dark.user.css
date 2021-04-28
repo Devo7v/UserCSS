@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Swappa.com - Dark Style
 @namespace   Devo7v
-@version     0.2.0
+@version     0.2.1
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/Swappa-Dark.user.css
@@ -49,6 +49,7 @@ if SystemTheme == "Dark" {
     @media (prefers-color-scheme: light)  {
         :root{
             --swappa-accent-color: swappa-accent-color;
+            --swappa-primary-background-color: #FFFFFF;
             if swappa-box-shadow-check == 1{
                 --swappa-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
             }
@@ -79,6 +80,7 @@ if SystemTheme == "Light" {
     @media (prefers-color-scheme: dark)  {
         :root{
             --swappa-accent-color: swappa-accent-color;
+            --swappa-primary-background-color: #FFFFFF;
             if swappa-box-shadow-check == 1{
                 --swappa-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
             }
