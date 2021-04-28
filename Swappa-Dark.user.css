@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Swappa.com - Dark Style
 @namespace   Devo7v
-@version     0.2.1
+@version     0.2.2
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/Swappa-Dark.user.css
@@ -28,6 +28,15 @@
 
 
 @-moz-document domain("swappa.com"){
+:root{
+    if swappa-box-shadow-check == 1{
+        --swappa-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+    else if swappa-box-shadow-check == 0{
+        --swappa-box-shadow: 0 0px 0px rgba(0,0,0,0.19), 0 0px 0px rgba(0,0,0,0.23);
+    }
+}
+
 /*=======Set the colors based on system theme options=======*/
 if SystemTheme == "Dark" {
     @media (prefers-color-scheme: dark)  {
@@ -38,24 +47,14 @@ if SystemTheme == "Dark" {
             --swappa-dark-background-color: swappa-dark-background-color;
             --swappa-primary-text-color: swappa-primary-text-color;
             --swappa-primary-line-color: swappa-primary-line-color;
-            if swappa-box-shadow-check == 1{
-                --swappa-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-            }
-            else if swappa-box-shadow-check == 0{
-                --swappa-box-shadow: 0 0px 0px rgba(0,0,0,0.19), 0 0px 0px rgba(0,0,0,0.23);
-            }
         }
     }
     @media (prefers-color-scheme: light)  {
         :root{
             --swappa-accent-color: swappa-accent-color;
             --swappa-primary-background-color: #FFFFFF;
-            if swappa-box-shadow-check == 1{
-                --swappa-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-            }
-            else if swappa-box-shadow-check == 0{
-                --swappa-box-shadow: 0 0px 0px rgba(0,0,0,0.19), 0 0px 0px rgba(0,0,0,0.23);
-            }
+            --swappa-light-background-color: #EEEEEE;
+            --swappa-primary-line-color: #AAAAAA;
         }
     }
 }
@@ -69,24 +68,14 @@ if SystemTheme == "Light" {
             --swappa-dark-background-color: swappa-dark-background-color;
             --swappa-primary-text-color: swappa-primary-text-color;
             --swappa-primary-line-color: swappa-primary-line-color;
-            if swappa-box-shadow-check == 1{
-                --swappa-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-            }
-            else if swappa-box-shadow-check == 0{
-                --swappa-box-shadow: 0 0px 0px rgba(0,0,0,0.19), 0 0px 0px rgba(0,0,0,0.23);
-            }
         }
     }
     @media (prefers-color-scheme: dark)  {
         :root{
             --swappa-accent-color: swappa-accent-color;
             --swappa-primary-background-color: #FFFFFF;
-            if swappa-box-shadow-check == 1{
-                --swappa-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-            }
-            else if swappa-box-shadow-check == 0{
-                --swappa-box-shadow: 0 0px 0px rgba(0,0,0,0.19), 0 0px 0px rgba(0,0,0,0.23);
-            }
+            --swappa-light-background-color: #EEEEEE;
+            --swappa-primary-line-color: #AAAAAA;
         }
     }
 }
@@ -99,12 +88,6 @@ if SystemTheme == "Always" {
             --swappa-dark-background-color: swappa-dark-background-color;
             --swappa-primary-text-color: swappa-primary-text-color;
             --swappa-primary-line-color: swappa-primary-line-color;
-            if swappa-box-shadow-check == 1{
-                --swappa-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-            }
-            else if swappa-box-shadow-check == 0{
-                --swappa-box-shadow: 0 0px 0px rgba(0,0,0,0.19), 0 0px 0px rgba(0,0,0,0.23);
-            }
         }
 }
 /*=======END Set the colors based on system theme option=======*/
