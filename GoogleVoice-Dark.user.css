@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.1.12
+@version     0.2.0
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -28,38 +28,94 @@
 @var color gvoice-background-color-dark "Dark Background Color" #222222
 
 @var color gvoice-text-color "Primary Text Color" #AAAAAA
+
+@var select SystemTheme "Apply Style Under System Theme"[
+"Dark" ,
+"Light",
+"Always"
+]
 ==/UserStyle== */
 
 
 @-moz-document url-prefix("http://voice.google.com/"), url-prefix("https://voice.google.com/"){
 
-    :root{
-        if gvoice-accent == "New"{
-            --gvoice-accent-color: #00897B;
-            --gvoice-accent-color-rotate: 0deg;
-        }
-        else if gvoice-accent == "Old"{
-            --gvoice-accent-color: #4284F4;
-            --gvoice-accent-color-rotate: 93.37318deg;
-        }
-        else if gvoice-accent == "Custom"{
-            --gvoice-accent-color: gvoice-accent-custom;
-            --gvoice-accent-color-rotate: 0deg;
-        }
-        if gvoice-corner == "Round"{
-            --gvoice-corner-radius: 2.0rem;
-        }
-        else if gvoice-corner == "Square"{
-            --gvoice-corner-radius: 0.0rem;
-        }
-        else if gvoice-corner == "Squircle"{
-            --gvoice-corner-radius: 0.75rem;
-        }
-        --gvoice-background-color: gvoice-background-color;
-        --gvoice-background-color-light: gvoice-background-color-light;
-        --gvoice-background-color-dark: gvoice-background-color-dark;
-        --gvoice-text-color: gvoice-text-color;
+:root{
+    if gvoice-accent == "New"{
+        --gvoice-accent-color: #00897B;
+        --gvoice-accent-color-rotate: 0deg;
     }
+    else if gvoice-accent == "Old"{
+        --gvoice-accent-color: #4284F4;
+        --gvoice-accent-color-rotate: 93.37318deg;
+    }
+    else if gvoice-accent == "Custom"{
+        --gvoice-accent-color: gvoice-accent-custom;
+        --gvoice-accent-color-rotate: 0deg;
+    }
+    if gvoice-corner == "Round"{
+        --gvoice-corner-radius: 2.0rem;
+    }
+    else if gvoice-corner == "Square"{
+        --gvoice-corner-radius: 0.0rem;
+    }
+    else if gvoice-corner == "Squircle"{
+        --gvoice-corner-radius: 0.75rem;
+    }
+}
+
+/*=======Set the colors based on system theme options=======*/
+if SystemTheme == "Dark" {
+    @media (prefers-color-scheme: dark)  {
+        :root{
+            --gvoice-background-color: gvoice-background-color;
+            --gvoice-background-color-light: gvoice-background-color-light;
+            --gvoice-background-color-dark: gvoice-background-color-dark;
+            --gvoice-text-color: gvoice-text-color;
+            --gvoice-border-color: #444444;
+            --gvoice-white: #FFFFFF;
+        }
+    }
+    @media (prefers-color-scheme: light)  {
+        :root{
+            --gvoice-background-color: #FFFFFF;
+            /*--gvoice-background-color-light: gvoice-background-color-light;
+            --gvoice-background-color-dark: gvoice-background-color-dark;/**/
+            --gvoice-text-color: #202124;/**/
+            --gvoice-border-color: #dadce0;
+        }
+    }
+}
+if SystemTheme == "Light" {
+    @media (prefers-color-scheme: light)  {
+        :root{
+            --gvoice-background-color: gvoice-background-color;
+            --gvoice-background-color-light: gvoice-background-color-light;
+            --gvoice-background-color-dark: gvoice-background-color-dark;
+            --gvoice-text-color: gvoice-text-color;
+            --gvoice-border-color: #444444;
+            --gvoice-white: #FFFFFF;
+        }
+    }
+    @media (prefers-color-scheme: dark)  {
+        :root{
+            --gvoice-background-color: #FFFFFF;
+            /*--gvoice-background-color-light: gvoice-background-color-light;
+            --gvoice-background-color-dark: gvoice-background-color-dark;/**/
+            --gvoice-text-color: #202124;/**/
+            --gvoice-border-color: #dadce0;
+        }
+    }
+}
+if SystemTheme == "Always" {
+        :root{
+            --gvoice-background-color: gvoice-background-color;
+            --gvoice-background-color-light: gvoice-background-color-light;
+            --gvoice-background-color-dark: gvoice-background-color-dark;
+            --gvoice-text-color: gvoice-text-color;
+            --gvoice-border-color: #444444;
+            --gvoice-white: #FFFFFF;
+        }
+}
 
 /*Make Elements Square or Round*/
 .Bqxti-VCkuzd, /*sent and received message bubbles*/
@@ -131,7 +187,7 @@ img.gb_uc {
 /*=======Text Messages=======*/
 /*Outgoing Text messages*/
 .Bqxti-VCkuzd, .Bqxti-VCkuzd a {
-    color: #FFFFFF !important;
+    color: var(--gvoice-white) !important;
     /*#00695c;*/
     background-color: var(--gvoice-background-color-light) !important;
 }
@@ -139,18 +195,18 @@ img.gb_uc {
 /*Incoming Text messages*/
 .Bqxti-MJZihc.Bqxti-VCkuzd, .Bqxti-MJZihc.Bqxti-VCkuzd a {
     background-color: var(--gvoice-accent-color) !important;
-    color: #FFFFFF !important;
+    color: var(--gvoice-white) !important;
 }
 
 ::-moz-placeholder {
-    color: #FFFFFF !important;
+    color: var(--gvoice-white) !important;
     opacity: 1 !important;
 }
 
 /*Overall Background and Text*/
 md-content, body, md-sidenav {
     background-color: var(--gvoice-background-color) !important;
-    color: #FFFFFF !important;
+    color: var(--gvoice-white) !important;
 }
 
 /* center section background */
@@ -163,7 +219,7 @@ md-content, body, md-sidenav {
 .md-title, /* title headings */
 .rkljfb-npMLoc/* message list contact names */
 {
-    color: #FFFFFF !important;
+    color: var(--gvoice-white) !important;
 }
 
 /* accent text, headings */
@@ -178,7 +234,7 @@ md-content, body, md-sidenav {
 
 /*Left pane border color*/
 .ieK2Ab-H9tDt {
-    border-right: 1px solid #444444 !important;
+    border-right: 1px solid var(--gvoice-border-color) !important;
 }
 
 .GYQtq-mpvPNd[disabled] {
@@ -187,13 +243,13 @@ md-content, body, md-sidenav {
 
 /* darken divider(s) in message view bottom and left slideout */
 md-divider {
-    border-top-color: #444444 !important;
+    border-top-color: var(--gvoice-border-color) !important;
     /*visibility: hidden !important;*/
 }
 
 /* name entry field text and "To" text for new message and message field text */
 md-autocomplete input, .BN08bf-pex4lc, .B3EWm-YPqjbf.B3EWm-YPqjbf, .B3EWm-PWVi0d {
-    color: #FFFFFF !important;
+    color: var(--gvoice-white) !important;
 }
 
 /* type message text */
@@ -211,12 +267,12 @@ md-autocomplete input, .BN08bf-pex4lc, .B3EWm-YPqjbf.B3EWm-YPqjbf, .B3EWm-PWVi0d
 .layout-row > .flex, /* Name */
 .BN08bf-Od0oM/* suggested contact number type */
 {
-    color: #FFFFFF !important;
+    color: var(--gvoice-white) !important;
 }
 
 /*Text Message List*/
 .GYQtq-CLHpQd {
-    border-right: 1px solid #444444 !important;
+    border-right: 1px solid var(--gvoice-border-color) !important;
 }
 
 /* Message multi-select icon */
@@ -225,7 +281,7 @@ md-autocomplete input, .BN08bf-pex4lc, .B3EWm-YPqjbf.B3EWm-YPqjbf, .B3EWm-PWVi0d
     -webkit-filter: brightness(150%) !important;
     -o-filter: brightness(150%) !important;
     -ms-filter: brightness(150%) !important;
-    background-color: #444444 !important;
+    background-color: var(--gvoice-border-color) !important;
 }
 
 /* Message multi-select icon color */
@@ -240,23 +296,23 @@ md-autocomplete input, .BN08bf-pex4lc, .B3EWm-YPqjbf.B3EWm-YPqjbf, .B3EWm-PWVi0d
 
 /*Message Title Text*/
 .E4guKe-npMLoc {
-    color: #FFFFFF !important;
+    color: var(--gvoice-white) !important;
 }
 
 /*Message Date/Time Text*/
 /*.E4guKe-biJjHb*/
 .Bqxti-HIQJ9 {
-    color: #FFFFFF !important;
+    color: var(--gvoice-white) !important;
 }
 
 /*Message Preview Text*/
 .E4guKe-bVEB4e {
-    color: #FFFFFF !important;
+    color: var(--gvoice-white) !important;
 }
 
 /*Messages Subtitle Text*/
 .uM2Vn-VdSJob {
-    color: #FFFFFF !important;
+    color: var(--gvoice-white) !important;
 }
 
 /*Messages More Options*/
@@ -278,16 +334,16 @@ md-menu-content {
 .hlKfD-tJHJj, /* make call */
 .q2hAhb-RZ063d/* top right header */
 {
-    border-bottom: 1px solid #444444 !important;
-    color: #FFFFFF !important;
+    border-bottom: 1px solid var(--gvoice-border-color) !important;
+    color: var(--gvoice-white) !important;
 }
 
 /*Bottom Box*/
 .tDBuBb-Zpe2Q, /* phone calls */
 .hlKfD-fqVkud/* make call */
 {
-    border-top: 1px solid #444444 !important;
-    color: #FFFFFF !important;
+    border-top: 1px solid var(--gvoice-border-color) !important;
+    color: var(--gvoice-white) !important;
 }
 
 /*Call Contact Text Color*/
@@ -297,7 +353,7 @@ md-menu-content {
 
 /* people and options right slideout */
 .GYQtq-pZARYb {
-    border-left: 1px solid #444444 !important;
+    border-left: 1px solid var(--gvoice-border-color) !important;
 }
 
 /*Icons*/
@@ -305,7 +361,7 @@ md-menu-content {
 .md-icon-button,
 .gv-nav-item-icon,
 .material-icons-extended {
-    color: #ffffff !important;
+    color: var(--gvoice-white) !important;
 }
 
 /*Primary Icon*/
@@ -390,7 +446,7 @@ md-dialog.md-default-theme, md-dialog {
 /*======= unread counts =======*/
 .IhMtsf-ho7Xm-NnAfwf, .navItemBadge {
     background-color: var(--gvoice-accent-color) !important;
-    color: #FFFFFF !important;
+    color: var(--gvoice-white) !important;
 }
 
 /* call dialog call button */
@@ -402,7 +458,7 @@ md-dialog.md-default-theme, md-dialog {
 .q68de-Ne3sFf, .q68de-iOyk4d,
 md-select .md-select-value.md-select-placeholder,
 md-input-container.md-input-has-value label:not(.md-no-float) {
-    color: #FFFFFF !important;
+    color: var(--gvoice-white) !important;
 }
 
 /* calling dialog selected option text */
@@ -441,18 +497,18 @@ md-select-menu md-content md-option:hover:not([disabled]) {
 
 /* dial pad section */
 .hlKfD-Mjd3I {
-    border-color: #444444 !important;
+    border-color: var(--gvoice-border-color) !important;
 }
 
 /* dial pad text */
 .lp3vjd-LgbsSe, .lp3vjd-cHYyed {
-    color: #FFFFFF !important;
+    color: var(--gvoice-white) !important;
 }
 
 /* call header text color and border */
 .hlKfD-pex4lc, .hlKfD-KdeNEf {
-    color: #FFFFFF !important;
-    border-color: #444444 !important;
+    color: var(--gvoice-white) !important;
+    border-color: var(--gvoice-border-color) !important;
 }
 
 /*=======SETTINGS=======*/
@@ -560,17 +616,17 @@ md-select-menu md-content md-option:hover:not([disabled]) {
 
 /* settings switch background bar */
 md-switch .md-bar {
-    background-color: #444444 !important;
+    background-color: var(--gvoice-border-color) !important;
 }
 
 /* settings small text items */
 .Y01sTe-akRZae {
-    color: #FFFFFF !important;
+    color: var(--gvoice-white) !important;
 }
 
 /* new linked number dialog input box */
 md-input-container .md-input {
-    color: #FFFFFF !important;
+    color: var(--gvoice-white) !important;
     border-color: var(--gvoice-accent-color) !important;
 }
 
@@ -615,7 +671,7 @@ md-input-container .md-input {
 
 /* new contact name input box label */
 md-input-container label {
-    color: #FFFFFF !important;
+    color: var(--gvoice-white) !important;
 }
 
 /* new contact buttons */
@@ -628,12 +684,12 @@ md-input-container label {
 
 /* new message recipient text input box */
 input.ng-valid {
-    color: #FFFFFF !important;
+    color: var(--gvoice-white) !important;
 }
 
 /* suggested new contact phone # label */
 .md-autocomplete-suggestions-container li {
-    color: #FFFFFF !important;
+    color: var(--gvoice-white) !important;
 }
 
 /* contact selection background */
@@ -643,7 +699,7 @@ input.ng-valid {
 
 /* contact card name and number type */
 .dOUild-XSJd1, .dOUild-Od0oM, .Gb0ubd-Od0oM {
-    color: #FFFFFF !important;
+    color: var(--gvoice-white) !important;
 }
 
 /* center of starred contact star badge */
@@ -673,12 +729,12 @@ input.ng-valid {
 
 /* call button text */
 .md-button.md-raised:not([disabled]) {
-    color: #FFFFFF !important;
+    color: var(--gvoice-white) !important;
 }
 
 /* place border below google bar container (top of google voice frame) */
 .gv_root {
-    border-top: 1px solid #444444 !important;
+    border-top: 1px solid var(--gvoice-border-color) !important;
 }
 
 /*=======Dialer=======*/
@@ -727,6 +783,5 @@ input.ng-valid {
 .button.button[_ngcontent-ngx-c13]{
     background-color: var(--gvoice-background-color-light) !important;
 }
-
 
 }
