@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Hangouts - Dark Style
 @namespace   Devo7v
-@version     0.1.2
+@version     0.2.0
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleHangouts-Dark.user.css
@@ -13,37 +13,113 @@
 
 @var checkbox ghangouts-accent-color-custom "Use Custom Accent Color" 0
 @var color ghangouts-accent-color "Accent Color" #53A93F
+
+@var select SystemTheme "Apply Style Under System Theme"[
+"Dark" ,
+"Light",
+"Always"
+]
 ==/UserStyle== */
 
 
 @-moz-document url-prefix("http://www.google.com/hangouts/"), url-prefix("https://www.google.com/hangouts/"), url-prefix("http://hangouts.google.com/"), url-prefix("https://hangouts.google.com/"){
+
 :root{
-    --ghangouts-accent-color: #0F9D58;
     /*Original Hangouts accent color #53A93F*/
-    if ghangouts-accent-color-custom{
+    if ghangouts-accent-color-custom == 0{
+        --ghangouts-accent-color: #0F9D58;
+    }
+    else if ghangouts-accent-color-custom == 1{
         --ghangouts-accent-color: ghangouts-accent-color;
     }
 }
 
+/*=======Set the colors based on system theme options=======*/
+if SystemTheme == "Dark" {
+    @media (prefers-color-scheme: dark)  {
+		 :root{
+            --ghangouts-primary-background-color: #111111;
+            --ghangouts-dark-background-color: #222222;
+			--ghangouts-dark2-background-color: #333333;
+			--ghangouts-light-background-color: #444444;
+			--ghangouts-border-color: #777777;
+			--ghangouts-primary-text-color: #999999;
+			--ghangouts-secondary-text-color: #CCCCCC;
+            --ghangouts-icon-color: rgba(255, 255, 255, 0.87);
+            --ghangouts-invert-icons: invert(100%);
+        }
+    }
+    @media (prefers-color-scheme: light)  {
+		 :root{
+            /*--ghangouts-primary-background-color: #111111;/**/
+            --ghangouts-dark-background-color: #FFFFFF;/**/
+			--ghangouts-dark2-background-color: var(--ghangouts-accent-color);/**/
+			--ghangouts-light-background-color: #DDDDDD;/**/
+			/*--ghangouts-border-color: #777777;/**/
+			--ghangouts-primary-text-color: #111111;/**/
+			--ghangouts-secondary-text-color: #333333;/**/
+        }
+    }
+}
+if SystemTheme == "Light" {
+    @media (prefers-color-scheme: light)  {
+		 :root{
+            --ghangouts-primary-background-color: #111111;
+            --ghangouts-dark-background-color: #222222;
+			--ghangouts-dark2-background-color: #333333;
+			--ghangouts-light-background-color: #444444;
+			--ghangouts-border-color: #777777;
+			--ghangouts-primary-text-color: #999999;
+			--ghangouts-secondary-text-color: #CCCCCC;
+            --ghangouts-icon-color: rgba(255, 255, 255, 0.87);
+            --ghangouts-invert-icons: invert(100%);
+        }
+    }
+    @media (prefers-color-scheme: dark)  {
+		 :root{
+            /*--ghangouts-primary-background-color: #111111;/**/
+            --ghangouts-dark-background-color: #FFFFFF;/**/
+			--ghangouts-dark2-background-color: var(--ghangouts-accent-color);/**/
+			--ghangouts-light-background-color: #DDDDDD;/**/
+			/*--ghangouts-border-color: #777777;/**/
+			--ghangouts-primary-text-color: #111111;/**/
+			--ghangouts-secondary-text-color: #333333;/**/
+        }
+    }
+}
+if SystemTheme == "Always" {
+		 :root{
+            --ghangouts-primary-background-color: #111111;
+            --ghangouts-dark-background-color: #222222;
+			--ghangouts-dark2-background-color: #333333;
+			--ghangouts-light-background-color: #444444;
+			--ghangouts-border-color: #777777;
+			--ghangouts-primary-text-color: #999999;
+			--ghangouts-secondary-text-color: #CCCCCC;
+            --ghangouts-icon-color: rgba(255, 255, 255, 0.87);
+            --ghangouts-invert-icons: invert(100%);
+        }
+}
+
 /*Loading Background*/
 .g-Ue-kc{
-    background-color: #111111 !important;
+    background-color: var(--ghangouts-primary-background-color) !important;
 }
 
 /*=========================Left slide out menu=========================*/
 /*Left slide out menu background*/
 .JPdR6b{
-  background: #222222 !important;
+  background: var(--ghangouts-dark-background-color) !important;
 }
 
 /*Text color*/
 .g-Ue-we, .z80M1{
-  color: #999999 !important;
+  color: var(--ghangouts-primary-text-color) !important;
 }
 
 /*Selected and Hovered Over item*/
 .bdXzDb .z80M1.FwR7Pc, .bdXzDb .z80M1.skHzY{
-  background: #444444 !important;
+  background: var(--ghangouts-light-background-color) !important;
 }
 .bdXzDb .skHzY .jO7h3c, .bdXzDb .skHzY .pTh3n{
     color: var(--ghangouts-accent-color) !important;
@@ -51,8 +127,8 @@
 }
 
 /*Invert the color of dark icons*/
-.bdXzDb .RY89vd .pTh3n {
-	fill: rgba(255, 255, 255, 0.87);
+.bdXzDb .RY89vd .pTh3n{
+    fill: var(--ghangouts-icon-color) !important;
 }
 
  /*Contacts icon*/
@@ -77,7 +153,7 @@
 /*=========================Main Message List=========================*/
 /*Message list background*/
 .Yo, .aOY59, .x1bKod{
-  background: #111111 !important;
+  background: var(--ghangouts-primary-background-color) !important;
   border-bottom: none !important;
 }
 
@@ -88,55 +164,55 @@
 
 /*Message List Text*/
 .lPNGt, .qCUW5d{
-    color: #999999 !important;
+    color: var(--ghangouts-primary-text-color) !important;
 }
 
 /*Message list border*/
 .gsl0xd{
-  border-left: 0px solid #444444 !important;
+  border-left: 0px solid var(--ghangouts-light-background-color) !important;
 }
 
 /*Hovering over items in message list*/
 .KgaIJb:hover, .Bb:hover{
-    background-color: #444444 !important;
+    background-color: var(--ghangouts-light-background-color) !important;
 }
 
 /*Conversations background color*/
 .Bb, .Ahnnze{
-  background: #111111 !important;
-  border-bottom: 0px solid #444444 !important;
+  background: var(--ghangouts-primary-background-color) !important;
+  border-bottom: 0px solid var(--ghangouts-light-background-color) !important;
 }
 
 /*Input text boxes*/
 input, textarea{
-  background: #444444 !important;
-  color: #999999 !important;
+  background: var(--ghangouts-light-background-color) !important;
+  color: var(--ghangouts-primary-text-color) !important;
 }
 
 /*Text color for Message list*/
 .ik, .ng, /*span,*/ .rNeXgf, .ZmcSxe, .FzSsbb, .VqBtHf, .pghO0c{
-  color: #CCCCCC !important;
+  color: var(--ghangouts-secondary-text-color) !important;
 }
 
 /*Search results text color*/
 .cj{
-   color: #CCCCCC !important;
+   color: var(--ghangouts-secondary-text-color) !important;
 }
 
 /*Search results hover background color*/
 .eh.c-P-p{
-  background: #333333 !important;
+  background: var(--ghangouts-dark2-background-color) !important;
 }
 
 /*Search results section background color*/
 .Wkchmf{
-  background: #333333 !important;
+  background: var(--ghangouts-dark2-background-color) !important;
   border: none !important;
 }
 
 /*Search results section text color*/
 .Wkchmf .kp{
-  color: #CCCCCC !important;
+  color: var(--ghangouts-secondary-text-color) !important;
 }
 
 /*"Invite" text color*/
@@ -147,7 +223,7 @@ input, textarea{
 /*=======Chat Window=======*/
 /*Header background color*/
 .Ik{
-  background-color: #333333 !important;
+  background-color: var(--ghangouts-dark2-background-color) !important;
 }
 
 /*New Chat Header background color*/
@@ -156,32 +232,32 @@ input, textarea{
 }
 /*Header buttons background color*/
 .EV{
-  background: #333333 !important;
+  background: var(--ghangouts-dark2-background-color) !important;
 }
 
 /*Header text color*/
 .Ob2Lud, .O1vsec, .xP{
-  color: #CCCCCC !important;
+  color: var(--ghangouts-secondary-text-color) !important;
 }
 
 /*Message window background*/
 .iN{
-  background-color: #222222 !important;
+  background-color: var(--ghangouts-dark-background-color) !important;
 }
 
 /*======Chat Bubble Colors======*/
 /*Sent by User*/
 .pj .KRQuhe{
-  background-color: #444444 !important;
+  background-color: var(--ghangouts-light-background-color) !important;
   border-radius: 0px !important; /*Fully rounded chat bubbles have a radius of 15px*/
   border-top-right-radius: 0px !important;
 }
 .pj .jHldnd{
-  border: 8px solid #444444 !important;
+  border: 8px solid var(--ghangouts-light-background-color) !important;
 }
 /*Text Color*/
 .pj .JL{
-  color: #CCCCCC !important;
+  color: var(--ghangouts-secondary-text-color) !important;
 }
 .pj .JL a{
   color: #BBBBBB !important;
@@ -211,12 +287,12 @@ input, textarea{
 
 /*Message contact name, timestamp, status color*/
 .sV, .TlvAYc, .bI{
-  color: #999999 !important;
+  color: var(--ghangouts-primary-text-color) !important;
 }
 
 /*Message text input box background and layering*/
 .My{
-  background-color: #333333 !important;
+  background-color: var(--ghangouts-dark2-background-color) !important;
 }
 
 /*Remove text entry box borders*/
@@ -236,17 +312,18 @@ input, textarea{
 .Tnn80c, /*Pencil icon*/
 .HxMcae, /*SMS icon*/
 .Xv, /*Video camera icon*/
+.-xc .pTh3n, /*Video camera icon 2*/
 .PK, /*People icon*/
 .BboKFb, /*Bell icon*/
 .OK, /*Add person icon*/
 .Tikynd, /*Back arrow icon*/
 .mnIV2e /*Check box in chat options*/
 /*.Dkouue /*SMS icon*/{
-    filter: invert(100%) !important;
-    -webkit-filter: invert(100%) !important;
-    /*-moz-filter: invert(100%) !important;*/
-    -o-filter: invert(100%) !important;
-    -ms-filter: invert(100%) !important;
+    filter: var(--ghangouts-invert-icons) !important;
+    -webkit-filter: var(--ghangouts-invert-icons) !important;
+    /*-moz-filter: var(--ghangouts-invert-icons) !important;*/
+    -o-filter: var(--ghangouts-invert-icons) !important;
+    -ms-filter: var(--ghangouts-invert-icons) !important;
 }
 
 /*Background color for Phone icon next to chat bubble picture*/
@@ -269,13 +346,13 @@ input, textarea{
 /*=======Emoji Popup=======*/
 /*Emoji stickers background*/
 .HM, .bC7CXb, .IaF29d, .vf6xyf, .Hy.Th96Ob, .gr4xCd{
-  background-color: #222222 !important;
+  background-color: var(--ghangouts-dark-background-color) !important;
 }
 
 /*Emoji types background*/
 .Hy.Th96Ob .IM{
-  background-color: #222222 !important;
-  border: 1px solid #777777 !important;
+  background-color: var(--ghangouts-dark-background-color) !important;
+  border: 1px solid var(--ghangouts-border-color) !important;
 }
 
 /*invert emoji types images*/
@@ -296,32 +373,32 @@ input, textarea{
 /*=======Settings=======*/
 /*Window background color*/
 .uJ .Ih{
-  background: #222222 !important;
+  background: var(--ghangouts-dark-background-color) !important;
 }
 
 /*Icons*/
 .z-b-G{
-  background: #444444 !important;
+  background: var(--ghangouts-light-background-color) !important;
   border: none !important;
-  color: #999999 !important;
+  color: var(--ghangouts-primary-text-color) !important;
 }
 
 /*Text color*/
 .uJ .Ih, .ahRshd .wxPY, .NLK4Q{
-  color: #999999 !important;
+  color: var(--ghangouts-primary-text-color) !important;
   text-shadow: none !important;
 }
 
 /*Buttons area background color*/
 .RU, .IRDqje, .Su{
-  background: #333333 !important;
+  background: var(--ghangouts-dark2-background-color) !important;
   border: none !important;
 }
 
 /*=======People in conversation=======*/
 /*Background color*/
  .zS{
-  background: #222222 !important;
+  background: var(--ghangouts-dark-background-color) !important;
 }
 .rI{
   border: none !important;
