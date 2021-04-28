@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Swappa.com - Dark Style
 @namespace   Devo7v
-@version     0.1.2
+@version     0.2.0
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/Swappa-Dark.user.css
@@ -18,25 +18,94 @@
 @var color swappa-primary-text-color "Main Text Color" #CCCCCC
 @var color swappa-primary-line-color "Color for Borders & Lines" #777777
 @var checkbox swappa-box-shadow-check "Show Shadow Behind Elements" 1
+@var select SystemTheme "Apply Style Under System Theme"[
+"Dark" ,
+"Light",
+"Always"
+]
 ==/UserStyle== */
 
 
 
 @-moz-document domain("swappa.com"){
-:root{
-    --swappa-accent-color: swappa-accent-color;
-    --swappa-primary-background-color: swappa-primary-background-color;
-    --swappa-light-background-color: swappa-light-background-color;
-    --swappa-dark-background-color: swappa-dark-background-color;
-    --swappa-primary-text-color: swappa-primary-text-color;
-    --swappa-primary-line-color: swappa-primary-line-color;
-     if swappa-box-shadow-check == 1{
-        --swappa-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+/*=======Set the colors based on system theme options=======*/
+if SystemTheme == "Dark" {
+    @media (prefers-color-scheme: dark)  {
+        :root{
+            --swappa-accent-color: swappa-accent-color;
+            --swappa-primary-background-color: swappa-primary-background-color;
+            --swappa-light-background-color: swappa-light-background-color;
+            --swappa-dark-background-color: swappa-dark-background-color;
+            --swappa-primary-text-color: swappa-primary-text-color;
+            --swappa-primary-line-color: swappa-primary-line-color;
+            if swappa-box-shadow-check == 1{
+                --swappa-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            }
+            else if swappa-box-shadow-check == 0{
+                --swappa-box-shadow: 0 0px 0px rgba(0,0,0,0.19), 0 0px 0px rgba(0,0,0,0.23);
+            }
+        }
     }
-    else if swappa-box-shadow-check == 0{
-        --swappa-box-shadow: 0 0px 0px rgba(0,0,0,0.19), 0 0px 0px rgba(0,0,0,0.23);
+    @media (prefers-color-scheme: light)  {
+        :root{
+            --swappa-accent-color: swappa-accent-color;
+            if swappa-box-shadow-check == 1{
+                --swappa-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            }
+            else if swappa-box-shadow-check == 0{
+                --swappa-box-shadow: 0 0px 0px rgba(0,0,0,0.19), 0 0px 0px rgba(0,0,0,0.23);
+            }
+        }
     }
 }
+
+if SystemTheme == "Light" {
+    @media (prefers-color-scheme: light)  {
+        :root{
+            --swappa-accent-color: swappa-accent-color;
+            --swappa-primary-background-color: swappa-primary-background-color;
+            --swappa-light-background-color: swappa-light-background-color;
+            --swappa-dark-background-color: swappa-dark-background-color;
+            --swappa-primary-text-color: swappa-primary-text-color;
+            --swappa-primary-line-color: swappa-primary-line-color;
+            if swappa-box-shadow-check == 1{
+                --swappa-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            }
+            else if swappa-box-shadow-check == 0{
+                --swappa-box-shadow: 0 0px 0px rgba(0,0,0,0.19), 0 0px 0px rgba(0,0,0,0.23);
+            }
+        }
+    }
+    @media (prefers-color-scheme: dark)  {
+        :root{
+            --swappa-accent-color: swappa-accent-color;
+            if swappa-box-shadow-check == 1{
+                --swappa-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            }
+            else if swappa-box-shadow-check == 0{
+                --swappa-box-shadow: 0 0px 0px rgba(0,0,0,0.19), 0 0px 0px rgba(0,0,0,0.23);
+            }
+        }
+    }
+}
+
+if SystemTheme == "Always" {
+        :root{
+            --swappa-accent-color: swappa-accent-color;
+            --swappa-primary-background-color: swappa-primary-background-color;
+            --swappa-light-background-color: swappa-light-background-color;
+            --swappa-dark-background-color: swappa-dark-background-color;
+            --swappa-primary-text-color: swappa-primary-text-color;
+            --swappa-primary-line-color: swappa-primary-line-color;
+            if swappa-box-shadow-check == 1{
+                --swappa-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            }
+            else if swappa-box-shadow-check == 0{
+                --swappa-box-shadow: 0 0px 0px rgba(0,0,0,0.19), 0 0px 0px rgba(0,0,0,0.23);
+            }
+        }
+}
+/*=======END Set the colors based on system theme option=======*/
 
 /*Top bar*/
 .navbar-default{
@@ -92,8 +161,8 @@ a{
 
 /*Links*/
 a:hover, a:focus, .listing_row a:hover{
-	text-decoration: none !important;
-	color: var(--swappa-accent-color) !important;
+    text-decoration: none !important;
+    color: var(--swappa-accent-color) !important;
 }
 .title_link, .row_cell_model .price, .listing_row a{
     color: var(--swappa-primary-text-color) !important;
@@ -233,9 +302,9 @@ footer, footer a{
 
 /*Overwrites the above*/
 if swappa-box-shadow-check{
-	.navbar-default, .btn-default, .cell_product, .breadcrumb, div.col-sm-6:hover, .panel{
-		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23) !important;
-    	}
+    .navbar-default, .btn-default, .cell_product, .breadcrumb, div.col-sm-6:hover, .panel{
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23) !important;
+    }
 }
 
 }
