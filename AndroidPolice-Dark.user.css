@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Android Police - Dark Style
 @namespace   Devo7v
-@version     0.1.0
+@version     0.2.0
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/AndroidPolice-Dark.user.css
@@ -14,14 +14,73 @@
 @var color AndroidPolice-primary-background "Primary Background Color" #333333
 @var color AndroidPolice-dark-background "Dark Background Color" #111111
 @var color AndroidPolice-light-background "Light Background Color" #777777
+@var select SystemTheme "Apply Style Under System Theme"[
+"Dark" ,
+"Light",
+"Always"
+]
 ==/UserStyle== */
 
 @-moz-document domain("androidpolice.com"){
-:root{
-    --AndroidPolice-primary-background: AndroidPolice-primary-background;
-    --AndroidPolice-dark-background: AndroidPolice-dark-background;
-    --AndroidPolice-light-background: AndroidPolice-light-background;
+
+/*=======Set the colors based on system theme options=======*/
+if SystemTheme == "Dark" {
+    @media (prefers-color-scheme: dark)  {
+        :root{
+            --AndroidPolice-primary-background: AndroidPolice-primary-background; /*#333333*/
+            --AndroidPolice-dark-background: AndroidPolice-dark-background; /*#111111*/
+            --AndroidPolice-light-background: AndroidPolice-light-background; /*#777777*/
+            --AndroidPolice-gray-1: #656565;
+            --AndroidPolice-gray-2: #292929;
+            --AndroidPolice-primary-text: #ffffff;
+            --AndroidPolice-secondary-text: #E6E6E6;
+            --AndroidPolice-tertiary-text: #C7C7C7;	
+        }
+    }
+
+    @media (prefers-color-scheme: light)  {
+        :root{
+            --AndroidPolice-primary-background: #FFFFFF;
+            --AndroidPolice-gray-1: #656565;
+        }
+    }
 }
+
+if SystemTheme == "Light" {
+    @media (prefers-color-scheme: light)  {
+        :root{
+            --AndroidPolice-primary-background: AndroidPolice-primary-background; /*#333333*/
+            --AndroidPolice-dark-background: AndroidPolice-dark-background; /*#111111*/
+            --AndroidPolice-light-background: AndroidPolice-light-background; /*#777777*/
+            --AndroidPolice-gray-1: #656565;
+            --AndroidPolice-gray-2: #292929;
+            --AndroidPolice-primary-text: #ffffff;
+            --AndroidPolice-secondary-text: #E6E6E6;
+            --AndroidPolice-tertiary-text: #C7C7C7;	
+        }
+    }
+
+    @media (prefers-color-scheme: dark)  {
+        :root{
+            --AndroidPolice-primary-background: #FFFFFF;
+            --AndroidPolice-gray-1: #656565;
+        }
+    }
+}
+
+if SystemTheme == "Always" {
+         :root{
+            --AndroidPolice-primary-background: AndroidPolice-primary-background; /*#333333*/
+            --AndroidPolice-dark-background: AndroidPolice-dark-background; /*#111111*/
+            --AndroidPolice-light-background: AndroidPolice-light-background; /*#777777*/
+            --AndroidPolice-gray-1: #656565;
+            --AndroidPolice-gray-2: #292929;
+            --AndroidPolice-primary-text: #ffffff;
+            --AndroidPolice-secondary-text: #E6E6E6;
+            --AndroidPolice-tertiary-text: #C7C7C7;	
+        }
+}
+/*=======END Set the colors based on system theme option=======*/
 
 .band.sub-nav{
     height: 35px !important;
@@ -46,7 +105,7 @@
 }
 
 .band.sub-nav{
-    border-bottom: 0px solid #656565 !important;
+    border-bottom: 0px solid var(--AndroidPolice-gray-1) !important;
 }
 
 .ap-new-articles-btn{
@@ -64,52 +123,52 @@ ul.sub-nav li a{
 }
 
 .post-header h2 a{
-    color: #fff !important;
+    color: var(--AndroidPolice-primary-text) !important;
 }
 
-a{
+/*a{
     color: #E6E6E6 !important;
-}
+}*/
 
 .post-date-time{
-    color: #929292 !important;
+    color: var(--AndroidPolice-tertiary-text) !important;
 }
 
 .share-box .shares{
-    color: #929292 !important;
+    color: var(--AndroidPolice-tertiary-text) !important;
 }
 
 ul.share-btns li{
-    border: 1px solid #656565 !important;
+    border: 1px solid var(--AndroidPolice-gray-1) !important;
 }
 
 .categories{
-    border-top: 1px solid #656565 !important;
+    border-top: 1px solid var(--AndroidPolice-gray-1) !important;
 }
 
 .categories li a{
-    border-top: 1px solid #656565 !important;
+    border-top: 1px solid var(--AndroidPolice-gray-1) !important;
 }
 
 .categories ul.post-categories{
-    border-left: 1px solid #656565 !important;
+    border-left: 1px solid var(--AndroidPolice-gray-1) !important;
 }
 
 .share-box .shares span.count{
-    border: 1px solid #656565 !important;
+    border: 1px solid var(--AndroidPolice-gray-1) !important;
 }
 
 body{
-    color: #EAEAEA !important;
+    color: var(--AndroidPolice-secondary-text) !important;
 }
 
 .wp-polls .Buttons, input[type="submit"], input[type="reset"], input[type="button"], a.read-more, a.primary-btn, .wp-polls-ans a{
-    background: #777777 !important;
+    background: var(--AndroidPolice-light-background) !important;
 }
 
 .banner-update{
-    background-color: #757575 !important;
-    border: 1px solid #656565 !important;
+    background-color: var(--AndroidPolice-light-background) !important;
+    border: 1px solid var(--AndroidPolice-gray-1) !important;
 }
 
 /*.post{
@@ -118,23 +177,23 @@ body{
 
 .wp-pagenavi{
 	background: var(--AndroidPolice-primary-background) !important;
-	border: 1px solid #656565 !important;
+	border: 1px solid var(--AndroidPolice-gray-1) !important;
 	box-shadow: none !important;
 }*/
 
 .EmbeddedTweet{
-    background: #292929 !important;
-    border: 1px solid #656565 !important;
+    background: var(--AndroidPolice-gray-2) !important;
+    border: 1px solid var(--AndroidPolice-gray-1) !important;
 }
 
 .FollowButton{
     background: #191919 !important;
-    border: 1px solid #656565 !important;
+    border: 1px solid var(--AndroidPolice-gray-1) !important;
 }
 
 .note-tip{
-    background-color: #292929 !important;
-    border: 1px solid #656565 !important;
+    background-color: var(--AndroidPolice-gray-2) !important;
+    border: 1px solid var(--AndroidPolice-gray-1) !important;
 }
 
 .note-tip .note-heading{
@@ -142,12 +201,12 @@ body{
 }
 
 .categories li a{
-    border: 1px solid #656565 !important;
+    border: 1px solid var(--AndroidPolice-gray-1) !important;
 }
 
 .note-warning{
-    background-color: #292929 !important;
-    border: 1px solid #656565 !important;
+    background-color: var(--AndroidPolice-gray-2) !important;
+    border: 1px solid var(--AndroidPolice-gray-1) !important;
 }
 
 .note-warning .note-heading{
@@ -155,7 +214,7 @@ body{
 }
 
 strong{
-    color: #fff !important;
+    color: var(--AndroidPolice-primary-text) !important;
 }
 
 layout .ob-widget-header{
@@ -163,24 +222,24 @@ layout .ob-widget-header{
 }
 
 #comments{
-    background: #292929 !important;
+    background: var(--AndroidPolice-gray-2) !important;
 }
 
 .section-header{
-    border-bottom: 1px solid #656565 !important;
+    border-bottom: 1px solid var(--AndroidPolice-gray-1) !important;
 }
 
 .primary .post-footer{
-    border: 1px solid #656565 !important;
+    border: 1px solid var(--AndroidPolice-gray-1) !important;
     box-shadow: none !important;
 }
 
 .nav-primary > ul > li.active > a{
-    color: #C7C7C7!important;
+    color: var(--AndroidPolice-tertiary-text)!important;
 }
 
 h3, strong, strong a{
-    color: #C7C7C7!important;
+    color: var(--AndroidPolice-tertiary-text)!important;
 }
 
 .post-content .post-message p:last-child{
@@ -189,43 +248,43 @@ h3, strong, strong a{
 
 .textarea-wrapper{
     background: var(--AndroidPolice-primary-background) !important;
-    border: 2px solid #656565 !important;
+    border: 2px solid var(--AndroidPolice-gray-1) !important;
     box-shadow: none !important;
 }
 
 .post .post-content tr:nth-child(2n) td{
-    background: #292929 !important;
+    background: var(--AndroidPolice-gray-2) !important;
 }
 
 .post .post-content th, .post .post-content td{
-    border: 1px solid #656565 !important;
+    border: 1px solid var(--AndroidPolice-gray-1) !important;
 }
 
 .section-header{
-    background: #292929 !important;
+    background: var(--AndroidPolice-gray-2) !important;
 }
 
 blockquote.pr section.open{
-    background: #292929 !important;
+    background: var(--AndroidPolice-gray-2) !important;
 }
 
 blockquote.pr section{
-    border-left: 1px solid #656565 !important;
-    border-right: 1px solid #656565 !important;
+    border-left: 1px solid var(--AndroidPolice-gray-1) !important;
+    border-right: 1px solid var(--AndroidPolice-gray-1) !important;
 }
 
 blockquote.pr section p{
-    color: #C7C7C7 !important;
+    color: var(--AndroidPolice-tertiary-text) !important;
 }
 
 blockquote.pr{
-    background: #292929 !important;
+    background: var(--AndroidPolice-gray-2) !important;
 }
 
 blockquote.pr footer{
-    border-left: 1px solid #656565 !important;
-    border-right: 1px solid #656565 !important;
-    border-bottom: 1px solid #656565 !important;
+    border-left: 1px solid var(--AndroidPolice-gray-1) !important;
+    border-right: 1px solid var(--AndroidPolice-gray-1) !important;
+    border-bottom: 1px solid var(--AndroidPolice-gray-1) !important;
 }
 
 blockquote.pr .fade-text{
@@ -245,8 +304,8 @@ blockquote.pr .fade-text{
 }
 
 .note-note{
-    background: #292929 !important;
-    border: 1px solid #656565 !important;
+    background: var(--AndroidPolice-gray-2) !important;
+    border: 1px solid var(--AndroidPolice-gray-1) !important;
 }
 
 .note-note .note-heading{
@@ -254,25 +313,25 @@ blockquote.pr .fade-text{
 }
 
 .pb-app-widget-discover .pb-app-widget-table{
-    background: #292929 !important;
+    background: var(--AndroidPolice-gray-2) !important;
 }
 
 .pb-app-widget-discover .pb-wd-icon{
-    background: #292929 !important;
+    background: var(--AndroidPolice-gray-2) !important;
 }
 
 .pb-app-widget-discover .pb-wd-footer{
-    background: #292929 !important;
+    background: var(--AndroidPolice-gray-2) !important;
 }
 
 .pb-app-widget-discover{
-    border: 1px solid #656565 !important;
+    border: 1px solid var(--AndroidPolice-gray-1) !important;
 }
 
 
 blockquote p{
     text-shadow: 0px 0px 0 #191919;
-    color: #EAEAEA;
+    color: var(--AndroidPolice-secondary-text);
     font-style: normal;
     font-size: 15px;
 }
