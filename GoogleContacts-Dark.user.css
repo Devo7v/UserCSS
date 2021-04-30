@@ -592,9 +592,6 @@ div.UloUpf:nth-child(1) > div:nth-child(2) > a:nth-child(1){
   -ms-filter: invert(100%) !important;
 }
 
-}
-
-
 
 
 /*=====================Google Contacts OLD VERSION=====================*/
@@ -901,3 +898,5 @@ body{
   color: #999999 !important;
   border: 1px solid #444444 !important;
 }
+
+}/*END*/
