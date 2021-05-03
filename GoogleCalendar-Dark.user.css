@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Calendar - Dark Style
 @namespace   Devo7v
-@version     0.1.2
+@version     0.1.3
 @homepageURL https://github.com/Devo7v/UserCSS
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleCalendar-Dark.user.css
 @license     CC-BY-NC-SA-4.0
@@ -822,12 +822,12 @@
     }
 
     /*Title text*/
-    .tOrNgd {
+    .tOrNgd, .O9Lx9e {
         color: var(--gcal-primary-text-color) !important;
     }
 
     /*Other text*/
-    .PbnGhe {
+    .PbnGhe, .SDtMeb {
         color: var(--gcal-primary-text-color) !important;
     }
 
