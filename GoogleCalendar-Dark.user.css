@@ -29,6 +29,10 @@
 ==/UserStyle== */
 @-moz-document url-prefix("http://www.google.com/calendar/"), url-prefix("https://www.google.com/calendar/"), url-prefix("http://calendar.google.com/"), url-prefix("https://calendar.google.com/") {
     /*If you want to fully theme the Google Bar at the top, install the Google Bar - Dark Style (https://userstyles.org/styles/120351/google-bar-dark-style)*/
+
+/*Comment out the following line if you want this style to apply regardless of System Dark Mode settings*/
+@media (prefers-color-scheme: dark)  {
+
     :root {
         --gcal-accent-color: gcal-accent-color;
 
@@ -822,12 +826,12 @@
     }
 
     /*Title text*/
-    .tOrNgd, .O9Lx9e {
+    .tOrNgd {
         color: var(--gcal-primary-text-color) !important;
     }
 
     /*Other text*/
-    .PbnGhe, .SDtMeb {
+    .PbnGhe {
         color: var(--gcal-primary-text-color) !important;
     }
 
@@ -1017,7 +1021,7 @@
         color: var(--gcal-primary-text-color) !important;
     }
 }
-
+}
 @-moz-document url-prefix("http://www.google.com/mail/"), url-prefix("https://www.google.com/mail/"), url-prefix("http://mail.google.com/"), url-prefix("https://mail.google.com/") {
 
     /*=============Formatting for the Calendar widget in Gmail=============*/
