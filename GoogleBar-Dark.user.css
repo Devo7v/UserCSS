@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Bar - Dark Style
 @namespace   Devo7v
-@version     0.2.0
+@version     0.2.1
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css
@@ -97,6 +97,13 @@ if SystemTheme == "Dark" {
             --gbar-box-shadow2: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23), 0 -10px 20px rgba(0,0,0,0.19), 0 -6px 6px rgba(0,0,0,0.23);
             /*creates a shadow on all sides, comment out this line to remove*/
         }
+        /*LEGACY Apps icon in Google bar*/
+        .gb_C.gb_rc{
+            border: none !important;
+            /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
+            background-position: -40px -1800px !important;
+            opacity: 1.00 !important;
+        }
     }
     @media (prefers-color-scheme: light)  {
         :root{
@@ -135,6 +142,13 @@ if SystemTheme == "Light" {
             --gbar-box-shadow2: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23), 0 -10px 20px rgba(0,0,0,0.19), 0 -6px 6px rgba(0,0,0,0.23);
             /*creates a shadow on all sides, comment out this line to remove*/
         }
+         /*LEGACY Apps icon in Google bar*/
+        .gb_C.gb_rc{
+            border: none !important;
+            /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
+            background-position: -40px -1800px !important;
+            opacity: 1.00 !important;
+        }
     }
     @media (prefers-color-scheme: dark)  {
         :root{
@@ -172,17 +186,24 @@ if SystemTheme == "Always" {
             --gbar-box-shadow2: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23), 0 -10px 20px rgba(0,0,0,0.19), 0 -6px 6px rgba(0,0,0,0.23);
             /*creates a shadow on all sides, comment out this line to remove*/
         }
+         /*LEGACY Apps icon in Google bar*/
+        .gb_C.gb_rc{
+            border: none !important;
+            /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
+            background-position: -40px -1800px !important;
+            opacity: 1.00 !important;
+        }
 }
 /*=======END Set the colors based on system theme option=======*/
 
 if IconColor == "White"{
     /*Logo Text Color*/
-    .gb_Wc, .NkK3Fc span[role="heading"]{
+    .gb_5d, .NkK3Fc span[role="heading"]{
         color: var(--gbar-icon-color) !important;
     }
 
     /*Coloring for svg icons in new Google Bar*/
-    .gb_qa svg{
+    .gb_pa svg{
         fill: var(--gbar-icon-color) !important;
         color: var(--gbar-button-color-2) !important;
     }
@@ -191,24 +212,16 @@ if IconColor == "White"{
     .gb_g{
         border-right: 0px solid var(--gbar-border-color) !important;
     }
-    
-    /*LEGACY Apps icon in Google bar*/
-    .gb_D.gb_sc{
-        border: none !important;
-        /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
-        background-position: -40px -1800px !important;
-        opacity: 1.00 !important;
-    }
 }
         
 if IconColor == "Custom"{
     /*Logo Text Color*/
-    .gb_Wc, .NkK3Fc span[role="heading"]{
+    .gb_5d, .NkK3Fc span[role="heading"]{
         color: var(--gbar-icon-color-custom) !important;
     }
 
     /*Coloring for svg icons in new Google Bar*/
-    .gb_qa svg{
+    .gb_pa svg{
         fill: var(--gbar-icon-color-custom) !important;
         color: var(--gbar-button-color-2) !important;
     }
@@ -239,7 +252,7 @@ header#gb /*New Google Bar*/
 }
 
 /*Background color for Search box*/
-#gbqfqw, .gb_Ue{
+#gbqfqw, .gb_Te{
     /*background: var(--gbar-light-background-color) !important;*/
     background: none !important;
     background: rgba(255,255,255,0.16) !important;
@@ -250,7 +263,7 @@ header#gb /*New Google Bar*/
 }*/
 
 /*Text color for Search box*/
-.gbqfif, .gb_ff, .gb_ff::placeholder{
+.gbqfif, .gb_ef, .gb_ef::placeholder{
     color: var(--gbar-accent-color) !important;
 }
 
@@ -325,16 +338,16 @@ if AppsPopup {
 
     /*=========================User Popup=========================*/
     /*Main background color*/
-    .gb_4a.gb_na, .gb_F{
+    .gb_4a.gb_na, .gb_E{
         background: var(--gbar-light-background-color) !important;
         box-shadow: var(--gbar-box-shadow2) !important;
     }
     
     /*Picture icon background*/
-    .gb_fb{
+    .gb_eb{
         background: var(--gbar-button-color) !important;
     }
-    .gb_fb:hover{
+    .gb_eb:hover{
         background: var(--gbar-light-background-color) !important;
         box-shadow: var(--gbar-box-shadow2) !important;
     }
@@ -343,43 +356,43 @@ if AppsPopup {
     }
 
     /*User name*/
-    .gb_nb, .gb_ob{
+    .gb_mb, .gb_ob{
         color: var(--gbar-border-color-2) !important;
     }
 
     /*Buttons background color*/
-    .gb_Qe{
+    .gb_Pe{
         background: var(--gbar-button-color) !important;
         border-color: var(--gbar-button-color) !important;
         color: var(--gbar-border-color-2) !important;
     }
-    .gb_Qe:hover, .gb_ub:hover{
+    .gb_Pe:hover, .gb_ub:hover{
         background-color: var(--gbar-main-background-color) !important;
         box-shadow: var(--gbar-box-shadow) !important;
     }
 
     /*Secondary user background*/
-    .gb_Mb:hover{
+    .gb_Lb:hover{
         background: var(--gbar-button-color) !important;
         box-shadow: var(--gbar-box-shadow) !important;
     }
 
     /*Secondary user text color*/
-    .gb_1b{
+    .gb_0b{
         color: var(--gbar-border-color-2) !important;
     }
     
     /*All Brand Accounts background*/
-    .gb_Qb{
+    .gb_Pb{
         background: var(--gbar-light-background-color) !important;
     }
-    .gb_Qb:hover{
+    .gb_Pb:hover{
         background: var(--gbar-button-color) !important;
         box-shadow: var(--gbar-box-shadow) !important;
     }
     
     /*All Brand Accounts text color*/
-    .gb_bc{
+    .gb_ac{
         color: var(--gbar-border-color-2) !important;
     }
     
@@ -389,12 +402,12 @@ if AppsPopup {
     }
 
     /*Add another account background*/
-    .gb_wb{
+    .gb_vb{
         background: var(--gbar-light-background-color) !important;
         border-top: 0px solid var(--gbar-border-color) !important;
     }
     
-    .gb_wb:hover, .gb_Rb:hover{
+    .gb_vb:hover, .gb_tb:hover{
         background: var(--gbar-button-color) !important;
         box-shadow: var(--gbar-box-shadow) !important;
     }
@@ -405,12 +418,12 @@ if AppsPopup {
     }
 
     /*Add another account text*/
-    .gb_Bb{
+    .gb_Ab{
         color: var(--gbar-border-color-2) !important;
     }
 
     /*Dividing Lines*/
-    .gb_Fb, .gb_Cb{
+    .gb_Eb, .gb_Bb{
         border-top: 0px solid var(--gbar-border-color) !important;
         border-bottom: 0px solid var(--gbar-border-color) !important;
     }
@@ -425,18 +438,16 @@ if AppsPopup {
     color: var(--gbar-text-color) !important;
 }
 
-if SystemTheme == "Dark" {
-    @media (prefers-color-scheme: dark)  {
 /*Background color for the Google bar*/
-.gb_If{
+.gb_Hf{
     background: var(--gbar-main-background-color) !important;
 }
 
 /*Fix for Google Play logo*/
-.gb_uc{
+.gb_tc{
     display: none !important;    
 }
-.gb_je{
+.gb_ke{
     width: 183px !important;
     height: 39px !important;
     /*https://i.imgur.com/QgS6N1E.png*/
@@ -444,8 +455,7 @@ if SystemTheme == "Dark" {
     background-size: 183px 39px !important;
 }
 }
-}
-}
+
 @-moz-document url-prefix("http://www.google.com/plus/"), url-prefix("https://www.google.com/plus/"), url-prefix("http://plus.google.com/"), url-prefix("https://plus.google.com/"),
     url-prefix("https://example.com/"){
 
