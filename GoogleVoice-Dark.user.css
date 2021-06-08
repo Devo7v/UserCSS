@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.2.1
+@version     0.2.2
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -448,7 +448,7 @@ md-dialog.md-default-theme, md-dialog {
 /*======= unread counts =======*/
 .IhMtsf-ho7Xm-NnAfwf, .navItemBadge {
     background-color: var(--gvoice-accent-color) !important;
-    color: var(--gvoice-white) !important;
+    color: #FFFFFF !important;
 }
 
 /* call dialog call button */
