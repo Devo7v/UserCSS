@@ -170,6 +170,11 @@ img.gb_uc {
     fill: var(--gvoice-accent-color) !important;
 }
 
+/*Bottom Border for the Google Bar*/
+#gvPageRoot > div:nth-child(1){
+    border-bottom: 0px solid var(--gbar-border-color) !important
+}
+
 /*Highlight and hovering background*/
 .rkljfb-gk6SMd, .rkljfb-H9tDt:hover {
     background-color: var(--gvoice-background-color-light) !important;
