@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Music - Light Style
 @namespace   Devo7v
-@version     0.1.0
+@version     0.1.1
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/YouTubeMusic-Light.user.css
@@ -70,6 +70,9 @@ if SystemTheme == "Light" {
             --ytmusic-subtitle-1_-_--yt-endpoint-color: --yt-spec-text-secondary !important;
             --ytmusic-subtitle-1_-_--yt-endpoint-hover-color: --yt-spec-text-secondary !important;
             --ytmusic-subtitle-1_-_--yt-endpoint-visited-color: --yt-spec-text-secondary !important;
+            
+            /*VARIABLES CREATED FOR THE STYLE*/
+            --ytmusic-border-color: rgba(0,0,0,0.1)
         }
 
         /*SETS THE LOGO TO A DARK TEXT VERSION OF THE YOUTUBE MUSIC LOGO IF SELECTED BY THE USER*/
@@ -88,6 +91,7 @@ if SystemTheme == "Light" {
     @media (prefers-color-scheme: dark) {
         :root {
             --ytmusic-background: ytmusic-black-background !important;
+            --ytmusic-border-color: rgba(255,255,255,0.1) !important;
         }
     }
 }
@@ -112,6 +116,9 @@ if SystemTheme == "Dark" {
             --ytmusic-subtitle-1_-_--yt-endpoint-color: --yt-spec-text-secondary !important;
             --ytmusic-subtitle-1_-_--yt-endpoint-hover-color: --yt-spec-text-secondary !important;
             --ytmusic-subtitle-1_-_--yt-endpoint-visited-color: --yt-spec-text-secondary !important;
+        
+            /*VARIABLES CREATED FOR THE STYLE*/
+            --ytmusic-border-color: rgba(0,0,0,0.1)
         }
 
         /*SETS THE LOGO TO A DARK TEXT VERSION OF THE YOUTUBE MUSIC LOGO IF SELECTED BY THE USER*/
@@ -130,6 +137,7 @@ if SystemTheme == "Dark" {
     @media (prefers-color-scheme: light) {
         :root {
             --ytmusic-background: ytmusic-black-background !important;
+            --ytmusic-border-color: rgba(255,255,255,0.1) !important;
         }
     }
 }
@@ -154,6 +162,9 @@ if SystemTheme == "Always" {
             --ytmusic-subtitle-1_-_--yt-endpoint-color: --yt-spec-text-secondary !important;
             --ytmusic-subtitle-1_-_--yt-endpoint-hover-color: --yt-spec-text-secondary !important;
             --ytmusic-subtitle-1_-_--yt-endpoint-visited-color: --yt-spec-text-secondary !important;
+        
+            /*VARIABLES CREATED FOR THE STYLE*/
+            --ytmusic-border-color: rgba(0,0,0,0.1)
         }
 
         /*SETS THE LOGO TO A DARK TEXT VERSION OF THE YOUTUBE MUSIC LOGO IF SELECTED BY THE USER*/
@@ -184,17 +195,11 @@ ytmusic-player-page, /*Player page background*/
 /*MENU ITEMS IN THE TOP NAV BAR*/
 /*Logo*/
 ytmusic-nav-bar .left-content [aria-label=Home] {
-    /*background: url(https://logos-world.net/wp-content/uploads/2021/04/Youtube-Music-Emblem-700x394.png);
-    /*background: url(https://play-music.gstatic.com/fe/aa1d36d090084eb930e7980d07426111/play_music.svg) !important;
-    width: 85px;
-    height: 24px;/**/
     padding: 8px;
     border-radius: 5px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    
-    
 }
 
 /*Selected or hovered header item*/
@@ -220,7 +225,7 @@ iron-input.tp-yt-paper-input > input.tp-yt-paper-input, /*Library section Recent
 ytmusic-tabs.iron-selected .tab.ytmusic-tabs, .tab.selected.ytmusic-tabs, /*Search results page, selected category*/
 .text.style-scope.ytmusic-chip-cloud-chip-renderer, /*Search results page, subcategory bubbles*/
 .title, /*Album title on the album page*/
-tp-yt-paper-tab.iron-selected.ytmusic-player-page, /*Player page, Up Next*/
+tp-yt-paper-tab.iron-selected.ytmusic-player-page, /*Player page, selected section (Up next or Lyrics)*/
 .dialog-title.ytmusic-settings-page, /*Settings title on the settings popup*/
 .text /*Text in some popup menus*/
 {
@@ -238,8 +243,10 @@ ytmusic-search-suggestion, /*Search result suggestions*/
 .more-button.ytmusic-shelf-renderer tp-yt-paper-button, /*Search results page, SHOW ALL*/
 .index, /*Track numbers*/
 .duration.ytmusic-player-queue-item, .byline.ytmusic-player-queue-item, /*Player page, Artist and duration*/
-.content-info-wrapper.ytmusic-player-bar .byline.ytmusic-player-bar, /*Artist and Album  on the music player*/
-#hover-time-info.ytmusic-player-bar /*Time when hovering over the progress bar*/
+tp-yt-paper-tab.ytmusic-player-page[disabled], /*Player page, not selected section (Up next or Lyrics)*/
+.content-info-wrapper.ytmusic-player-bar .byline.ytmusic-player-bar, /*Artist and Album on the music player*/
+#hover-time-info.ytmusic-player-bar, /*Time when hovering over the progress bar*/
+.time-info.ytmusic-player-bar /*Duration and total lenght of the song in the player bar*/
 {
     color: var(--yt-spec-text-secondary) !important;
 }
@@ -247,6 +254,11 @@ ytmusic-search-suggestion, /*Search result suggestions*/
 /*RIGHT CLICK MENU TEXT*/
 .yt-simple-endpoint:hover {
     color: var(--yt-endpoint-color) !important;
+}
+
+/*POPUP MENU BORDERS*/
+.ytmusic-popup-container {
+    border: 1px solid var(--ytmusic-border-color) !important;
 }
 
 /*NEXT AND PREVIOUS ITEMS BUTTONS*/
@@ -284,6 +296,11 @@ yt-button-renderer.watch-button.ytmusic-menu-renderer {
     background-color: var(--yt-spec-text-primary) !important;
 }
 
+/*QUEUE ITEMS*/
+tp-yt-paper-tabs.ytmusic-player-page, ytmusic-player-queue-item {
+    border-bottom: 1px solid var(--ytmusic-border-color) !important;
+}
+
 /*PROGRESS BAR*/
 #primaryProgress{
     background: var(--accent-color) !important;
@@ -301,4 +318,4 @@ yt-button-renderer.watch-button.ytmusic-menu-renderer {
     fill: var(--ytmusic-text-primary) !important;
 }
 
-/**/}
+}
