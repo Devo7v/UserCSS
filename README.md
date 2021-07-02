@@ -70,7 +70,7 @@ In order to fully theme the Google Bar within Google Voice, install the [Google 
 
 A light style for YouTube Music.  This style allows you to choose whether to use YouTube Music or Google Play Music branding as well as to modify the background color of the original dark theme.
 
-![alt text](https://github.com/Devo7v/UserCSS/raw/master/Screenshots/YouTubeMusic.JPG "YouTube Music - Light Style Screenshot")
+![alt text](https://github.com/Devo7v/UserCSS/raw/master/Screenshots/YouTubeMusic.jpg "YouTube Music - Light Style Screenshot")
 
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=for-the-badge)](https://raw.githubusercontent.com/Devo7v/UserCSS/master/YouTubeMusic-Light.user.css)
 
