@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.2.3
+@version     0.2.4
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -405,7 +405,10 @@ a.md-button.md-icon-button:hover:not([disabled]),
 /*.IC8yrb-haAclf, /* left side items section header */
 .TK1dEe-haAclf/* message section header */
 {
-    background-color: var(--gvoice-accent-color) !important;
+    background-color: var(--gvoice-background-color) !important;
+}
+.TK1dEe-haAclf::after{
+    border-top: 3px solid var(--gvoice-accent-color) !important;
 }
 
 /*Message Section Header*/
