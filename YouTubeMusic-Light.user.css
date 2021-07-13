@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Music - Light Style
 @namespace   Devo7v
-@version     0.1.3
+@version     0.1.4
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/YouTubeMusic-Light.user.css
@@ -270,7 +270,7 @@ ytmusic-search-suggestion, /*Search result suggestions*/
 .more-button.ytmusic-shelf-renderer tp-yt-paper-button, /*Search results page, SHOW ALL*/
 .index, /*Track numbers*/
 .duration.ytmusic-player-queue-item, .byline.ytmusic-player-queue-item, /*Player page, Artist and duration*/
-tp-yt-paper-tab.ytmusic-player-page[disabled], /*Player page, not selected section (Up next or Lyrics)*/
+tp-yt-paper-tab:not(.iron-selected) > .tab-content.tp-yt-paper-tab, /*Player page, not selected section (Up next or Lyrics)*/
 .content-info-wrapper.ytmusic-player-bar .byline.ytmusic-player-bar, /*Artist and Album on the music player*/
 #hover-time-info.ytmusic-player-bar, /*Time when hovering over the progress bar*/
 .time-info.ytmusic-player-bar /*Duration and total lenght of the song in the player bar*/
