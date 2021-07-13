@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Music - Light Style
 @namespace   Devo7v
-@version     0.1.2
+@version     0.1.3
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/YouTubeMusic-Light.user.css
@@ -276,6 +276,11 @@ tp-yt-paper-tab.ytmusic-player-page[disabled], /*Player page, not selected secti
 .time-info.ytmusic-player-bar /*Duration and total lenght of the song in the player bar*/
 {
     color: var(--yt-spec-text-secondary) !important;
+}
+
+/*ADD DROP SHADOW TO ALBUM ART*/
+#player.ytmusic-player-page {
+    box-shadow: 0 0 6px 1px rgba(0,0,0,1) !important;
 }
 
 /*RIGHT CLICK MENU TEXT*/
