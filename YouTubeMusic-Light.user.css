@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Music - Light Style
 @namespace   Devo7v
-@version     0.1.4
+@version     0.1.5
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/YouTubeMusic-Light.user.css
@@ -81,6 +81,7 @@ if SystemTheme == "Light" {
             --ytmusic-subtitle-1_-_--yt-endpoint-color: var(--yt-spec-text-secondary) !important;
             --ytmusic-subtitle-1_-_--yt-endpoint-hover-color: var(--yt-spec-text-secondary) !important;
             --ytmusic-subtitle-1_-_--yt-endpoint-visited-color: var(--yt-spec-text-secondary) !important;
+            --ytmusic-menu-item-hover-background-color: rgba(0,0,0,0.1) !important;
             
             /*VARIABLES CREATED FOR THE STYLE*/
             --yt-music-background: var(--yt-music-white-background);
@@ -127,6 +128,7 @@ if SystemTheme == "Dark" {
             --ytmusic-subtitle-1_-_--yt-endpoint-color: var(--yt-spec-text-secondary) !important;
             --ytmusic-subtitle-1_-_--yt-endpoint-hover-color: var(--yt-spec-text-secondary) !important;
             --ytmusic-subtitle-1_-_--yt-endpoint-visited-color: var(--yt-spec-text-secondary) !important;
+            --ytmusic-menu-item-hover-background-color: rgba(0,0,0,0.1) !important;
             
             /*VARIABLES CREATED FOR THE STYLE*/
             --yt-music-background: var(--yt-music-white-background);
@@ -173,6 +175,7 @@ if SystemTheme == "Always" {
             --ytmusic-subtitle-1_-_--yt-endpoint-color: var(--yt-spec-text-secondary) !important;
             --ytmusic-subtitle-1_-_--yt-endpoint-hover-color: var(--yt-spec-text-secondary) !important;
             --ytmusic-subtitle-1_-_--yt-endpoint-visited-color: var(--yt-spec-text-secondary) !important;
+            --ytmusic-menu-item-hover-background-color: rgba(0,0,0,0.1) !important;
             
             /*VARIABLES CREATED FOR THE STYLE*/
             --yt-music-background: var(--yt-music-white-background);
@@ -278,9 +281,17 @@ tp-yt-paper-tab:not(.iron-selected) > .tab-content.tp-yt-paper-tab, /*Player pag
     color: var(--yt-spec-text-secondary) !important;
 }
 
-/*ADD DROP SHADOW TO ALBUM ART*/
-#player.ytmusic-player-page {
-    box-shadow: 0 0 6px 1px rgba(0,0,0,1) !important;
+/*MODIFY ALBUM ART*/
+img.yt-img-shadow, #player.ytmusic-player-page, /*Album art on the now playing page*/
+.yt-simple-endpoint.image-wrapper, ytmusic-two-row-item-renderer .image.ytmusic-two-row-item-renderer, /*Album art/videos on the Home page. If you're going to add a shadow to these, then you'll also want to set the border-radius to 0% in the next rule.*/
+.left-items.ytmusic-responsive-list-item-renderer, /*Small thumbnails on the Home page*/
+.image.ytmusic-player-bar /*Thumbnail in the player bar*/
+{
+	box-shadow: 0 0 3px 0px rgba(0,0,0,1) !important;
+    border-radius: 0% !important; /*50% creates circles, 0% creates squares*/
+}
+yt-img-shadow[object-fit="CONTAIN"] img.yt-img-shadow {
+    object-fit: none !important;
 }
 
 /*RIGHT CLICK MENU TEXT*/
@@ -310,6 +321,10 @@ ytmusic-tabs.iron-selected .tab.ytmusic-tabs, .tab.selected.ytmusic-tabs, /*Sear
 /*DROPDOWN MENUS*/
 .dropdown-content.ytmusic-dropdown-renderer {
     background: var(--ytmusic-nav-bar) !important;
+}
+/*Hovering over a menu item*/
+tp-yt-paper-item:hover, tp-yt-paper-icon-item:hover, #navigation-endpoint:hover {
+    background: var(--ytmusic-menu-item-hover-background-color) !important;
 }
 
 /*SEARCH RESULTS PAGE*/
