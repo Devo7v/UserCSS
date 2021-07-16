@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Calendar - Dark Style
 @namespace   Devo7v
-@version     0.2.0
+@version     0.2.1
 @homepageURL https://github.com/Devo7v/UserCSS
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleCalendar-Dark.user.css
 @license     CC-BY-NC-SA-4.0
@@ -149,8 +149,9 @@ if SystemTheme == "Always" {
     }
 
     /*Background color when hovering over an app icon*/
-    .ONKrsd-jrnDlb-LgbsSe-ZmdkE .ONKrsd-jrnDlb-Bz112c-haAclf {
+    .DWWcKd-OomVLb-LgbsSe-ZmdkE .DWWcKd-OomVLb-LgbsSe-Bz112c-AHe6Kc {
         background-color: var(--gcal-enhanced2-background-color) !important;
+        border-color: var(--gcal-enhanced2-background-color) !important;
     }
 
     /*Background of the arrow at the bottom*/
@@ -182,7 +183,7 @@ if SystemTheme == "Always" {
   }
   
   /*Google Calendar Logo and text color*/
-    .gb_ie {
+    .gb_5d {
         color: var(--gcal-enhanced-text-color) !important;
     }
 
@@ -197,8 +198,9 @@ if SystemTheme == "Always" {
     }
 
     /*Previous/Next Month, Search, Settings icons*/
-    .rF3YF {
-        color: var(--gcal-dull-text-color) !important;
+    .gb_pa svg {
+        color: var(--gcal-primary-text-color) !important;
+        fill: var(--gcal-primary-text-color) !important;
     }
 
     /*Month Title text color*/
@@ -211,7 +213,7 @@ if SystemTheme == "Always" {
     }
 
     /*View (Month, Week, Day, etc) button*/
-    .Cd9hpd {
+    .HLI7qf {
         background-color: var(--gcal-enhanced2-background-color) !important;
         border: none !important;
     }
@@ -235,6 +237,7 @@ if SystemTheme == "Always" {
     /*Background color*/
     .q1j8lf {
         background-color: var(--gcal-enhanced-background-color) !important;
+        height: 95% !important;
     }
 
     /*Month text color*/
@@ -317,8 +320,19 @@ if SystemTheme == "Always" {
         border-bottom: 1px solid var(--gcal-primary-line-color) !important;
     }
 
+    /*Border above mini calendar*/
+    .hEtGGf::after {
+        display: none !important;
+    }
+    
+    /*Fix for seach for people border*/
+    .qXIcZc .ULpymb.rFrNMe {
+        border-radius: 0px !important;
+        border: none !important;
+    }
+    
     /*My calendars and Other calendars hover*/
-    .VTaCRb:hover, .VTaCRb:focus {
+    .kMp0We:hover, .kMp0We:focus {
         background-color: var(--gcal-enhanced-background-color) !important;
     }
 
@@ -656,7 +670,7 @@ if SystemTheme == "Always" {
     }
 
     /*Times text*/
-    .LLxvl.vXnnM {
+    .LLxvl.vXnnM, .snByac {
         color: var(--gcal-primary-text-color) !important;
     }
 
@@ -684,9 +698,9 @@ if SystemTheme == "Always" {
     }
 
     /*Title and Date/Time Boxes*/
-    .Kb2sf {
+    .Kb2sf, .TgcD5e {
         background-color: var(--gcal-enhanced-background-color) !important;
-        border: 1px solid var(--gcal-dark-line-color) !important;
+        border: 0px solid var(--gcal-dark-line-color) !important;
     }
 
     /*Add Title text color*/
@@ -751,13 +765,13 @@ if SystemTheme == "Always" {
     }
 
     /*Add conferencing button*/
-    .HLI7qf .c7fp5b {
+    /*.HLI7qf .c7fp5b {
         color: var(--gcal-primary-text-color) !important;
         background: var(--gcal-enhanced-background-color) !important;
         border: 1px solid var(--gcal-dark-line-color) !important;
     }
 
-    /*Add conferencing icon*/
+    /*Add conferencing */
     .DPvwYc svg {
         fill: var(--gcal-primary-text-color) !important;
     }
@@ -806,7 +820,7 @@ if SystemTheme == "Always" {
     }
 
     /*Guests can text*/
-    .hGcgEd {
+    .hGcgEd, .GEhdLd {
         color: var(--gcal-primary-text-color) !important;
     }
 
@@ -838,7 +852,7 @@ if SystemTheme == "Always" {
     }
 
     /*Icons*/
-    .tzcF6 {
+    .tzcF6, .NMm5M {
         color: var(--gcal-primary-text-color) !important;
     }
 
@@ -1057,7 +1071,7 @@ if SystemTheme == "Always" {
     }
 
     /*Fix for drop down boxes*/
-    .HLI7qf {
+    /*.HLI7qf {
         background-color: var(--gcal-enhanced-background-color) !important;
     }
 
