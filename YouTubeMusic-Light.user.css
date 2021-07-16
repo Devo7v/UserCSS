@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Music - Light Style
 @namespace   Devo7v
-@version     0.1.5
+@version     0.1.6
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/YouTubeMusic-Light.user.css
@@ -267,6 +267,7 @@ tp-yt-paper-tab.iron-selected.ytmusic-player-page, /*Player page, selected secti
 .subtitle.ytmusic-two-row-item-renderer, /**/
 .third-title.ytmusic-two-row-item-renderer, /**/
 .secondary-flex-columns.style-scope.ytmusic-responsive-list-item-renderer, /**/
+.ytmusic-search-box::placeholder, /*Placeholder text in the search box*/
 ytmusic-search-suggestion, /*Search result suggestions*/
 .tab.ytmusic-item-section-tab-renderer, /*Library section other category text*/
 .tab.ytmusic-tabs, /*Search results page, nonselected category*/
