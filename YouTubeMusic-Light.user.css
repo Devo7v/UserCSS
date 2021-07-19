@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Music - Light Style
 @namespace   Devo7v
-@version     0.1.6
+@version     0.1.7
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/YouTubeMusic-Light.user.css
@@ -208,6 +208,9 @@ ytmusic-player-page, /*Player page background*/
 }
 
 /*NAVIGATION PROGRESS BAR AT THE TOP*/
+yt-page-navigation-progress {
+    background-color: var(--yt-music-grey-background) !important;
+}
 #progress.yt-page-navigation-progress {
     background-color: var(--yt-music-accent-color) !important;
 }
@@ -285,10 +288,11 @@ tp-yt-paper-tab:not(.iron-selected) > .tab-content.tp-yt-paper-tab, /*Player pag
 /*MODIFY ALBUM ART*/
 img.yt-img-shadow, #player.ytmusic-player-page, /*Album art on the now playing page*/
 .yt-simple-endpoint.image-wrapper, ytmusic-two-row-item-renderer .image.ytmusic-two-row-item-renderer, /*Album art/videos on the Home page. If you're going to add a shadow to these, then you'll also want to set the border-radius to 0% in the next rule.*/
-.left-items.ytmusic-responsive-list-item-renderer, /*Small thumbnails on the Home page*/
-.image.ytmusic-player-bar /*Thumbnail in the player bar*/
+/*.left-items.ytmusic-responsive-list-item-renderer, /*Small thumbnails on the Home page*/
+.image.ytmusic-player-bar, /*Thumbnail in the player bar*/
+ytmusic-thumbnail-renderer[thumbnail-crop_="MUSIC_THUMBNAIL_CROP_CIRCLE"], ytmusic-thumbnail-renderer[thumbnail-crop_="MUSIC_THUMBNAIL_CROP_CIRCLE"] .image.ytmusic-thumbnail-renderer /*Artist/Alum pictures when viewing the artist or album list in the UPLOADED library view*/
 {
-	box-shadow: 0 0 3px 0px rgba(0,0,0,1) !important;
+    box-shadow: 0 0 3px 0px rgba(0,0,0,1) !important;
     border-radius: 0% !important; /*50% creates circles, 0% creates squares*/
 }
 yt-img-shadow[object-fit="CONTAIN"] img.yt-img-shadow {
@@ -342,6 +346,11 @@ ytmusic-chip-cloud-chip-renderer[chip-style="STYLE_PRIMARY"] a.ytmusic-chip-clou
 yt-button-renderer.watch-button.ytmusic-menu-renderer {
     color: var(--ytmusic-color-black1) !important;
     background-color: var(--yt-spec-text-primary) !important;
+}
+/*Secondary Button*/
+.edit-playlist-button {
+    --yt-button-color: var(--yt-spec-text-primary) !important;
+    border-color: var(--yt-spec-text-primary) !important;
 }
 
 /*QUEUE ITEMS*/
