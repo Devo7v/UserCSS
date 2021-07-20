@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Music - Light Style
 @namespace   Devo7v
-@version     0.1.7
+@version     0.1.8
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/YouTubeMusic-Light.user.css
@@ -368,11 +368,21 @@ tp-yt-paper-tabs.ytmusic-player-page, ytmusic-player-queue-item {
 }
 
 /*MEDIA CONTROLS*/
-.previous-button .tp-yt-paper-icon-button,
-#play-pause-button .tp-yt-paper-icon-button, 
-.next-button .tp-yt-paper-icon-button,
-.toggle-player-page-button .tp-yt-paper-icon-button{
+.previous-button .tp-yt-paper-icon-button, /*Previous button*/
+#play-pause-button .tp-yt-paper-icon-button, /*Play/pause button*/
+.next-button .tp-yt-paper-icon-button, /*Next button*/
+.toggle-player-page-button .tp-yt-paper-icon-button, /*Toggle full screen player vs miniplayer*/
+{
     fill: var(--ytmusic-text-primary) !important;
+}
+/*Repeat Button*/
+ytmusic-player-bar:not([repeat-mode_="NONE"]) .repeat.ytmusic-player-bar {
+    color: var(--ytmusic-text-primary) !important;
+}
+
+/*SPINNER COLOR*/
+.tp-yt-paper-spinner-lite {
+    color: var(--yt-music-accent-color) !important;
 }
 
 }
