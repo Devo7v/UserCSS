@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Contacts - Dark Style
 @namespace   Devo7v
-@version     0.2.2
+@version     0.2.3
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleContacts-Dark.user.css
@@ -53,12 +53,15 @@
     }
      if gcontacts-corner == "Round"{
             --gcontacts-corner-radius: 2.0rem;
+            --gcontacts-contact-radius: 50%;
     }
     else if gcontacts-corner == "Square"{
             --gcontacts-corner-radius: 0.0rem;
+            --gcontacts-contact-radius: 0%;
     }
     else if gcontacts-corner == "Squircle"{
             --gcontacts-corner-radius: 0.75rem;
+            --gcontacts-contact-radius: 18.75%;
     }
 }
 
@@ -406,7 +409,7 @@ color: #666666 !important;
 /*Drop shadow for Picture*/
 .YpExIf, .HfynVe, .LrbNhc {
   /*box-shadow: 0 0 1px 1px #666666 !important;*/
-  border-radius: var(--gcontacts-corner-radius) !important;
+  border-radius: var(--gcontacts-contact-radius) !important;
 }
 
 /*Drop shadow for Header*/
