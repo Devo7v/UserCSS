@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.2.5
+@version     0.2.6
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -131,7 +131,8 @@ if SystemTheme == "Always" {
 .md-button.md-icon-button, /*highlight when hovering over 3-dot for each message*/
 .qVBuHc-haAclf.qVBuHc-E6eRQd .qVBuHc-aTv5jf, /*Video attachments*/
 .gmat-nav-list-item, /*selected icon in the nav bar*/
-.rkljfb-H9tDt::before/*selected items in a list*/
+.rkljfb-H9tDt::before, /*selected items in a list*/
+.call-button[_ngcontent-pcw-c18], /*call button next to the name/number in the dialer*/
 {
     border-radius: var(--gvoice-corner-radius) !important;
     /*2.0 is the default (rounded), 0 will make the edges completely square*/
@@ -370,6 +371,7 @@ md-menu-content {
 
 /*Icons*/
 .md-button,
+.mat-icon,
 .md-icon-button,
 .gv-nav-item-icon,
 .material-icons-extended {
@@ -516,7 +518,7 @@ md-select-menu md-content md-option:hover:not([disabled]) {
 }
 
 /* dial pad text */
-.lp3vjd-LgbsSe, .lp3vjd-cHYyed, .button[_ngcontent-jcn-c21] {
+.lp3vjd-LgbsSe, .lp3vjd-cHYyed, .button[_ngcontent-jcn-c21], .button[_ngcontent-pcw-c22] {
     color: var(--gvoice-white) !important;
 }
 
