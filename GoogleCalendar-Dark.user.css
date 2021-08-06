@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Calendar - Dark Style
 @namespace   Devo7v
-@version     0.2.1
+@version     0.2.2
 @homepageURL https://github.com/Devo7v/UserCSS
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleCalendar-Dark.user.css
 @license     CC-BY-NC-SA-4.0
@@ -74,7 +74,8 @@ if SystemTheme == "Dark" {
 
             --gcal-primary-background-color: #FFFFFF;
             --gcal-enhanced-background-color: #EEEEEE;
-           --gcal-primary-line-color: #dadce0;
+            --gcal-enhanced2-background-color:  #DDDDDD;
+            --gcal-primary-line-color: #dadce0;
         }
     }
 }
@@ -98,13 +99,14 @@ if SystemTheme == "Light" {
             --gcal-dark-line-color: gcal-dark-line-color;
         }
     }
-    @media (prefers-color-scheme: dark)  {
+    @media (prefers-color-scheme: light)  {
         :root {
             --gcal-accent-color: gcal-accent-color;
 
             --gcal-primary-background-color: #FFFFFF;
             --gcal-enhanced-background-color: #EEEEEE;
-           --gcal-primary-line-color: #dadce0;
+            --gcal-enhanced2-background-color:  #DDDDDD;
+            --gcal-primary-line-color: #dadce0;
         }
     }
 }
