@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Music - Light Style
 @namespace   Devo7v
-@version     0.1.8
+@version     0.1.9
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/YouTubeMusic-Light.user.css
@@ -259,6 +259,7 @@ ytmusic-tabs.iron-selected .tab.ytmusic-tabs, .tab.selected.ytmusic-tabs, /*Sear
 .text.style-scope.ytmusic-chip-cloud-chip-renderer, /*Search results page, subcategory bubbles*/
 .title, /*Album title on the album page*/
 tp-yt-paper-tab.iron-selected.ytmusic-player-page, /*Player page, selected section (Up next or Lyrics)*/
+.song-title.ytmusic-player-queue-item, /*Song title in the queue list*/
 .dialog-title.ytmusic-settings-page, /*Settings title on the settings popup*/
 .text /*Text in some popup menus*/
 {
@@ -280,6 +281,7 @@ ytmusic-search-suggestion, /*Search result suggestions*/
 tp-yt-paper-tab:not(.iron-selected) > .tab-content.tp-yt-paper-tab, /*Player page, not selected section (Up next or Lyrics)*/
 .content-info-wrapper.ytmusic-player-bar .byline.ytmusic-player-bar, /*Artist and Album on the music player*/
 #hover-time-info.ytmusic-player-bar, /*Time when hovering over the progress bar*/
+yt-formatted-string.byline > a, /*Artist & Album in the player bar*/
 .time-info.ytmusic-player-bar /*Duration and total lenght of the song in the player bar*/
 {
     color: var(--yt-spec-text-secondary) !important;
