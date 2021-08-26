@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Music - Light Style
 @namespace   Devo7v
-@version     0.1.9
+@version     0.1.10
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/YouTubeMusic-Light.user.css
@@ -73,6 +73,7 @@ if SystemTheme == "Light" {
             --yt-spec-static-brand-white: var(--yt-music-black-background) !important;
             --yt-endpoint-color: var(--yt-music-grey-text) !important;
             --yt-compact-link-icon-color: var(--yt-music-white-text) !important;
+            --ytmusic-overlay-text-secondary: var(--yt-music-grey-text) !important;
             --ytmusic-nav-bar: var(--yt-music-white-background) !important;
             --ytmusic-color-black1: var(--yt-music-grey-background) !important;
             --ytmusic-text-primary: var(--yt-music-black-text) !important;
@@ -120,6 +121,7 @@ if SystemTheme == "Dark" {
             --yt-spec-static-brand-white: var(--yt-music-black-background) !important;
             --yt-endpoint-color: var(--yt-music-grey-text) !important;
             --yt-compact-link-icon-color: var(--yt-music-white-text) !important;
+            --ytmusic-overlay-text-secondary: var(--yt-music-grey-text) !important;
             --ytmusic-nav-bar: var(--yt-music-white-background) !important;
             --ytmusic-color-black1: var(--yt-music-grey-background) !important;
             --ytmusic-text-primary: var(--yt-music-black-text) !important;
@@ -167,6 +169,7 @@ if SystemTheme == "Always" {
             --yt-spec-static-brand-white: var(--yt-music-black-background) !important;
             --yt-endpoint-color: var(--yt-music-grey-text) !important;
             --yt-compact-link-icon-color: var(--yt-music-white-text) !important;
+            --ytmusic-overlay-text-secondary: var(--yt-music-grey-text) !important;
             --ytmusic-nav-bar: var(--yt-music-white-background) !important;
             --ytmusic-color-black1: var(--yt-music-grey-background) !important;
             --ytmusic-text-primary: var(--yt-music-black-text) !important;
