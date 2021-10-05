@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Music - Light Style
 @namespace   Devo7v
-@version     0.1.12
+@version     0.1.13
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/YouTubeMusic-Light.user.css
@@ -383,6 +383,11 @@ tp-yt-paper-tabs.ytmusic-player-page, ytmusic-player-queue-item {
 /*Repeat Button*/
 ytmusic-player-bar:not([repeat-mode_="NONE"]) .repeat.ytmusic-player-bar {
     color: var(--ytmusic-text-primary) !important;
+}
+
+/*Like/dislike buttons*/
+ytmusic-like-button-renderer[like-status="LIKE"] .like.ytmusic-like-button-renderer, ytmusic-like-button-renderer[like-status="DISLIKE"] .dislike.ytmusic-like-button-renderer{
+    color: var(--yt-spec-text-secondary) !important
 }
 
 /*SPINNER COLOR*/
