@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Music - Light Style
 @namespace   Devo7v
-@version     0.1.13
+@version     0.1.14
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/YouTubeMusic-Light.user.css
@@ -261,6 +261,7 @@ iron-input.tp-yt-paper-input > input.tp-yt-paper-input, /*Library section Recent
 ytmusic-tabs.iron-selected .tab.ytmusic-tabs, .tab.selected.ytmusic-tabs, /*Search results page, selected category*/
 .text.style-scope.ytmusic-chip-cloud-chip-renderer, /*Search results page, subcategory bubbles*/
 .title, /*Album title on the album page*/
+#description, /*Album description text on the album page*/
 tp-yt-paper-tab.iron-selected.ytmusic-player-page, /*Player page, selected section (Up next or Lyrics)*/
 .song-title.ytmusic-player-queue-item, /*Song title in the queue list*/
 .dialog-title.ytmusic-settings-page, /*Settings title on the settings popup*/
@@ -353,8 +354,8 @@ yt-button-renderer.watch-button.ytmusic-menu-renderer {
     background-color: var(--yt-spec-text-primary) !important;
 }
 /*Secondary Button*/
-.edit-playlist-button {
-    --yt-button-color: var(--yt-spec-text-primary) !important;
+.edit-playlist-button, ytmusic-toggle-button-renderer #button.ytmusic-toggle-button-renderer {
+    --yt-button-color: var(--yt-spec-text-secondary) !important;
     border-color: var(--yt-spec-text-primary) !important;
 }
 
