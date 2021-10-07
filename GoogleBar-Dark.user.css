@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Bar - Dark Style
 @namespace   Devo7v
-@version     0.2.2
+@version     0.2.3
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css
@@ -361,12 +361,12 @@ if AppsPopup {
     }
 
     /*Buttons background color*/
-    .gb_3c{
+    .gb_Je{
         background: var(--gbar-button-color) !important;
         border-color: var(--gbar-button-color) !important;
         color: var(--gbar-border-color-2) !important;
     }
-    .gb_3c:hover, .gb_ub:hover{
+    .gb_Je:hover, .gb_ub:hover{
         background-color: var(--gbar-main-background-color) !important;
         box-shadow: var(--gbar-box-shadow) !important;
     }
