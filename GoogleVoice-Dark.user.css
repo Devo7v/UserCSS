@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.2.8
+@version     0.2.9
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -122,7 +122,7 @@ if SystemTheme == "Always" {
 /*Make Elements Square or Round*/
 .Bqxti-VCkuzd, /*sent and received message bubbles*/
 .YxDDMd-Dfn1ve .YxDDMd-VCkuzd, .d8IJmb-haAclf.d8IJmb-E6eRQd, .d8IJmb-haAclf.d8IJmb-E6eRQd .d8IJmb-HiaYvf, /*corners of pictures in threads*/
-.A7jSV-YLEF4c, /*User pictures*/
+.photo, /*User pictures*/
 .avatar, /*User pictures in the message list*/
 .GYQtq-CLHpQd .GYQtq-mpvPNd, /*Send a message icon*/
 .rkljfb-rVkNNe, /*Highlight when selecting multiple items/threads*/
@@ -132,7 +132,7 @@ if SystemTheme == "Always" {
 .qVBuHc-haAclf.qVBuHc-E6eRQd .qVBuHc-aTv5jf, /*Video attachments*/
 .gmat-nav-list-item, /*selected icon in the nav bar*/
 .rkljfb-H9tDt::before, /*selected items in a list*/
-.call-button[_ngcontent-pcw-c18], /*call button next to the name/number in the dialer*/
+.call-button, /*call button next to the name/number in the dialer*/
 {
     border-radius: var(--gvoice-corner-radius) !important;
     /*2.0 is the default (rounded), 0 will make the edges completely square*/
