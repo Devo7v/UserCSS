@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Contacts - Dark Style
 @namespace   Devo7v
-@version     0.2.3
+@version     0.2.4
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleContacts-Dark.user.css
@@ -126,7 +126,7 @@ if SystemTheme == "Always" {
 /*=======END Set the colors based on system theme option=======*/
 
 /*Search Bar Background*/
-.gb_6e{
+.gb_Le{
     background: none !important;
     background: rgba(255,255,255,0.16) !important;
     border: none !important;
@@ -321,18 +321,28 @@ body{
 
 /*=======Popup when adding new contact=======*/
 /*Header Background Color*/
-.PO4Br, .fbkutb{
-    background-color: var(--gcontacts-background-color-2) !important;
+.PO4Br, .fbkutb, .FGgXHc{
+    background-color: var(--gcontacts-background-color) !important;
 }
 
 /*Background*/
 .e2txse, .PWsB5e{
-    background-color: var(--gcontacts-background-color-2) !important;
+    background-color: var(--gcontacts-background-color) !important;
 }
 
 /*Contact name text color*/
-.y4sJgd{
+.y4sJgd, .qhML4e, .m8VNgd{
     color: #999999 !important;
+}
+
+/*Random Icons*/
+.uQXbGe{
+    background-color: var(--gcontacts-background-color) !important;
+}
+
+/*Contact Detials*/
+.dlP5vf, .Yz8cvd{
+    background-color: var(--gcontacts-background-color-2) !important;
 }
 
 /*Cancel, Save, and More text*/
