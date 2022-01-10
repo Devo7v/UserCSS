@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Calendar - Dark Style
 @namespace   Devo7v
-@version     0.2.2
+@version     0.2.3
 @homepageURL https://github.com/Devo7v/UserCSS
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleCalendar-Dark.user.css
 @license     CC-BY-NC-SA-4.0
@@ -543,7 +543,7 @@ if SystemTheme == "Always" {
 
     /*Current Day Date*/
     .yzYBvd.F262Ye {
-        color: var(--gcal-enhanced-text-color) !important;
+        color: white !important;
         background-color: var(--gcal-accent-color) !important;
     }
 
