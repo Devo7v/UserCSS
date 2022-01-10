@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Music - Light Style
 @namespace   Devo7v
-@version     0.1.15
+@version     0.1.16
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/YouTubeMusic-Light.user.css
@@ -241,6 +241,12 @@ ytmusic-pivot-bar-item-renderer, ytmusic-search-box {
     box-shadow: 0 0px 6px rgba(0,0,0,1) !important;
 }
 
+/*PICK 5 ARTISTS YOU LIKE*/
+/*Footer background*/
+.buttons.ytmusic-tastebuilder-renderer{
+    background: var(--yt-music-grey-background) !important;
+}
+
 /*NEW RECOMMENDATIONS BUBBLE*/
 a.ytmusic-content-update-chip {
     background: var(--yt-music-grey-background) !important;
@@ -265,7 +271,9 @@ ytmusic-tabs.iron-selected .tab.ytmusic-tabs, .tab.selected.ytmusic-tabs, /*Sear
 tp-yt-paper-tab.iron-selected.ytmusic-player-page, /*Player page, selected section (Up next or Lyrics)*/
 .song-title.ytmusic-player-queue-item, /*Song title in the queue list*/
 .dialog-title.ytmusic-settings-page, /*Settings title on the settings popup*/
-.text /*Text in some popup menus*/
+.text, /*Text in some popup menus*/
+.primary-text.ytmusic-tastebuilder-renderer, /*Pick 5 artists you like text*/
+.primary-text.ytmusic-tastebuilder-item-renderer /*Pick 5 artists you like, Artist names*/
 {
     color: var(--yt-spec-text-primary) !important;
 }
@@ -286,7 +294,8 @@ tp-yt-paper-tab:not(.iron-selected) > .tab-content.tp-yt-paper-tab, /*Player pag
 .content-info-wrapper.ytmusic-player-bar .byline.ytmusic-player-bar, /*Artist and Album on the music player*/
 #hover-time-info.ytmusic-player-bar, /*Time when hovering over the progress bar*/
 yt-formatted-string.byline > a, /*Artist & Album in the player bar*/
-.time-info.ytmusic-player-bar /*Duration and total lenght of the song in the player bar*/
+.time-info.ytmusic-player-bar, /*Duration and total lenght of the song in the player bar*/
+.secondary-text.ytmusic-tastebuilder-renderer /*Pick 5 artists you like , Get you started text*/
 {
     color: var(--yt-spec-text-secondary) !important;
 }
@@ -297,7 +306,8 @@ img.yt-img-shadow, #player.ytmusic-player-page, /*Album art on the now playing p
 /*.left-items.ytmusic-responsive-list-item-renderer, /*Small thumbnails on the Home page*/
 .left-items.ytmusic-player-queue-item, /*Thumbnail in the queue*/
 .image.ytmusic-player-bar, /*Thumbnail in the player bar*/
-ytmusic-thumbnail-renderer[thumbnail-crop_="MUSIC_THUMBNAIL_CROP_CIRCLE"], ytmusic-thumbnail-renderer[thumbnail-crop_="MUSIC_THUMBNAIL_CROP_CIRCLE"] .image.ytmusic-thumbnail-renderer /*Artist/Alum pictures when viewing the artist or album list in the UPLOADED library view*/
+ytmusic-thumbnail-renderer[thumbnail-crop_="MUSIC_THUMBNAIL_CROP_CIRCLE"], ytmusic-thumbnail-renderer[thumbnail-crop_="MUSIC_THUMBNAIL_CROP_CIRCLE"] .image.ytmusic-thumbnail-renderer, /*Artist/Alum pictures when viewing the artist or album list in the UPLOADED library view*/
+.image-wrapper.ytmusic-tastebuilder-item-renderer /*Artist images on the Pick 5 artists you like page*/
 {
     box-shadow: 0 0 3px 0px rgba(0,0,0,1) !important;
     border-radius: 0% !important; /*50% creates circles, 0% creates squares*/
