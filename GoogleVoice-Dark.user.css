@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.2.9
+@version     0.2.10
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -141,6 +141,11 @@ if SystemTheme == "Always" {
 /*General text color*/
 .gvPageRoot .grey-900, .thread-info{
     color: var(--gvoice-text-color) !important;
+}
+
+/*Spinners*/
+.mat-progress-spinner circle, .mat-spinner circle, #mpcInit > svg:nth-child(1) > path:nth-child(1){
+    stroke: var(--gvoice-accent-color) !important;
 }
 
 /*Greeting text color*/
