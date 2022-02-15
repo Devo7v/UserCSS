@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.2.10
+@version     0.2.11
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -523,12 +523,12 @@ md-select-menu md-content md-option:hover:not([disabled]) {
 }
 
 /* dial pad section */
-.hlKfD-Mjd3I {
+/*.hlKfD-Mjd3I {
     border-color: var(--gvoice-border-color) !important;
 }
 
 /* dial pad text */
-.lp3vjd-LgbsSe, .lp3vjd-cHYyed, .button[_ngcontent-jcn-c21], .button[_ngcontent-pcw-c22] {
+/*.lp3vjd-LgbsSe, .lp3vjd-cHYyed, .button[_ngcontent-jcn-c21], .button[_ngcontent-pcw-c22] {
     color: var(--gvoice-white) !important;
 }
 
@@ -638,8 +638,6 @@ md-select-menu md-content md-option:hover:not([disabled]) {
 /*.mat-option-text{
     color: var(--gvoice-text-color) !important;
 }
-
-
 
 /* settings switch background bar */
 md-switch .md-bar {
@@ -793,6 +791,11 @@ input.ng-valid {
 /*Dialed Numbers*/
 .gmat-headline-5{
     background-color: var(--gvoice-background-color) !important;
+}
+
+/*Numberpad Numbers*/
+.gvPageRoot [_nghost-ibb-c262] .button[_ngcontent-ibb-c262]{
+    color: var(--gvoice-text-color) !important;
 }
 
 /*Show keypad / hide keypad background*/
