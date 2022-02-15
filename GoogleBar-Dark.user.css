@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Bar - Dark Style
 @namespace   Devo7v
-@version     0.2.7
+@version     0.3.0
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css
@@ -338,52 +338,113 @@ if AppsPopup {
 
     /*=========================User Popup=========================*/
     /*Main background color*/
-    .gb_4a.gb_na, .gb_C{
+    .p2Ux4d{
         background: var(--gbar-light-background-color) !important;
         box-shadow: var(--gbar-box-shadow2) !important;
     }
     
     /*Picture icon background*/
-    .gb_hb{
+    .J41f7d{
+        background: var(--gbar-button-color) !important;
+    }
+    .J41f7d:hover{
+        background: var(--gbar-light-background-color) !important;
+        box-shadow: var(--gbar-box-shadow2) !important;
+    }
+    .xAIiLb{
+        color: var(--gbar-border-color-2) !important;
+    }
+
+    /*User name*/
+    .UTWGce, .ZWVAt{
+        color: var(--gbar-border-color-2) !important;
+    }
+
+    /*Buttons background color*/
+    .ksO4Qc, .jAcX2{
+        background: var(--gbar-button-color) !important;
+        border-color: var(--gbar-button-color) !important;
+        color: var(--gbar-border-color-2) !important;
+    }
+    .R37Fhd:hover{
+        background-color: var(--gbar-main-background-color) !important;
+        box-shadow: var(--gbar-box-shadow) !important;
+    }
+
+    /*Add another account background*/
+    .piCvSe{
+        background: var(--gbar-light-background-color) !important;
+        border-top: 0px solid var(--gbar-border-color) !important;
+    }
+    
+    .jh4KE:hover{
+        background: var(--gbar-button-color) !important;
+        box-shadow: var(--gbar-box-shadow) !important;
+    }
+    
+    /*Add another account icon*/
+    .NMm5M{
+        fill: var(--gbar-border-color-2) !important;
+    }
+    
+    /*Privacy and Terms of Service text*/
+    .R37Fhd{
+        color: var(--gbar-border-color-2) !important;
+    }
+
+    /*Dividing Lines*/
+    .EeWTFe{
+        border-top: 0px solid var(--gbar-border-color) !important;
+        border-bottom: 0px solid var(--gbar-border-color) !important;
+    }
+    /*====OLD VERSION of User Popup====*/
+    /*Main background color*/
+    /*.gb_4a.gb_na, .gb_C{
+        background: var(--gbar-light-background-color) !important;
+        box-shadow: var(--gbar-box-shadow2) !important;
+    }
+    
+    /*Picture icon background*/
+    /*.gb_hb{
         background: var(--gbar-button-color) !important;
     }
     .gb_hb:hover{
         background: var(--gbar-light-background-color) !important;
         box-shadow: var(--gbar-box-shadow2) !important;
     }
-    svg.gb_ob{
+    /*svg.gb_ob{
         color: var(--gbar-border-color-2) !important;
     }
 
     /*User name*/
-    .gb_pb, .gb_qb{
+    /*.gb_pb, .gb_qb{
         color: var(--gbar-border-color-2) !important;
     }
 
     /*Buttons background color*/
-    .gb_6c{
+    /*.gb_6c{
         background: var(--gbar-button-color) !important;
         border-color: var(--gbar-button-color) !important;
         color: var(--gbar-border-color-2) !important;
     }
-    .gb_6c:hover, .gb_wb:hover{
+    /*.gb_6c:hover, .gb_wb:hover{
         background-color: var(--gbar-main-background-color) !important;
         box-shadow: var(--gbar-box-shadow) !important;
     }
 
     /*Secondary user background*/
-    .gb_Ob:hover{
+    /*.gb_Ob:hover{
         background: var(--gbar-button-color) !important;
         box-shadow: var(--gbar-box-shadow) !important;
     }
 
     /*Secondary user text color*/
-    .gb_3b{
+    /*.gb_3b{
         color: var(--gbar-border-color-2) !important;
     }
     
     /*All Brand Accounts background*/
-    .gb_Sb{
+    /*.gb_Sb{
         background: var(--gbar-light-background-color) !important;
     }
     .gb_Sb:hover{
@@ -392,17 +453,17 @@ if AppsPopup {
     }
     
     /*All Brand Accounts text color*/
-    .gb_dc{
+    /*.gb_dc{
         color: var(--gbar-border-color-2) !important;
     }
     
     /*All Brand Accounts icon*/
-    .gb_ac > svg:nth-child(1) > path:nth-child(1){
+    /*.gb_ac > svg:nth-child(1) > path:nth-child(1){
         fill: var(--gbar-border-color-2) !important;
     }
 
     /*Add another account background*/
-    .gb_yb{
+    /*.gb_yb{
         background: var(--gbar-light-background-color) !important;
         border-top: 0px solid var(--gbar-border-color) !important;
     }
@@ -413,20 +474,20 @@ if AppsPopup {
     }
     
     /*Add another account icon*/
-    svg.gb_Ab{
+    /*svg.gb_Ab{
         fill: var(--gbar-border-color-2) !important;
     }
 
     /*Add another account text*/
-    .gb_Db{
+    /*.gb_Db{
         color: var(--gbar-border-color-2) !important;
     }
-
+    
     /*Dividing Lines*/
-    .gb_Lb, .gb_Eb{
+    /*.gb_Lb, .gb_Eb{
         border-top: 0px solid var(--gbar-border-color) !important;
         border-bottom: 0px solid var(--gbar-border-color) !important;
-    }
+    }*/
 }
 
 }
