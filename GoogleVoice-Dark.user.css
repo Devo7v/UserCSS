@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.2.11
+@version     0.2.12
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -204,14 +204,15 @@ img.gb_tc {
 
 /*=======Text Messages=======*/
 /*Outgoing Text messages*/
-.Bqxti-VCkuzd, .Bqxti-VCkuzd a {
+.Bqxti-VCkuzd, .Bqxti-VCkuzd a, .gvPageRoot [_nghost-xbk-c242] .bubble[_ngcontent-xbk-c242] {
     color: var(--gvoice-white) !important;
     /*#00695c;*/
     background-color: var(--gvoice-background-color-light) !important;
+    border-radius: var(--gvoice-corner-radius) !important;
 }
 
 /*Incoming Text messages*/
-.Bqxti-MJZihc.Bqxti-VCkuzd, .Bqxti-MJZihc.Bqxti-VCkuzd a {
+.Bqxti-MJZihc.Bqxti-VCkuzd, .Bqxti-MJZihc.Bqxti-VCkuzd a, .gvPageRoot [_nghost-xbk-c242] .incoming[_ngcontent-xbk-c242] .bubble[_ngcontent-xbk-c242] {
     background-color: var(--gvoice-accent-color) !important;
     color: var(--gvoice-white) !important;
 }
@@ -784,7 +785,7 @@ input.ng-valid {
 }
 
 /*Caller Phone Number*/
-.GHQeBe-wKtwcc, .GHQeBe-jOfkMb{
+.GHQeBe-wKtwcc, .GHQeBe-jOfkMb, .gvPageRoot [_nghost-xbk-c292] .phone-number-details[_ngcontent-xbk-c292]{
     color: var(--gvoice-text-color) !important;
 }
 
@@ -794,7 +795,7 @@ input.ng-valid {
 }
 
 /*Numberpad Numbers*/
-.gvPageRoot [_nghost-ibb-c262] .button[_ngcontent-ibb-c262]{
+.gvPageRoot [_nghost-ibb-c262] .button[_ngcontent-ibb-c262], .gvPageRoot [_nghost-xbk-c264] .button[_ngcontent-xbk-c264]{
     color: var(--gvoice-text-color) !important;
 }
 
