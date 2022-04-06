@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Bar - Dark Style
 @namespace   Devo7v
-@version     0.3.1
+@version     0.3.2
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css
@@ -637,4 +637,24 @@ gpm-data-management-card #actions.gpm-data-management-card > a.gpm-data-manageme
 gpm-data-management-card #actions.gpm-data-management-card > a.gpm-data-management-card > iron-icon.gpm-data-management-card{
     color: var(--gbar-text-color) !important;
 }
+
+/*Replace GIF with one that has a transparent background*/
+#logo > img:nth-child(1){
+    display: none !important;
+}
+#logo{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 124px !important;
+    height: 124px !important;
+    /*Imgur URL*/
+    background: url('https://i.imgur.com/JhYuDbU.gif') no-repeat !important;
+    /*GFYCAT URL*/
+    /*background: url('https://thumbs.gfycat.com/HighlevelSatisfiedFlatfish-size_restricted.gif') no-repeat !important;
+    /*GITHUB URL*/
+    /*background: url('https://github.com/Devo7v/UserCSS/raw/master/Screenshots/GPM_to_YTM-v2.gif') no-repeat !important;
+    /**/
+    background-size: contain !important;
+}
+
 }
