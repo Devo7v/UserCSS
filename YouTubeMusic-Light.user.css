@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Music - Light Style
 @namespace   Devo7v
-@version     0.1.17
+@version     0.1.18
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/YouTubeMusic-Light.user.css
@@ -83,6 +83,7 @@ if SystemTheme == "Light" {
             --ytmusic-subtitle-1_-_--yt-endpoint-hover-color: var(--yt-spec-text-secondary) !important;
             --ytmusic-subtitle-1_-_--yt-endpoint-visited-color: var(--yt-spec-text-secondary) !important;
             --ytmusic-menu-item-hover-background-color: rgba(0,0,0,0.1) !important;
+            --ytmusic-av-toggle-active: rgba(0,0,0,0.1) !important;
             
             /*VARIABLES CREATED FOR THE STYLE*/
             --yt-music-background: var(--yt-music-white-background);
@@ -131,6 +132,7 @@ if SystemTheme == "Dark" {
             --ytmusic-subtitle-1_-_--yt-endpoint-hover-color: var(--yt-spec-text-secondary) !important;
             --ytmusic-subtitle-1_-_--yt-endpoint-visited-color: var(--yt-spec-text-secondary) !important;
             --ytmusic-menu-item-hover-background-color: rgba(0,0,0,0.1) !important;
+            --ytmusic-av-toggle-active: rgba(0,0,0,0.1) !important;
             
             /*VARIABLES CREATED FOR THE STYLE*/
             --yt-music-background: var(--yt-music-white-background);
@@ -179,6 +181,7 @@ if SystemTheme == "Always" {
             --ytmusic-subtitle-1_-_--yt-endpoint-hover-color: var(--yt-spec-text-secondary) !important;
             --ytmusic-subtitle-1_-_--yt-endpoint-visited-color: var(--yt-spec-text-secondary) !important;
             --ytmusic-menu-item-hover-background-color: rgba(0,0,0,0.1) !important;
+            --ytmusic-av-toggle-active: rgba(0,0,0,0.1) !important;
             
             /*VARIABLES CREATED FOR THE STYLE*/
             --yt-music-background: var(--yt-music-white-background);
@@ -269,6 +272,7 @@ ytmusic-tabs.iron-selected .tab.ytmusic-tabs, .tab.selected.ytmusic-tabs, /*Sear
 .title, /*Album title on the album page*/
 #description, /*Album description text on the album page*/
 tp-yt-paper-tab.iron-selected.ytmusic-player-page, /*Player page, selected section (Up next or Lyrics)*/
+ytmusic-av-toggle[toggle-enabled] .song-button.ytmusic-av-toggle, ytmusic-av-toggle[toggle-enabled] .video-button.ytmusic-av-toggle, /*Player page, Song vs Video*/
 .song-title.ytmusic-player-queue-item, /*Song title in the queue list*/
 .dialog-title.ytmusic-settings-page, /*Settings title on the settings popup*/
 .text, /*Text in some popup menus*/
@@ -291,6 +295,7 @@ ytmusic-search-suggestion, /*Search result suggestions*/
 .index, /*Track numbers*/
 .duration.ytmusic-player-queue-item, .byline.ytmusic-player-queue-item, /*Player page, Artist and duration*/
 tp-yt-paper-tab:not(.iron-selected) > .tab-content.tp-yt-paper-tab, /*Player page, not selected section (Up next or Lyrics)*/
+ytmusic-av-toggle[toggle-disabled] .song-button.ytmusic-av-toggle, ytmusic-av-toggle[toggle-disabled] .video-button.ytmusic-av-toggle, /*Player page, Song vs Video*/
 .content-info-wrapper.ytmusic-player-bar .byline.ytmusic-player-bar, /*Artist and Album on the music player*/
 #hover-time-info.ytmusic-player-bar, /*Time when hovering over the progress bar*/
 yt-formatted-string.byline > a, /*Artist & Album in the player bar*/
@@ -369,6 +374,15 @@ yt-button-renderer.watch-button.ytmusic-menu-renderer {
     --yt-button-color: var(--yt-spec-text-secondary) !important;
     border-color: var(--yt-spec-text-primary) !important;
 }
+
+/*Song vs Video*/
+.av-toggle.ytmusic-av-toggle {
+    background-color: var(--ytmusic-color-black1) !important;
+}/**/
+.song-button.ytmusic-av-toggle, .video-button.ytmusic-av-toggle{
+    background-color: var(--ytmusic-color-black1) !important;
+}
+
 
 /*QUEUE ITEMS*/
 tp-yt-paper-tabs.ytmusic-player-page, ytmusic-player-queue-item {
