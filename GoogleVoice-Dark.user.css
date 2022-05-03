@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.2.12
+@version     0.2.13
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -198,13 +198,18 @@ img.gb_tc {
 }
 
 /*=======Call List=======*/
-.container[_ngcontent-jcn-c16]:hover, .container[_ngcontent-jcn-c16]:focus {
+.gvPageRoot [_nghost-ybj-c302] .container.active[_ngcontent-ybj-c302], .gvPageRoot [_nghost-ybj-c302] .container[_ngcontent-ybj-c302]:hover {
     background-color: var(--gvoice-background-color-light) !important;
+}
+
+/*Selected call text*/
+.primary-text {
+    color: var(--gvoice-text-color) !important;
 }
 
 /*=======Text Messages=======*/
 /*Outgoing Text messages*/
-.Bqxti-VCkuzd, .Bqxti-VCkuzd a, .gvPageRoot [_nghost-xbk-c242] .bubble[_ngcontent-xbk-c242] {
+.Bqxti-VCkuzd, .Bqxti-VCkuzd a, .bubble  {
     color: var(--gvoice-white) !important;
     /*#00695c;*/
     background-color: var(--gvoice-background-color-light) !important;
@@ -212,9 +217,10 @@ img.gb_tc {
 }
 
 /*Incoming Text messages*/
-.Bqxti-MJZihc.Bqxti-VCkuzd, .Bqxti-MJZihc.Bqxti-VCkuzd a, .gvPageRoot [_nghost-xbk-c242] .incoming[_ngcontent-xbk-c242] .bubble[_ngcontent-xbk-c242] {
+.Bqxti-MJZihc.Bqxti-VCkuzd, .Bqxti-MJZihc.Bqxti-VCkuzd a, .incoming .bubble {
     background-color: var(--gvoice-accent-color) !important;
     color: var(--gvoice-white) !important;
+    border-radius: var(--gvoice-corner-radius) !important;
 }
 
 ::-moz-placeholder {
@@ -785,7 +791,7 @@ input.ng-valid {
 }
 
 /*Caller Phone Number*/
-.GHQeBe-wKtwcc, .GHQeBe-jOfkMb, .gvPageRoot [_nghost-xbk-c292] .phone-number-details[_ngcontent-xbk-c292]{
+.GHQeBe-wKtwcc, .GHQeBe-jOfkMb, .phone-number-details {
     color: var(--gvoice-text-color) !important;
 }
 
@@ -795,7 +801,14 @@ input.ng-valid {
 }
 
 /*Numberpad Numbers*/
-.gvPageRoot [_nghost-ibb-c262] .button[_ngcontent-ibb-c262], .gvPageRoot [_nghost-xbk-c264] .button[_ngcontent-xbk-c264]{
+.gvPageRoot [_nghost-ybj-c265] .button[_ngcontent-ybj-c265]{
+    background-color: var(--gvoice-background-color) !important;
+    border-radius: var(--gvoice-corner-radius) !important;
+}
+.gvPageRoot [_nghost-ybj-c265] .button[_ngcontent-ybj-c265]:hover {
+    background-color: var(--gvoice-background-color-dark) !important;
+}
+.button {
     color: var(--gvoice-text-color) !important;
 }
 
