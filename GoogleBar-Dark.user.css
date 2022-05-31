@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Bar - Dark Style
 @namespace   Devo7v
-@version     0.3.2
+@version     0.3.3
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css
@@ -74,8 +74,7 @@ url-prefix("http://www.google.com/wallet/"), url-prefix("https://www.google.com/
 url-prefix("http://www.google.com/voice"), url-prefix("https://www.google.com/voice"),url-prefix("http://voice.google.com/"),url-prefix("https://voice.google.com/"),
 url-prefix("http://www.google.com/notifications/"), url-prefix("https://www.google.com/notifications/"),url-prefix("http://notifications.google.com/"),url-prefix("https://notifications.google.com/"),
 url-prefix("http://www.google.com/ogs/"), url-prefix("https://www.google.com/ogs/"),url-prefix("http://ogs.google.com/"),url-prefix("https://ogs.google.com/"),url-prefix("http://play.google.com/music/managemusic"), url-prefix("https://play.google.com/music/managemusic"),
-url-prefix("https://play.google.com/music/listen"), url-prefix("https://music.youtube.com/googleplaymusic"),
-url-prefix("https://example.com/"){
+url-prefix("https://play.google.com/music/listen"), url-prefix("https://music.youtube.com/googleplaymusic"), url-prefix("https://example.com/"){
     
 /*=======Set the colors based on system theme options=======*/
 if SystemTheme == "Dark" {
@@ -98,7 +97,7 @@ if SystemTheme == "Dark" {
             /*creates a shadow on all sides, comment out this line to remove*/
         }
         /*LEGACY Apps icon in Google bar*/
-        .gb_A.gb_xc{
+        .gb_A.gb_vc{
             border: none !important;
             /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
             background-position: -40px -1800px !important;
@@ -143,7 +142,7 @@ if SystemTheme == "Light" {
             /*creates a shadow on all sides, comment out this line to remove*/
         }
          /*LEGACY Apps icon in Google bar*/
-        .gb_A.gb_xc{
+        .gb_A.gb_vc{
             border: none !important;
             /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
             background-position: -40px -1800px !important;
@@ -187,7 +186,7 @@ if SystemTheme == "Always" {
             /*creates a shadow on all sides, comment out this line to remove*/
         }
          /*LEGACY Apps icon in Google bar*/
-        .gb_A.gb_xc{
+        .gb_A.gb_vc{
             border: none !important;
             /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
             background-position: -40px -1800px !important;
@@ -198,12 +197,12 @@ if SystemTheme == "Always" {
 
 if IconColor == "White"{
     /*Logo Text Color*/
-    .gb_5d, .NkK3Fc span[role="heading"]{
+    .gb_3d, .NkK3Fc span[role="heading"]{
         color: var(--gbar-icon-color) !important;
     }
 
     /*Coloring for svg icons in new Google Bar*/
-    .gb_na svg{
+    .gb_oa svg{
         fill: var(--gbar-icon-color) !important;
         color: var(--gbar-button-color-2) !important;
     }
@@ -216,12 +215,12 @@ if IconColor == "White"{
         
 if IconColor == "Custom"{
     /*Logo Text Color*/
-    .gb_5d, .NkK3Fc span[role="heading"]{
+    .gb_3d, .NkK3Fc span[role="heading"]{
         color: var(--gbar-icon-color-custom) !important;
     }
 
     /*Coloring for svg icons in new Google Bar*/
-    .gb_na svg{
+    .gb_oa svg{
         fill: var(--gbar-icon-color-custom) !important;
         color: var(--gbar-button-color-2) !important;
     }
@@ -252,7 +251,7 @@ header#gb /*New Google Bar*/
 }
 
 /*Background color for Search box*/
-#gbqfqw, .gb_Te{
+#gbqfqw, .gb_Re{
     /*background: var(--gbar-light-background-color) !important;*/
     background: none !important;
     background: rgba(255,255,255,0.16) !important;
@@ -263,7 +262,7 @@ header#gb /*New Google Bar*/
 }*/
 
 /*Text color for Search box*/
-.gbqfif, .gb_ef, .gb_ef::placeholder{
+.gbqfif, .gb_cf, .gb_cf::placeholder{
     color: var(--gbar-accent-color) !important;
 }
 
@@ -495,21 +494,21 @@ if AppsPopup {
     url-prefix("https://example.com"){
 
 /*Search box drop down text color*/
-.hNW13c{
+/*.hNW13c{
     color: var(--gbar-text-color) !important;
 }
 
 /*Background color for the Google bar*/
-.gb_Hf{
+.gb_Hf, .S3WLMd{
     background: var(--gbar-main-background-color) !important;
 }
 
 if IconColor == "White"{
     /*Fix for Google Play logo*/
-    .gb_zc{
+    .kOqhQd, .f0UV3d > span{
         display: none !important;    
     }
-    .gb_ie{
+    .f0UV3d{
         width: 183px !important;
         height: 39px !important;
         /*https://i.imgur.com/QgS6N1E.png*/
@@ -520,10 +519,10 @@ if IconColor == "White"{
         
 if IconColor == "Custom"{
     /*Fix for Google Play logo*/
-    .gb_zc{
+    .kOqhQd, .f0UV3d > span{
         display: none !important;    
     }
-    .gb_ie{
+    .f0UV3d{
         width: 183px !important;
         height: 39px !important;
         /*https://i.imgur.com/QgS6N1E.png*/
@@ -534,6 +533,27 @@ if IconColor == "Custom"{
 
 else if IconColor == "Black"{
 /*To change the color of the icons in the Google Bar, configure the options of this style.*/
+}
+
+/*Icon colors*/
+.r9optf:not(:disabled){
+    color: var(--gbar-icon-color) !important;
+}
+
+/*Search box background color*/
+.hQnXo.sMVRZe:not(:disabled){
+    background-color: rgba(255,255,255,0.16) !important;
+}
+.hQnXo.sMVRZe .ePyrDc{
+    border-bottom: 0px !important;
+}
+/*Search box, magnifying glass icon*/
+.j1R2Me .Ic6Vy:not(:disabled), .VnJy5c .dbAtlf:not(:disabled){
+    color: var(--gbar-icon-color) !important;
+}
+/*Search box, text*/
+.HWAcU:not(:disabled)::placeholder, .HWAcU:not(:disabled), .qfH6Df{
+    color: var(--gbar-text-color) !important;
 }
 }
 
