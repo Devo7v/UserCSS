@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.2.13
+@version     0.2.14
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -129,7 +129,8 @@ if SystemTheme == "Always" {
 .YxDDMd-MJZihc.YxDDMd-XLMwWc .YxDDMd-VCkuzd, /*bottom right corner of random pictures*/
 .ZRgO8c-ienHib, /*Icon when selecting specific messages in a thread*/
 .md-button.md-icon-button, /*highlight when hovering over 3-dot for each message*/
-.qVBuHc-haAclf.qVBuHc-E6eRQd .qVBuHc-aTv5jf, /*Video attachments*/
+.gvImageAttachment-image, /*Image attachments*/
+.gvVideoAttachment-video, /*Video attachments*/
 .gmat-nav-list-item, /*selected icon in the nav bar*/
 .rkljfb-H9tDt::before, /*selected items in a list*/
 .call-button, /*call button next to the name/number in the dialer*/
@@ -159,7 +160,7 @@ if SystemTheme == "Always" {
 }
 
 /*Google Voice Logo*/
-img.gb_tc {
+img.gb_yc {
     filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
     -webkit-filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
     -o-filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
@@ -182,7 +183,7 @@ img.gb_tc {
 }
 
 /*Highlight and hovering background*/
-.rkljfb-gk6SMd, .rkljfb-H9tDt:hover {
+.gvThreadItem-selected, .gvThreadItem-root:hover /*Message List*/ {
     background-color: var(--gvoice-background-color-light) !important;
 }
 
@@ -198,8 +199,14 @@ img.gb_tc {
 }
 
 /*=======Call List=======*/
-.gvPageRoot [_nghost-ybj-c302] .container.active[_ngcontent-ybj-c302], .gvPageRoot [_nghost-ybj-c302] .container[_ngcontent-ybj-c302]:hover {
+/*Call List items*/
+.gvPageRoot .container.active, .gvPageRoot [_nghost-wka-c309] .container:hover {
     background-color: var(--gvoice-background-color-light) !important;
+}
+
+/*Selected call background*/
+.gvMessagingView-threadDetailsWrap {
+    background: var(--gvoice-background-color)
 }
 
 /*Selected call text*/
@@ -208,8 +215,13 @@ img.gb_tc {
 }
 
 /*=======Text Messages=======*/
+/*Selected message phone number*/
+.gvMessageListHeader-subtitle {
+    color: var(--gvoice-text-color) !important;
+}
+
 /*Outgoing Text messages*/
-.Bqxti-VCkuzd, .Bqxti-VCkuzd a, .bubble  {
+.gvMessageItem-bubble  {
     color: var(--gvoice-white) !important;
     /*#00695c;*/
     background-color: var(--gvoice-background-color-light) !important;
@@ -217,10 +229,15 @@ img.gb_tc {
 }
 
 /*Incoming Text messages*/
-.Bqxti-MJZihc.Bqxti-VCkuzd, .Bqxti-MJZihc.Bqxti-VCkuzd a, .incoming .bubble {
+.gvMessageItem-incoming {
     background-color: var(--gvoice-accent-color) !important;
     color: var(--gvoice-white) !important;
     border-radius: var(--gvoice-corner-radius) !important;
+}
+
+/*Incoming and outgoing name and date/time text*/
+.gvMessageItem-postTime, .gvMessageItem-status {
+    color: var(--gvoice-text-color) !important;
 }
 
 ::-moz-placeholder {
@@ -229,69 +246,8 @@ img.gb_tc {
 }
 
 /*Overall Background and Text*/
-md-content, body, md-sidenav {
+md-content, body, .gvInfiniteScroll-root, .gvMessageListHeader-messageHeader, .md-body-1 {
     background-color: var(--gvoice-background-color) !important;
-    color: var(--gvoice-white) !important;
-}
-
-/* center section background */
-.GYQtq-wTVjof, .q2hAhb-H9tDt {
-    background-color: var(--gvoice-background-color) !important;
-}
-
-.md-subhead, /* menus and search dropdown */
-.md-body-1, /* other body text */
-.md-title, /* title headings */
-.rkljfb-npMLoc/* message list contact names */
-{
-    color: var(--gvoice-white) !important;
-}
-
-/* accent text, headings */
-.md-body-2 {
-    color: var(--gvoice-accent-color) !important;
-}
-
-/* left slideout container during transition */
-.gb_nc.gb_lc.gb_pc {
-    background-color: var(--gvoice-background-color) !important;
-}
-
-/*Left pane border color*/
-.ieK2Ab-H9tDt {
-    border-right: 1px solid var(--gvoice-border-color) !important;
-}
-
-.GYQtq-mpvPNd[disabled] {
-    background-color: var(--gvoice-background-color-light) !important;
-}
-
-/* darken divider(s) in message view bottom and left slideout */
-md-divider {
-    border-top-color: var(--gvoice-border-color) !important;
-    /*visibility: hidden !important;*/
-}
-
-/* name entry field text and "To" text for new message and message field text */
-md-autocomplete input, .BN08bf-pex4lc, .B3EWm-YPqjbf.B3EWm-YPqjbf, .B3EWm-PWVi0d {
-    color: var(--gvoice-white) !important;
-}
-
-/* type message text */
-[contenteditable="true"]:empty::before {
-    color: #777777 !important;
-}
-
-/* new message suggested contacts background */
-.md-autocomplete-suggestions li:not(.md-not-found-wrapper),
-.md-autocomplete-suggestions-container {
-    background-color: var(--gvoice-background-color-light) !important;
-}
-
-/* new message suggested contact text */
-.layout-row > .flex, /* Name */
-.BN08bf-Od0oM/* suggested contact number type */
-{
     color: var(--gvoice-white) !important;
 }
 
@@ -771,7 +727,7 @@ input.ng-valid {
 
 /*=======Dialer=======*/
 /*Main background color*/
-.GHQeBe-H9tDt, .TF50hf-H9tDt{
+.gvCallSidebar-root{
     background-color: var(--gvoice-background-color) !important;
 }
 
@@ -801,11 +757,11 @@ input.ng-valid {
 }
 
 /*Numberpad Numbers*/
-.gvPageRoot [_nghost-ybj-c265] .button[_ngcontent-ybj-c265]{
+.gvPageRoot [_nghost-wka-c272] .button[_ngcontent-wka-c272]{
     background-color: var(--gvoice-background-color) !important;
     border-radius: var(--gvoice-corner-radius) !important;
 }
-.gvPageRoot [_nghost-ybj-c265] .button[_ngcontent-ybj-c265]:hover {
+.gvPageRoot [_nghost-wka-c272] .button[_ngcontent-wka-c272]:hover {
     background-color: var(--gvoice-background-color-dark) !important;
 }
 .button {
