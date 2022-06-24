@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Bar - Dark Style
 @namespace   Devo7v
-@version     0.3.3
+@version     0.3.4
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css
@@ -97,10 +97,10 @@ if SystemTheme == "Dark" {
             /*creates a shadow on all sides, comment out this line to remove*/
         }
         /*LEGACY Apps icon in Google bar*/
-        .gb_A.gb_vc{
+        .gb_A.gb_wc{
             border: none !important;
             /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
-            background-position: -40px -1800px !important;
+            background-position: -35px -2878px !important;
             opacity: 1.00 !important;
         }
     }
@@ -142,10 +142,10 @@ if SystemTheme == "Light" {
             /*creates a shadow on all sides, comment out this line to remove*/
         }
          /*LEGACY Apps icon in Google bar*/
-        .gb_A.gb_vc{
+        .gb_A.gb_wc{
             border: none !important;
             /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
-            background-position: -40px -1800px !important;
+            background-position: -35px -2878px !important;
             opacity: 1.00 !important;
         }
     }
@@ -186,10 +186,10 @@ if SystemTheme == "Always" {
             /*creates a shadow on all sides, comment out this line to remove*/
         }
          /*LEGACY Apps icon in Google bar*/
-        .gb_A.gb_vc{
+        .gb_A.gb_wc{
             border: none !important;
             /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
-            background-position: -40px -1800px !important;
+            background-position: -35px -2878px !important;
             opacity: 1.00 !important;
         }
 }
@@ -197,7 +197,7 @@ if SystemTheme == "Always" {
 
 if IconColor == "White"{
     /*Logo Text Color*/
-    .gb_3d, .NkK3Fc span[role="heading"]{
+    .gb_4d, .NkK3Fc span[role="heading"]{
         color: var(--gbar-icon-color) !important;
     }
 
@@ -215,7 +215,7 @@ if IconColor == "White"{
         
 if IconColor == "Custom"{
     /*Logo Text Color*/
-    .gb_3d, .NkK3Fc span[role="heading"]{
+    .gb_4d, .NkK3Fc span[role="heading"]{
         color: var(--gbar-icon-color-custom) !important;
     }
 
@@ -251,7 +251,7 @@ header#gb /*New Google Bar*/
 }
 
 /*Background color for Search box*/
-#gbqfqw, .gb_Re{
+#gbqfqw, .gb_Se{
     /*background: var(--gbar-light-background-color) !important;*/
     background: none !important;
     background: rgba(255,255,255,0.16) !important;
@@ -262,7 +262,7 @@ header#gb /*New Google Bar*/
 }*/
 
 /*Text color for Search box*/
-.gbqfif, .gb_cf, .gb_cf::placeholder{
+.gbqfif, .gb_df, .gb_df::placeholder{
     color: var(--gbar-accent-color) !important;
 }
 
@@ -337,16 +337,16 @@ if AppsPopup {
 
     /*=========================User Popup=========================*/
     /*Main background color*/
-    .p2Ux4d{
+    .Lvwayc{
         background: var(--gbar-light-background-color) !important;
         box-shadow: var(--gbar-box-shadow2) !important;
     }
     
     /*Picture icon background*/
-    .J41f7d{
+    .uarSJe{
         background: var(--gbar-button-color) !important;
     }
-    .J41f7d:hover{
+    .uarSJe:hover{
         background: var(--gbar-light-background-color) !important;
         box-shadow: var(--gbar-box-shadow2) !important;
     }
@@ -355,28 +355,28 @@ if AppsPopup {
     }
 
     /*User name*/
-    .UTWGce, .ZWVAt{
+    .znj3je, .BvDXcd{
         color: var(--gbar-border-color-2) !important;
     }
 
     /*Buttons background color*/
-    .ksO4Qc, .jAcX2{
+    .RroO5d, .z8t5Oc{
         background: var(--gbar-button-color) !important;
         border-color: var(--gbar-button-color) !important;
         color: var(--gbar-border-color-2) !important;
     }
-    .R37Fhd:hover{
+    .RroO5d:hover, .z8t5Oc:hover, .zpoCob:hover{
         background-color: var(--gbar-main-background-color) !important;
         box-shadow: var(--gbar-box-shadow) !important;
     }
 
     /*Add another account background*/
-    .piCvSe{
+    .SFWbIb{
         background: var(--gbar-light-background-color) !important;
         border-top: 0px solid var(--gbar-border-color) !important;
     }
     
-    .jh4KE:hover{
+    .SFWbIb:hover{
         background: var(--gbar-button-color) !important;
         box-shadow: var(--gbar-box-shadow) !important;
     }
@@ -387,12 +387,12 @@ if AppsPopup {
     }
     
     /*Privacy and Terms of Service text*/
-    .R37Fhd{
+    .OtBgcb{
         color: var(--gbar-border-color-2) !important;
     }
 
     /*Dividing Lines*/
-    .EeWTFe{
+    .F249q, .T6SHIc{
         border-top: 0px solid var(--gbar-border-color) !important;
         border-bottom: 0px solid var(--gbar-border-color) !important;
     }
@@ -542,7 +542,7 @@ else if IconColor == "Black"{
 
 /*Search box background color*/
 .hQnXo.sMVRZe:not(:disabled){
-    background-color: rgba(255,255,255,0.16) !important;
+    background-color: var(--gbar-light-background-color) !important;
 }
 .hQnXo.sMVRZe .ePyrDc{
     border-bottom: 0px !important;
