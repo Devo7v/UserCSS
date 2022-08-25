@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.2.14
+@version     0.2.15
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -214,6 +214,24 @@ img.gb_yc {
     color: var(--gvoice-text-color) !important;
 }
 
+/*Call List multi-select icon*/
+.gvPageRoot [_nghost-cft-c311] .container.batch-selected[_ngcontent-cft-c311] .batch-selection[_ngcontent-cft-c311] {
+    background: var(--gvoice-accent-color) !important;
+    border-radius: var(--gvoice-corner-radius) !important;
+}
+.gvPageRoot [_nghost-cft-c310] .container[_ngcontent-cft-c310]::after{
+    border-top: 3px solid var(--gvoice-accent-color) !important;
+}
+.gvPageRoot [_nghost-cft-c310] .container[_ngcontent-cft-c310] {
+    color: var(--gvoice-accent-color) !important;
+}
+.gvPageRoot [_nghost-cft-c311] .container[_ngcontent-cft-c311]::before{
+    background-color: var(--gvoice-background-color-dark) !important;
+    border-bottom-left-radius: var(--gvoice-corner-radius) !important;
+    border-top-left-radius: var(--gvoice-corner-radius) !important;
+}
+
+
 /*=======Text Messages=======*/
 /*Selected message phone number*/
 .gvMessageListHeader-subtitle {
@@ -256,13 +274,32 @@ md-content, body, .gvInfiniteScroll-root, .gvMessageListHeader-messageHeader, .m
     border-right: 1px solid var(--gvoice-border-color) !important;
 }
 
+/*Text Message List Text*/
+.gvThreadItem-root, .gvThreadItem-unread {
+    color: var(--gvoice-text-color) !important;
+}
+
 /* Message multi-select icon */
-.ZRgO8c-oyZWsd:hover .ZRgO8c-ienHib {
+/*.ZRgO8c-oyZWsd:hover .ZRgO8c-ienHib {
     filter: brightness(150%) !important;
     -webkit-filter: brightness(150%) !important;
     -o-filter: brightness(150%) !important;
     -ms-filter: brightness(150%) !important;
     background-color: var(--gvoice-border-color) !important;
+}
+
+/*Message multi-select icon*/
+.gvThreadItem-avatarBatchSelected .gvThreadItem-avatarCheckmark.gvThreadItem-avatarCheckmark.gvThreadItem-avatarCheckmark {
+    background: var(--gvoice-accent-color) !important;
+    border-radius: var(--gvoice-corner-radius) !important;
+}
+.gvBatchThreadSelectHeader-container::after{
+    border-top: 3px solid var(--gvoice-accent-color) !important;
+}
+.gvThreadItem-root::before{
+    background-color: var(--gvoice-background-color-dark) !important;
+    border-bottom-left-radius: var(--gvoice-corner-radius) !important;
+    border-top-left-radius: var(--gvoice-corner-radius) !important;
 }
 
 /* Message multi-select icon color */
@@ -757,11 +794,11 @@ input.ng-valid {
 }
 
 /*Numberpad Numbers*/
-.gvPageRoot [_nghost-wka-c272] .button[_ngcontent-wka-c272]{
+.gvPageRoot [_nghost-cft-c274] .button[_ngcontent-cft-c274]{
     background-color: var(--gvoice-background-color) !important;
     border-radius: var(--gvoice-corner-radius) !important;
 }
-.gvPageRoot [_nghost-wka-c272] .button[_ngcontent-wka-c272]:hover {
+.gvPageRoot [_nghost-cft-c274] .button[_ngcontent-cft-c274]:hover {
     background-color: var(--gvoice-background-color-dark) !important;
 }
 .button {
