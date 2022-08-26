@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.2.15
+@version     0.2.16
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -215,17 +215,20 @@ img.gb_yc {
 }
 
 /*Call List multi-select icon*/
-.gvPageRoot [_nghost-cft-c311] .container.batch-selected[_ngcontent-cft-c311] .batch-selection[_ngcontent-cft-c311] {
+.mat-ripple.container.read.ng-star-inserted:hover, .mat-ripple.container.read.ng-star-inserted:focus {
+    background-color: var(--gvoice-background-color-light) !important;
+}
+.gvPageRoot .container.batch-selected .batch-selection {
     background: var(--gvoice-accent-color) !important;
     border-radius: var(--gvoice-corner-radius) !important;
 }
-.gvPageRoot [_nghost-cft-c310] .container[_ngcontent-cft-c310]::after{
+.gvPageRoot .container::after {
     border-top: 3px solid var(--gvoice-accent-color) !important;
 }
-.gvPageRoot [_nghost-cft-c310] .container[_ngcontent-cft-c310] {
+.gvPageRoot .container {
     color: var(--gvoice-accent-color) !important;
 }
-.gvPageRoot [_nghost-cft-c311] .container[_ngcontent-cft-c311]::before{
+.gvPageRoot .container::before {
     background-color: var(--gvoice-background-color-dark) !important;
     border-bottom-left-radius: var(--gvoice-corner-radius) !important;
     border-top-left-radius: var(--gvoice-corner-radius) !important;
@@ -794,11 +797,11 @@ input.ng-valid {
 }
 
 /*Numberpad Numbers*/
-.gvPageRoot [_nghost-cft-c274] .button[_ngcontent-cft-c274]{
+.gvPageRoot .button {
     background-color: var(--gvoice-background-color) !important;
     border-radius: var(--gvoice-corner-radius) !important;
 }
-.gvPageRoot [_nghost-cft-c274] .button[_ngcontent-cft-c274]:hover {
+.gvPageRoot .button:hover {
     background-color: var(--gvoice-background-color-dark) !important;
 }
 .button {
