@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Music - Light Style
 @namespace   Devo7v
-@version     0.1.18
+@version     0.1.19
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/YouTubeMusic-Light.user.css
@@ -277,7 +277,8 @@ ytmusic-av-toggle[toggle-enabled] .song-button.ytmusic-av-toggle, ytmusic-av-tog
 .dialog-title.ytmusic-settings-page, /*Settings title on the settings popup*/
 .text, /*Text in some popup menus*/
 .primary-text.ytmusic-tastebuilder-renderer, /*Pick 5 artists you like text*/
-.primary-text.ytmusic-tastebuilder-item-renderer /*Pick 5 artists you like, Artist names*/
+.primary-text.ytmusic-tastebuilder-item-renderer, /*Pick 5 artists you like, Artist names*/
+ytmusic-description-shelf-renderer:not([has-strapline_]) .description.non-expandable.ytmusic-description-shelf-renderer /*Lyrics*/
 {
     color: var(--yt-spec-text-primary) !important;
 }
@@ -434,5 +435,5 @@ yt-button-renderer #button.yt-button-renderer{
 .tp-yt-paper-spinner-lite {
     color: var(--yt-music-accent-color) !important;
 }
-
+/**/
 }
