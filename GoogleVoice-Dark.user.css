@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.2.16
+@version     0.2.17
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -120,8 +120,8 @@ if SystemTheme == "Always" {
 }
 
 /*Make Elements Square or Round*/
-.Bqxti-VCkuzd, /*sent and received message bubbles*/
-.YxDDMd-Dfn1ve .YxDDMd-VCkuzd, .d8IJmb-haAclf.d8IJmb-E6eRQd, .d8IJmb-haAclf.d8IJmb-E6eRQd .d8IJmb-HiaYvf, /*corners of pictures in threads*/
+.Bqxti-VCkuzd, .gvPageRoot .bubble, /*sent and received message bubbles*/
+.YxDDMd-Dfn1ve .YxDDMd-VCkuzd, .d8IJmb-haAclf.d8IJmb-E6eRQd, .d8IJmb-haAclf.d8IJmb-E6eRQd .d8IJmb-HiaYvf, .container.last, .container.first, /*corners of pictures in threads*/
 .photo, /*User pictures*/
 .avatar, /*User pictures in the message list*/
 .GYQtq-CLHpQd .GYQtq-mpvPNd, /*Send a message icon*/
@@ -242,7 +242,7 @@ img.gb_yc {
 }
 
 /*Outgoing Text messages*/
-.gvMessageItem-bubble  {
+.bubble  {
     color: var(--gvoice-white) !important;
     /*#00695c;*/
     background-color: var(--gvoice-background-color-light) !important;
@@ -250,7 +250,7 @@ img.gb_yc {
 }
 
 /*Incoming Text messages*/
-.gvMessageItem-incoming {
+.incoming .bubble {
     background-color: var(--gvoice-accent-color) !important;
     color: var(--gvoice-white) !important;
     border-radius: var(--gvoice-corner-radius) !important;
