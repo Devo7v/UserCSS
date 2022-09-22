@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Hangouts - Dark Style
 @namespace   Devo7v
-@version     0.2.1
+@version     0.2.2
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleHangouts-Dark.user.css
@@ -11,6 +11,7 @@
 
 @preprocessor stylus
 
+@var color ghangouts-primary-background-color "Background Color" #333333
 @var checkbox ghangouts-accent-color-custom "Use Custom Accent Color" 0
 @var color ghangouts-accent-color "Accent Color" #53A93F
 
@@ -38,7 +39,7 @@
 if SystemTheme == "Dark" {
     @media (prefers-color-scheme: dark)  {
         :root{
-            --ghangouts-primary-background-color: #333333;
+            --ghangouts-primary-background-color: ghangouts-primary-background-color;
             --ghangouts-dark-background-color: #222222;
             --ghangouts-dark2-background-color: #333333;
             --ghangouts-light-background-color: #444444;
@@ -64,7 +65,7 @@ if SystemTheme == "Dark" {
 if SystemTheme == "Light" {
     @media (prefers-color-scheme: light)  {
         :root{
-            --ghangouts-primary-background-color: #333333;
+            --ghangouts-primary-background-color: ghangouts-primary-background-color;
             --ghangouts-dark-background-color: #222222;
             --ghangouts-dark2-background-color: #333333;
             --ghangouts-light-background-color: #444444;
@@ -89,7 +90,7 @@ if SystemTheme == "Light" {
 }
 if SystemTheme == "Always" {
         :root{
-            --ghangouts-primary-background-color: #333333;
+            --ghangouts-primary-background-color: ghangouts-primary-background-color;
             --ghangouts-dark-background-color: #222222;
             --ghangouts-dark2-background-color: #333333;
             --ghangouts-light-background-color: #444444;
