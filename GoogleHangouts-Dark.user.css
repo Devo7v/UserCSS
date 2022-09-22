@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Hangouts - Dark Style
 @namespace   Devo7v
-@version     0.2.0
+@version     0.2.1
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleHangouts-Dark.user.css
@@ -22,14 +22,14 @@
 ==/UserStyle== */
 
 
-@-moz-document url-prefix("http://www.google.com/hangouts/"), url-prefix("https://www.google.com/hangouts/"), url-prefix("http://hangouts.google.com/"), url-prefix("https://hangouts.google.com/"){
+@-moz-document url-prefix("http://www.google.com/hangouts/"), url-prefix("https://www.google.com/hangouts/"), url-prefix("http://hangouts.google.com/"), url-prefix("https://hangouts.google.com/") {
 
-:root{
+:root {
     /*Original Hangouts accent color #53A93F*/
-    if ghangouts-accent-color-custom == 0{
+    if ghangouts-accent-color-custom == 0 {
         --ghangouts-accent-color: #0F9D58;
     }
-    else if ghangouts-accent-color-custom == 1{
+    else if ghangouts-accent-color-custom == 1 {
         --ghangouts-accent-color: ghangouts-accent-color;
     }
 }
@@ -37,65 +37,65 @@
 /*=======Set the colors based on system theme options=======*/
 if SystemTheme == "Dark" {
     @media (prefers-color-scheme: dark)  {
-		 :root{
-            --ghangouts-primary-background-color: #111111;
+        :root{
+            --ghangouts-primary-background-color: #333333;
             --ghangouts-dark-background-color: #222222;
-			--ghangouts-dark2-background-color: #333333;
-			--ghangouts-light-background-color: #444444;
-			--ghangouts-border-color: #777777;
-			--ghangouts-primary-text-color: #999999;
-			--ghangouts-secondary-text-color: #CCCCCC;
+            --ghangouts-dark2-background-color: #333333;
+            --ghangouts-light-background-color: #444444;
+            --ghangouts-border-color: #777777;
+            --ghangouts-primary-text-color: #999999;
+            --ghangouts-secondary-text-color: #CCCCCC;
             --ghangouts-icon-color: rgba(255, 255, 255, 0.87);
             --ghangouts-invert-icons: invert(100%);
         }
     }
     @media (prefers-color-scheme: light)  {
-		 :root{
+        :root{
             /*--ghangouts-primary-background-color: #111111;/**/
             --ghangouts-dark-background-color: #FFFFFF;/**/
-			--ghangouts-dark2-background-color: var(--ghangouts-accent-color);/**/
-			--ghangouts-light-background-color: #DDDDDD;/**/
-			/*--ghangouts-border-color: #777777;/**/
-			--ghangouts-primary-text-color: #111111;/**/
-			--ghangouts-secondary-text-color: #333333;/**/
+            --ghangouts-dark2-background-color: var(--ghangouts-accent-color);/**/
+            --ghangouts-light-background-color: #DDDDDD;/**/
+            /*--ghangouts-border-color: #777777;/**/
+            --ghangouts-primary-text-color: #111111;/**/
+            --ghangouts-secondary-text-color: #333333;/**/
         }
     }
 }
 if SystemTheme == "Light" {
     @media (prefers-color-scheme: light)  {
-		 :root{
-            --ghangouts-primary-background-color: #111111;
+        :root{
+            --ghangouts-primary-background-color: #333333;
             --ghangouts-dark-background-color: #222222;
-			--ghangouts-dark2-background-color: #333333;
-			--ghangouts-light-background-color: #444444;
-			--ghangouts-border-color: #777777;
-			--ghangouts-primary-text-color: #999999;
-			--ghangouts-secondary-text-color: #CCCCCC;
+            --ghangouts-dark2-background-color: #333333;
+            --ghangouts-light-background-color: #444444;
+            --ghangouts-border-color: #777777;
+            --ghangouts-primary-text-color: #999999;
+            --ghangouts-secondary-text-color: #CCCCCC;
             --ghangouts-icon-color: rgba(255, 255, 255, 0.87);
             --ghangouts-invert-icons: invert(100%);
         }
     }
     @media (prefers-color-scheme: dark)  {
-		 :root{
+        :root{
             /*--ghangouts-primary-background-color: #111111;/**/
             --ghangouts-dark-background-color: #FFFFFF;/**/
-			--ghangouts-dark2-background-color: var(--ghangouts-accent-color);/**/
-			--ghangouts-light-background-color: #DDDDDD;/**/
-			/*--ghangouts-border-color: #777777;/**/
-			--ghangouts-primary-text-color: #111111;/**/
-			--ghangouts-secondary-text-color: #333333;/**/
+            --ghangouts-dark2-background-color: var(--ghangouts-accent-color);/**/
+            --ghangouts-light-background-color: #DDDDDD;/**/
+            /*--ghangouts-border-color: #777777;/**/
+            --ghangouts-primary-text-color: #111111;/**/
+            --ghangouts-secondary-text-color: #333333;/**/
         }
     }
 }
 if SystemTheme == "Always" {
-		 :root{
-            --ghangouts-primary-background-color: #111111;
+        :root{
+            --ghangouts-primary-background-color: #333333;
             --ghangouts-dark-background-color: #222222;
-			--ghangouts-dark2-background-color: #333333;
-			--ghangouts-light-background-color: #444444;
-			--ghangouts-border-color: #777777;
-			--ghangouts-primary-text-color: #999999;
-			--ghangouts-secondary-text-color: #CCCCCC;
+            --ghangouts-dark2-background-color: #333333;
+            --ghangouts-light-background-color: #444444;
+            --ghangouts-border-color: #777777;
+            --ghangouts-primary-text-color: #999999;
+            --ghangouts-secondary-text-color: #CCCCCC;
             --ghangouts-icon-color: rgba(255, 255, 255, 0.87);
             --ghangouts-invert-icons: invert(100%);
         }
