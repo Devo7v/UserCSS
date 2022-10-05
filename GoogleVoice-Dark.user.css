@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.2.17
+@version     0.2.18
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -37,7 +37,7 @@
 ==/UserStyle== */
 
 
-@-moz-document url-prefix("http://voice.google.com/"), url-prefix("https://voice.google.com/"){
+@-moz-document url-prefix("http://voice.google.com/"), url-prefix("https://voice.google.com/") {
 
 :root{
     if gvoice-accent == "New"{
@@ -470,6 +470,15 @@ a.md-button.md-icon-button:hover:not([disabled]),
 /* mark all as read dialog */
 md-dialog.md-default-theme, md-dialog {
     background-color: var(--gvoice-background-color-dark) !important;
+}
+
+/*======= Voicemail =======*/
+/*Progress Bar*/
+.gvVoicemailPlayer-progressBarLine {
+    background-color: var(--gvoice-white) !important;
+}
+.gvVoicemailPlayer-progressBar, .gvVoicemailPlayer-progressBarDot, .gvVoicemailPlayer-progressBarLineDummy {
+    background-color: var(--gvoice-accent-color) !important;
 }
 
 
