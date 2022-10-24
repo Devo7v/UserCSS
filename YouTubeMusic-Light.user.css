@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Music - Light Style
 @namespace   Devo7v
-@version     0.1.19
+@version     0.1.20
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/YouTubeMusic-Light.user.css
@@ -23,6 +23,7 @@
 ]
 
 @var color ytmusic-black-background "Adjust Dark Theme Background Color" #000000
+@var checkbox HideUpgrade "Hide Upgrade Link" 0
 
 ==/UserStyle== */
 
@@ -204,6 +205,15 @@ if SystemTheme == "Always" {
     
 
 /*=======RESTYLE PAGES=======*/
+/*Hide UPGRADE links*/
+if HideUpgrade {
+    ytmusic-pivot-bar-item-renderer.style-scope:nth-child(4), /*Upgrade link in the Header*/
+    yt-multi-page-menu-section-renderer.style-scope:nth-child(1) > div:nth-child(2) > ytd-compact-link-renderer:nth-child(2) /*Get Music Premium link in the user menu popup*/
+    {
+        display: none !important;
+    }
+}
+
 /*SITE BACKGROUND COLORS*/
 body, /*Main background*/
 ytmusic-detail-header-renderer, /*Header background on an album page*/
