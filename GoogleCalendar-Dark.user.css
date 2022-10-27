@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Calendar - Dark Style
 @namespace   Devo7v
-@version     0.2.3
+@version     0.2.4
 @homepageURL https://github.com/Devo7v/UserCSS
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleCalendar-Dark.user.css
 @license     CC-BY-NC-SA-4.0
@@ -190,17 +190,17 @@ if SystemTheme == "Always" {
     }
 
     /*Today Button*/
-    .GXlaye.qRI4pc {
+    .Rj2Mlf {
         background-color: var(--gcal-enhanced2-background-color) !important;
         border: none !important;
     }
 
-    .GXlaye .snByac {
+    .Rj2Mlf {
         color: var(--gcal-enhanced-text-color) !important;
     }
 
     /*Previous/Next Month, Search, Settings icons*/
-    .gb_pa svg {
+    .Ce1Y1c {
         color: var(--gcal-primary-text-color) !important;
         fill: var(--gcal-primary-text-color) !important;
     }
@@ -638,7 +638,7 @@ if SystemTheme == "Always" {
 
     /*========================Week========================*/
     /*Background*/
-    .v83gc {
+    .v83gc, .eADW5d {
         background-color: var(--gcal-primary-background-color) !important;
     }
 
@@ -655,8 +655,11 @@ if SystemTheme == "Always" {
     }
 
     /*Border*/
-    .eADW5d {
+    .eADW5d, .CIFHgc, .SU7tYb, .YvjgZe {
         border-right: 1px solid var(--gcal-primary-line-color) !important;
+    }
+     .MVMVEe {
+        border-left: 1px solid var(--gcal-primary-line-color) !important;
     }
 
 
