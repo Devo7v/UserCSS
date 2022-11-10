@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Music - Light Style
 @namespace   Devo7v
-@version     0.1.20
+@version     0.1.21
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/YouTubeMusic-Light.user.css
@@ -85,6 +85,7 @@ if SystemTheme == "Light" {
             --ytmusic-subtitle-1_-_--yt-endpoint-visited-color: var(--yt-spec-text-secondary) !important;
             --ytmusic-menu-item-hover-background-color: rgba(0,0,0,0.1) !important;
             --ytmusic-av-toggle-active: rgba(0,0,0,0.1) !important;
+
             
             /*VARIABLES CREATED FOR THE STYLE*/
             --yt-music-background: var(--yt-music-white-background);
@@ -404,7 +405,7 @@ tp-yt-paper-tabs.ytmusic-player-page, ytmusic-player-queue-item {
 #primaryProgress{
     background: var(--yt-music-accent-color) !important;
 }
-.slider-knob-inner.tp-yt-paper-slider, {
+.slider-knob-inner.tp-yt-paper-slider {    
     background-color: var(--yt-music-accent-color) !important;
     border: 2px solid var(--yt-music-accent-color) !important;
 }
@@ -422,9 +423,14 @@ ytmusic-player-bar:not([repeat-mode_="NONE"]) .repeat.ytmusic-player-bar {
     color: var(--ytmusic-text-primary) !important;
 }
 
+/*Explicit Icon*/
+yt-icon.ytmusic-inline-badge-renderer{
+    color: var(--yt-spec-text-secondary) !important;
+}
+
 /*Like/dislike buttons*/
 ytmusic-like-button-renderer[like-status="LIKE"] .like.ytmusic-like-button-renderer, ytmusic-like-button-renderer[like-status="DISLIKE"] .dislike.ytmusic-like-button-renderer{
-    color: var(--yt-spec-text-secondary) !important
+    color: var(--yt-spec-text-secondary) !important;
 }
 
 /*STILL WATCHING POPUP*/
