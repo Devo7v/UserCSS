@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Contacts - Dark Style
 @namespace   Devo7v
-@version     0.2.8
+@version     0.2.9
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleContacts-Dark.user.css
@@ -567,8 +567,8 @@ color: #666666 !important;
 
 /*=======Birthday Cards on the right=======*/
 /*Background color*/
-.Y2gHof {
-    background-color: var(--gcontacts-background-color) !important;
+.Y2gHof, .qm87J {
+    background-color: var(--gcontacts-background-color-2) !important;
 }
 
 /*Border*/
@@ -576,6 +576,11 @@ color: #666666 !important;
     border: 1px solid var(--gcontacts-border-color) !important;
     border-radius: var(--gcontacts-corner-radius) !important;
     box-shadow: 0 0 3px 3px rgba(0,0,0,0.23) !important;
+}
+
+/*Text Color*/
+.rpw8M {
+    color: var(--gcontacts-text-color) !important;
 }
 
 /*=======Settings Popup=======*/
