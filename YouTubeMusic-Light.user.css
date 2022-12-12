@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Music - Light Style
 @namespace   Devo7v
-@version     0.1.21
+@version     0.1.22
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/YouTubeMusic-Light.user.css
@@ -85,7 +85,6 @@ if SystemTheme == "Light" {
             --ytmusic-subtitle-1_-_--yt-endpoint-visited-color: var(--yt-spec-text-secondary) !important;
             --ytmusic-menu-item-hover-background-color: rgba(0,0,0,0.1) !important;
             --ytmusic-av-toggle-active: rgba(0,0,0,0.1) !important;
-
             
             /*VARIABLES CREATED FOR THE STYLE*/
             --yt-music-background: var(--yt-music-white-background);
@@ -222,6 +221,11 @@ ytmusic-player-page, /*Player page background*/
 #nav-bar-background
 {
     background-color: var(--yt-music-background) !important;
+}
+
+/*Disable the gradient that is applied to various sections on the Home page*/
+ytmusic-browse-response[has-background]:not([disable-gradient]) .background-gradient.ytmusic-browse-response {
+    background-image: none !important;
 }
 
 /*NAVIGATION PROGRESS BAR AT THE TOP*/
