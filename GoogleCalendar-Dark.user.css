@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Calendar - Dark Style
 @namespace   Devo7v
-@version     0.2.4
+@version     0.2.5
 @homepageURL https://github.com/Devo7v/UserCSS
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleCalendar-Dark.user.css
 @license     CC-BY-NC-SA-4.0
@@ -66,6 +66,9 @@ if SystemTheme == "Dark" {
             --gcal-enhanced-line-color: gcal-enhanced-line-color;
             --gcal-dull-line-color: gcal-dull-line-color;
             --gcal-dark-line-color: gcal-dark-line-color;
+            
+            /*Google Variables*/
+            --on-surface: var(--gcal-dull-text-color);
         }
     }
     @media (prefers-color-scheme: light)  {
@@ -97,6 +100,9 @@ if SystemTheme == "Light" {
             --gcal-enhanced-line-color: gcal-enhanced-line-color;
             --gcal-dull-line-color: gcal-dull-line-color;
             --gcal-dark-line-color: gcal-dark-line-color;
+            
+            /*Google Variables*/
+            --on-surface: var(--gcal-dull-text-color);
         }
     }
     @media (prefers-color-scheme: light)  {
@@ -127,6 +133,9 @@ if SystemTheme == "Always" {
             --gcal-enhanced-line-color: gcal-enhanced-line-color;
             --gcal-dull-line-color: gcal-dull-line-color;
             --gcal-dark-line-color: gcal-dark-line-color;
+            
+            /*Google Variables*/
+            --on-surface: var(--gcal-dull-text-color);
         }
 }
 
@@ -719,16 +728,17 @@ if SystemTheme == "Always" {
     }
 
     /*Date/Time text*/
-    #xStDaIn, #xStTiIn, #xEnTiIn, #xEnDaIn {
+    #xStDaIn, #xStTiIn, #xEnTiIn, #xEnDaIn, .pQdjpb.shor6 .nXeosb{
         color: var(--gcal-primary-text-color) !important;
+        background: var(--gcal-enhanced2-background-color) !important;
     }
 
     /*"To" and "TIME ZONE" text*/
     /*.YKfFKe, .RveJvd.snByac{
     color: blue !important;
-  }
-  
-  /*All day check box*/
+    }
+
+    /*All day check box*/
     .uHMk6b.fsHoPb {
         border: 7px solid var(--gcal-enhanced-background-color) !important;
     }
@@ -770,7 +780,7 @@ if SystemTheme == "Always" {
     }
 
     /*Add conferencing button*/
-    /*.HLI7qf .c7fp5b {
+    /*.HLI7qf .c7fp5b, .nCP5yc .VfPpkd-Jh9lGc {
         color: var(--gcal-primary-text-color) !important;
         background: var(--gcal-enhanced-background-color) !important;
         border: 1px solid var(--gcal-dark-line-color) !important;
@@ -787,7 +797,7 @@ if SystemTheme == "Always" {
     }
 
     /*Event color box*/
-    .FpmPAb {
+    .nHFrm.nHFrm {
         background-color: var(--gcal-enhanced-background-color) !important;
     }
 
@@ -824,7 +834,12 @@ if SystemTheme == "Always" {
         border-left: 1px solid var(--gcal-dull-line-color) !important;
     }
 
-    /*Guests can text*/
+    /*Add guests input box*/
+    .ULpymb {
+        background-color: var(--gcal-enhanced2-background-color) !important;
+    }
+
+    /*Guest permisions text*/
     .hGcgEd, .GEhdLd {
         color: var(--gcal-primary-text-color) !important;
     }
@@ -1088,13 +1103,13 @@ if SystemTheme == "Always" {
     }
 
     /*All day checkbox*/
-    #xAlDaCbx {
+    /*#xAlDaCbx {
         border: 9px solid var(--gcal-accent-color) !important;
         opacity: 0.54 !important;
     }
 
     /*All day text*/
-    .vl2Dvd {
+    .VfPpkd-I9GLp-yrriRe > label {
         color: var(--gcal-dull-text-color) !important;
         opacity: 0.54 !important;
     }
