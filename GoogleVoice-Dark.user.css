@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.2.24
+@version     0.2.25
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -82,7 +82,7 @@ if SystemTheme == "Dark" {
             /*--gvoice-background-color-dark: gvoice-background-color-dark;/**/
             --gvoice-text-color: #202124;
             --gvoice-border-color: #dadce0;
-            /*gvoice-white: #FFFFFF/**/
+            --gvoice-white: #202124/**/
         }
     }
 }
@@ -104,7 +104,7 @@ if SystemTheme == "Light" {
             /*--gvoice-background-color-dark: gvoice-background-color-dark;/**/
             --gvoice-text-color: #202124;
             --gvoice-border-color: #dadce0;
-            /*gvoice-white: #FFFFFF/**/
+            --gvoice-white: #202124/**/
         }
     }
 }
@@ -160,7 +160,7 @@ if SystemTheme == "Always" {
 }
 
 /*Google Voice Logo*/
-img.gb_Ec {
+img.gb_Fc {
     filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
     -webkit-filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
     -o-filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
