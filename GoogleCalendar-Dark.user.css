@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Calendar - Dark Style
 @namespace   Devo7v
-@version     0.2.5
+@version     0.2.6
 @homepageURL https://github.com/Devo7v/UserCSS
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleCalendar-Dark.user.css
 @license     CC-BY-NC-SA-4.0
@@ -202,14 +202,11 @@ if SystemTheme == "Always" {
     .Rj2Mlf {
         background-color: var(--gcal-enhanced2-background-color) !important;
         border: none !important;
-    }
-
-    .Rj2Mlf {
         color: var(--gcal-enhanced-text-color) !important;
     }
 
     /*Previous/Next Month, Search, Settings icons*/
-    .Ce1Y1c {
+    .m2yD4b {
         color: var(--gcal-primary-text-color) !important;
         fill: var(--gcal-primary-text-color) !important;
     }
