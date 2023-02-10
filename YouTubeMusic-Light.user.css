@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Music - Light Style
 @namespace   Devo7v
-@version     0.1.22
+@version     0.1.23
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/YouTubeMusic-Light.user.css
@@ -226,6 +226,9 @@ ytmusic-player-page, /*Player page background*/
 /*Disable the gradient that is applied to various sections on the Home page*/
 ytmusic-browse-response[has-background]:not([disable-gradient]) .background-gradient.ytmusic-browse-response {
     background-image: none !important;
+}
+.immersive-background {
+    display: none !important;
 }
 
 /*NAVIGATION PROGRESS BAR AT THE TOP*/
