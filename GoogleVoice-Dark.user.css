@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.2.25
+@version     0.2.26
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -175,6 +175,24 @@ img.gb_Fc {
     background-size: 32px 32px !important;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Voice_icon.svg") !important;
     fill: var(--gvoice-accent-color) !important;
+}
+
+/*Text color for Availability*/
+.title {
+    color: var(--gvoice-text-color) !important;
+}
+
+/*Availability Drop Down*/
+.availability-menu-panel .cdk-dialog-container {
+    background: var(--gvoice-background-color-light) !important;
+}
+
+/*Availability Drop Down DND Button*/
+.dnd-status {
+    background-color: var(--gvoice-background-color-dark) !important;
+}
+.dnd-status:hover {
+    background-color: var(--gvoice-text-color) !important;
 }
 
 /*Bottom Border for the Google Bar*/
