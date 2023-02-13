@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Music - Light Style
 @namespace   Devo7v
-@version     0.1.23
+@version     0.1.24
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/YouTubeMusic-Light.user.css
@@ -392,6 +392,13 @@ yt-button-renderer.watch-button.ytmusic-menu-renderer {
 .edit-playlist-button, ytmusic-toggle-button-renderer #button.ytmusic-toggle-button-renderer {
     --yt-button-color: var(--yt-spec-text-secondary) !important;
     border-color: var(--yt-spec-text-primary) !important;
+}
+yt-button-renderer.watch-button.ytmusic-menu-renderer {
+    background-color: transparent !important;
+}
+.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled {
+    background-color: var(--yt-music-white-background) !important;
+    border: solid 1px var(--ytmusic-color-black1) !important;
 }
 
 /*Song vs Video*/
