@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Contacts - Dark Style
 @namespace   Devo7v
-@version     0.2.9
+@version     0.2.10
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleContacts-Dark.user.css
@@ -36,17 +36,20 @@
 
 @-moz-document url-prefix("http://www.google.com/contacts/"), url-prefix("https://www.google.com/contacts/"), url-prefix("http://contacts.google.com/"), url-prefix("https://contacts.google.com/"){
 
-
+/*#1A73E8*/
 
 :root{
     if gcontacts-accent-color == "Blue-from-Material-Version"{
         --gcontacts-accent-color: #1A73E8;
+        --gcontacts-accent-color-rotate: 0deg; /*HSL 214deg, 82% 51%*/
     }
     else if gcontacts-accent-color == "Blue-from-Preview-Version"{
         --gcontacts-accent-color: #2A56C6;
+        --gcontacts-accent-color-rotate: 9deg; /*HSL 223deg, 65% 47%*/
     }
     else if gcontacts-accent-color == "Red-from-Old-Version"{
         --gcontacts-accent-color: #DD4B39;
+        --gcontacts-accent-color-rotate: -207deg; /*HSL 7deg, 71% 55%*/
     }
     else if gcontacts-accent-color == "Custom"{
         --gcontacts-accent-color: gcontacts-accent-color-custom;
@@ -72,6 +75,7 @@ if SystemTheme == "Dark" {
             --gcontacts-background-color: gcontacts-background-color; /*#111111*/
             --gcontacts-background-color-2: #222222;
             --gcontacts-background-color-3: #333333;
+            --gcontacts-border-color: #555555;
             --gcontacts-text-color: #333333;
             --gcontacts-text-color: gcontacts-text-color; /*#CCCCCC*/
             --gcontacts-light-text-color: gcontacts-light-text-color; /*#FFFFFF*/
@@ -96,6 +100,7 @@ if SystemTheme == "Light" {
             --gcontacts-background-color: gcontacts-background-color; /*#111111*/
             --gcontacts-background-color-2: #222222;
             --gcontacts-background-color-3: #333333;
+            --gcontacts-border-color: #555555;
             --gcontacts-text-color: #333333;
             --gcontacts-text-color: gcontacts-text-color; /*#CCCCCC*/
             --gcontacts-light-text-color: gcontacts-light-text-color; /*#FFFFFF*/
@@ -119,6 +124,7 @@ if SystemTheme == "Always" {
             --gcontacts-background-color: gcontacts-background-color; /*#111111*/
             --gcontacts-background-color-2: #222222;
             --gcontacts-background-color-3: #333333;
+            --gcontacts-border-color: #555555;
             --gcontacts-text-color: #333333;
             --gcontacts-text-color: gcontacts-text-color; /*#CCCCCC*/
             --gcontacts-light-text-color: gcontacts-light-text-color; /*#FFFFFF*/
@@ -572,15 +578,23 @@ color: #666666 !important;
 }
 
 /*Border*/
-.TcHf9 {
+.a8pf4d {
     border: 1px solid var(--gcontacts-border-color) !important;
     border-radius: var(--gcontacts-corner-radius) !important;
     box-shadow: 0 0 3px 3px rgba(0,0,0,0.23) !important;
 }
 
 /*Text Color*/
-.rpw8M {
+.VmVyed, .GryHKe, .WMnqtb {
     color: var(--gcontacts-text-color) !important;
+}
+
+/*Icon coloring*/
+.jU7kdd {
+    filter: hue-rotate(var(--gcontacts-accent-color-rotate)) !important;
+    -webkit-filter: hue-rotate(var(--gcontacts-accent-color-rotate)) !important;
+    -o-filter: hue-rotate(var(--gcontacts-accent-color-rotate)) !important;
+    -ms-filter: hue-rotate(var(--gcontacts-accent-color-rotate)) !important;
 }
 
 /*=======Settings Popup=======*/
@@ -641,6 +655,11 @@ div.UloUpf:nth-child(1) > div:nth-child(2) > a:nth-child(1){
   -webkit-filter: invert(100%) !important;
   -o-filter: invert(100%) !important;
   -ms-filter: invert(100%) !important;
+}
+
+/*Text Color on Merge & Fix page*/
+.H0zpEd {
+    color: var(--gcontacts-text-color) !important;
 }
 
 }
