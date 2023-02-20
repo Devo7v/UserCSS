@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.2.26
+@version     0.2.27
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -79,10 +79,10 @@ if SystemTheme == "Dark" {
         :root{
             --gvoice-background-color: #fff;
             --gvoice-background-color-light: #f1f3f4;
-            /*--gvoice-background-color-dark: gvoice-background-color-dark;/**/
+            --gvoice-background-color-dark: #dadce0;
             --gvoice-text-color: #202124;
             --gvoice-border-color: #dadce0;
-            --gvoice-white: #202124/**/
+            --gvoice-white: #202124;
         }
     }
 }
@@ -101,10 +101,10 @@ if SystemTheme == "Light" {
         :root{
             --gvoice-background-color: #fff;
             --gvoice-background-color-light: #f1f3f4;
-            /*--gvoice-background-color-dark: gvoice-background-color-dark;/**/
+            --gvoice-background-color-dark: #dadce0;
             --gvoice-text-color: #202124;
             --gvoice-border-color: #dadce0;
-            --gvoice-white: #202124/**/
+            --gvoice-white: #202124;
         }
     }
 }
@@ -854,6 +854,17 @@ input.ng-valid {
 /*Message button*/
 .button.button[_ngcontent-ngx-c13]{
     background-color: var(--gvoice-background-color-light) !important;
+}
+
+/*Active Call Background*/
+.ng-tns-c315-1.ng-star-inserted{
+    background-color: var(--gvoice-background-color) !important;
+    border: 0px solid var(--gvoice-border-color) !important;
+}
+
+/*Active Call - caller name*/
+.remote-display-name {
+    color: var(--gvoice-text-color) !important;
 }
 
 }
