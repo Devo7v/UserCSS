@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.2.27
+@version     0.2.28
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -865,6 +865,11 @@ input.ng-valid {
 /*Active Call - caller name*/
 .remote-display-name {
     color: var(--gvoice-text-color) !important;
+}
+
+/*End Call Button*/
+button.ng-tns-c287-29{
+    border-radius: var(--gvoice-corner-radius) !important;
 }
 
 }
