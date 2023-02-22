@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Calendar - Dark Style
 @namespace   Devo7v
-@version     0.2.6
+@version     0.2.7
 @homepageURL https://github.com/Devo7v/UserCSS
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleCalendar-Dark.user.css
 @license     CC-BY-NC-SA-4.0
@@ -750,7 +750,7 @@ if SystemTheme == "Always" {
     }
 
     /*Other drop down boxes*/
-    .jZ0DTb {
+    .jgvuAb, .Dc8KZd, .As4fnb {
         background-color: var(--gcal-enhanced-background-color) !important;
         border: 1px solid var(--gcal-dark-line-color) !important;
     }
