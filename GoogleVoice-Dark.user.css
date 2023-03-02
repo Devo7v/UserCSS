@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.2.28
+@version     0.2.29
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -120,20 +120,29 @@ if SystemTheme == "Always" {
 }
 
 /*Make Elements Square or Round*/
-.Bqxti-VCkuzd, .gvPageRoot .bubble, /*sent and received message bubbles*/
+.Bqxti-VCkuzd, .gvPageRoot .bubble, .incoming .bubble, /*sent and received message bubbles*/
 .YxDDMd-Dfn1ve .YxDDMd-VCkuzd, .d8IJmb-haAclf.d8IJmb-E6eRQd, .d8IJmb-haAclf.d8IJmb-E6eRQd .d8IJmb-HiaYvf, .container.last, .container.first, /*corners of pictures in threads*/
 .photo, /*User pictures*/
 .avatar, /*User pictures in the message list*/
+.chip, /*receiving calls button at the top*/
 .GYQtq-CLHpQd .GYQtq-mpvPNd, /*Send a message icon*/
-.rkljfb-rVkNNe, /*Highlight when selecting multiple items/threads*/
+.gvPageRoot .container.batch-selected .batch-selection, /*selecting multiple icons on the call list*/
+.gvPageRoot .container::before, /*background of highlighted items when selecting multiple items on the call list*/
+.rkljfb-rVkNNe, /*Highlight when selecting multiple message items/threads*/
+.gvThreadItem-avatarBatchSelected .gvThreadItem-avatarCheckmark.gvThreadItem-avatarCheckmark.gvThreadItem-avatarCheckmark, /*checkbox when selecting multiple items on the message list*/
+.gvThreadItem-root::before, /*background of highlighted items when selecting multiple items on the message list*/
 .YxDDMd-MJZihc.YxDDMd-XLMwWc .YxDDMd-VCkuzd, /*bottom right corner of random pictures*/
+.gvThreadItem-selected, .gvThreadItem-root:hover, /*active thread from the message list*/
 .ZRgO8c-ienHib, /*Icon when selecting specific messages in a thread*/
 .md-button.md-icon-button, /*highlight when hovering over 3-dot for each message*/
+.q2hAhb-OjaX2e.q2hAhb-OjaX2e.q2hAhb-OjaX2e, /*send message box at the bottom*/
 .gvImageAttachment-image, /*Image attachments*/
 .gvVideoAttachment-video, /*Video attachments*/
 .gmat-nav-list-item, /*selected icon in the nav bar*/
 .rkljfb-H9tDt::before, /*selected items in a list*/
+.gvPageRoot .button, /*numpad numbers*/
 .call-button, /*call button next to the name/number in the dialer*/
+button.ng-tns-c287-29, /*end call button*/
 {
     border-radius: var(--gvoice-corner-radius) !important;
     /*2.0 is the default (rounded), 0 will make the edges completely square*/
@@ -243,7 +252,6 @@ div.content > div:nth-child(2) > gv-side-nav {
 }
 .gvPageRoot .container.batch-selected .batch-selection {
     background: var(--gvoice-accent-color) !important;
-    border-radius: var(--gvoice-corner-radius) !important;
 }
 .gvPageRoot .container::after {
     border-top: 3px solid var(--gvoice-accent-color) !important;
@@ -253,8 +261,6 @@ div.content > div:nth-child(2) > gv-side-nav {
 }
 .gvPageRoot .container::before {
     background-color: var(--gvoice-background-color-dark) !important;
-    border-bottom-left-radius: var(--gvoice-corner-radius) !important;
-    border-top-left-radius: var(--gvoice-corner-radius) !important;
 }
 
 
@@ -269,14 +275,12 @@ div.content > div:nth-child(2) > gv-side-nav {
     color: var(--gvoice-white) !important;
     /*#00695c;*/
     background-color: var(--gvoice-background-color-light) !important;
-    border-radius: var(--gvoice-corner-radius) !important;
 }
 
 /*Incoming Text messages*/
 .incoming .bubble {
     background-color: var(--gvoice-accent-color) !important;
     color: var(--gvoice-white) !important;
-    border-radius: var(--gvoice-corner-radius) !important;
 }
 
 /*Incoming and outgoing name and date/time text*/
@@ -317,15 +321,12 @@ md-content, body, .gvInfiniteScroll-root, .gvMessageListHeader-messageHeader, .m
 /*Message multi-select icon*/
 .gvThreadItem-avatarBatchSelected .gvThreadItem-avatarCheckmark.gvThreadItem-avatarCheckmark.gvThreadItem-avatarCheckmark {
     background: var(--gvoice-accent-color) !important;
-    border-radius: var(--gvoice-corner-radius) !important;
 }
 .gvBatchThreadSelectHeader-container::after{
     border-top: 3px solid var(--gvoice-accent-color) !important;
 }
-.gvThreadItem-root::before{
+.gvThreadItem-root::before {
     background-color: var(--gvoice-background-color-dark) !important;
-    border-bottom-left-radius: var(--gvoice-corner-radius) !important;
-    border-top-left-radius: var(--gvoice-corner-radius) !important;
 }
 
 /* Message multi-select icon color */
@@ -372,7 +373,6 @@ md-menu-content {
 /*Message Search*/
 /*Send a message box at bottom*/
 .q2hAhb-OjaX2e.q2hAhb-OjaX2e.q2hAhb-OjaX2e{
-    border-radius: var(--gvoice-corner-radius) !important;
     background-color: var(--gvoice-background-color-dark) !important;
     color: var(--gvoice-text-color) !important;
 }
@@ -831,7 +831,6 @@ input.ng-valid {
 /*Numberpad Numbers*/
 .gvPageRoot .button {
     background-color: var(--gvoice-background-color) !important;
-    border-radius: var(--gvoice-corner-radius) !important;
 }
 .gvPageRoot .button:hover {
     background-color: var(--gvoice-background-color-dark) !important;
@@ -865,11 +864,6 @@ input.ng-valid {
 /*Active Call - caller name*/
 .remote-display-name {
     color: var(--gvoice-text-color) !important;
-}
-
-/*End Call Button*/
-button.ng-tns-c287-29{
-    border-radius: var(--gvoice-corner-radius) !important;
 }
 
 }
