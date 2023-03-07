@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Contacts - Dark Style
 @namespace   Devo7v
-@version     0.2.10
+@version     0.2.11
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleContacts-Dark.user.css
@@ -134,7 +134,7 @@ if SystemTheme == "Always" {
 /*=======END Set the colors based on system theme option=======*/
 
 /*Search Bar Background*/
-.gb_Qe{
+.gb_Ze{
     background: none !important;
     background: rgba(255,255,255,0.16) !important;
     border: none !important;
@@ -331,11 +331,16 @@ body{
     color: var(--gcontacts-accent-color) !important;
 }
 
+/*Recent Interactions Background*/
+.Usd1Ac {
+    background-color: var(--gcontacts-background-color-2) !important
+}
+
 /*Recent Interactions Text*/
-.wuyg4e {
+.Ko4REb {
     color: var(--gcontacts-text-color) !important;
 }
-.ubNHFb {
+.qfAujf {
     color: var(--gcontacts-accent-color) !important;
 }
 
