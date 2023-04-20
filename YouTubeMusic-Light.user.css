@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Music - Light Style
 @namespace   Devo7v
-@version     0.1.25
+@version     0.1.26
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/YouTubeMusic-Light.user.css
@@ -333,7 +333,7 @@ img.yt-img-shadow, #player.ytmusic-player-page, /*Album art on the now playing p
 ytmusic-thumbnail-renderer[thumbnail-crop="MUSIC_THUMBNAIL_CROP_CIRCLE"], ytmusic-thumbnail-renderer[thumbnail-crop="MUSIC_THUMBNAIL_CROP_CIRCLE"] .image.ytmusic-thumbnail-renderer, /*Artist/Alum pictures when viewing the artist or album list in the UPLOADED library view*/
 .image-wrapper.ytmusic-tastebuilder-item-renderer /*Artist images on the Pick 5 artists you like page*/
 {
-    box-shadow: 0 0 3px 0px rgba(0,0,0,1) !important;
+    box-shadow: 0 0 3px 1px rgba(0,0,0,0.5) !important;
     border-radius: 0% !important; /*50% creates circles, 0% creates squares*/
 }
 /*yt-img-shadow[object-fit="CONTAIN"] img.yt-img-shadow {
