@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Contacts - Dark Style
 @namespace   Devo7v
-@version     0.2.11
+@version     0.2.12
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleContacts-Dark.user.css
@@ -134,26 +134,26 @@ if SystemTheme == "Always" {
 /*=======END Set the colors based on system theme option=======*/
 
 /*Search Bar Background*/
-.gb_Ze{
+.gb_2d{
     background: none !important;
     background: rgba(255,255,255,0.16) !important;
     border: none !important;
 }
 
 /*Logo Text Color*/
-.gb_2d{
+.gb_bd{
     color: var(--gcontacts-light-text-color) !important;
 }
 
 /*Coloring for svg icons in new Google Bar*/
-.gb_qa svg{
+.gb_Ia svg, .bJdxvf{
     fill: var(--gcontacts-icon-color) !important;
-    color: #777777 !important;
+    color: var(--gcontacts-icon-color) !important;
 }
 
 /*=====================Google Contacts PREVIEW VERSION=====================*/
 /*Google Bar Background Color*/
-header#gb{
+header#gb, .gb_if{
   background-color: var(--gcontacts-accent-color) !important;
   z-index: 3 !important;
 }
@@ -174,7 +174,7 @@ body{
 }
 
 /*Link Color*/
-a {
+a, .lZOZW {
     color: var(--gcontacts-accent-color) !important;
 }
 
@@ -294,6 +294,7 @@ body{
 /*Grabs icons*/
 .zvAEaf .NSy2Hd{
     fill: var(--gcontacts-accent-color) !important;
+    color: var(--gcontacts-light-text-color) !important;
 }
 
 /*Dropdown hover*/
@@ -476,7 +477,7 @@ color: #666666 !important;
 }
 
 /*Popup text color*/
-.oKubKe{
+.oKubKe, .VfPpkd-fmcmS-wGMbrd{
   color: #999999 !important;
 }
 
