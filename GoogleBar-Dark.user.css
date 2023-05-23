@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Bar - Dark Style
 @namespace   Devo7v
-@version     0.3.15
+@version     0.3.16
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css
@@ -97,7 +97,7 @@ if SystemTheme == "Dark" {
             /*creates a shadow on all sides, comment out this line to remove*/
         }
         /*LEGACY Apps icon in Google bar*/
-        .gb_e.gb_Hc{
+        .gb_Hc{
             border: none !important;
             /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
             background-position: -35px -3425px !important;
@@ -142,7 +142,7 @@ if SystemTheme == "Light" {
             /*creates a shadow on all sides, comment out this line to remove*/
         }
          /*LEGACY Apps icon in Google bar*/
-        .gb_e.gb_Hc{
+        .gb_Hc{
             border: none !important;
             /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
             background-position: -35px -3425px !important;
@@ -186,7 +186,7 @@ if SystemTheme == "Always" {
             /*creates a shadow on all sides, comment out this line to remove*/
         }
          /*LEGACY Apps icon in Google bar*/
-        .gb_e.gb_Hc{
+        .gb_Hc{
             border: none !important;
             /*background-image: url('https://ssl.gstatic.com/gb/images/v1_76783e20.png') !important;*/
             background-position: -35px -3425px !important;
@@ -197,7 +197,7 @@ if SystemTheme == "Always" {
 
 if IconColor == "White"{
     /*Logo Text Color*/
-    .gb_Md, .NkK3Fc span[role="heading"]{
+    .gb_wd, .NkK3Fc span[role="heading"]{
         color: var(--gbar-icon-color) !important;
     }
 
@@ -215,7 +215,7 @@ if IconColor == "White"{
         
 if IconColor == "Custom"{
     /*Logo Text Color*/
-    .gb_Md, .NkK3Fc span[role="heading"]{
+    .gb_wd, .NkK3Fc span[role="heading"]{
         color: var(--gbar-icon-color-custom) !important;
     }
 
@@ -251,7 +251,7 @@ header#gb /*New Google Bar*/
 }
 
 /*Background color for Search box*/
-#gbqfqw, .gb_Ee{
+#gbqfqw, .gb_Je{
     /*background: var(--gbar-light-background-color) !important;*/
     background: none !important;
     background: rgba(255,255,255,0.16) !important;
@@ -262,7 +262,7 @@ header#gb /*New Google Bar*/
 }
 
 /*Text color for Search box*/
-.gbqfif, .gb_Ze, .gb_Ze::placeholder{
+.gbqfif, .gb_3e, .gb_3e::placeholder{
     color: var(--gbar-accent-color) !important;
 }
 
@@ -288,7 +288,7 @@ header#gb /*New Google Bar*/
 if AppsPopup {
     /*========================Apps Button Popup========================*/
     /*Main background color*/
-    .EHzcec, .gb_J, .gb_Q{
+    .EHzcec, .gb_J{
         background-color: var(--gbar-light-background-color) !important;
         /*border: 0px solid var(--gbar-border-color) !important;*/
         /*box-shadow: var(--gbar-box-shadow2) !important;*/
@@ -347,7 +347,7 @@ if AppsPopup {
     
     /*Radius*/
     .Lvwayc, .y5Iqsb {
-        border-radius: 8px !important;
+        border-radius: 0px !important;
     }
     .Lvwayc {
         border: 1px solid var(--gbar-border-color) !important
@@ -380,7 +380,7 @@ if AppsPopup {
         border-color: var(--gbar-button-color) !important;
         color: var(--gbar-border-color-2) !important;
     }
-    .RroO5d:hover, .CeKP0c:hover{
+    .ut3Ak:hover, .da1DUb:hover, .tqFCve:hover, .V5tzAf:hover, .Z6NXed:hover{
         background-color: var(--gbar-main-background-color) !important;
         box-shadow: var(--gbar-box-shadow) !important;
     }
@@ -390,7 +390,6 @@ if AppsPopup {
         background: var(--gbar-light-background-color) !important;
         border-top: 0px solid var(--gbar-border-color) !important;
     }
-    
     .OtBgcb:hover{
         background: var(--gbar-button-color) !important;
         box-shadow: var(--gbar-box-shadow) !important;
@@ -401,8 +400,18 @@ if AppsPopup {
         fill: var(--gbar-border-color-2) !important;
     }
     
+    /*Add another account text*/
+    .SedFmc {
+        color: var(--gbar-text-color) !important;
+    }
+    
+    /*Sign Out Hover*/
+    .T6SHIc:hover{
+        background: var(--gbar-button-color) !important;
+    }
+
     /*Privacy and Terms of Service text*/
-    .OtBgcb{
+    .Z6NXed{
         color: var(--gbar-border-color-2) !important;
     }
 
@@ -640,6 +649,11 @@ a{
 /*GPM No Longer Available Card*/
 paper-card.gpm-lockout-ytm-card{
     background: var(--gbar-light-background-color) !important;
+    color: var(--gbar-text-color) !important;
+}
+
+/*All the best Google Play Music...*/
+#farewell-description{
     color: var(--gbar-text-color) !important;
 }
 
