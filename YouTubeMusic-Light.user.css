@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Music - Light Style
 @namespace   Devo7v
-@version     0.1.26
+@version     0.1.27
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/YouTubeMusic-Light.user.css
@@ -218,7 +218,7 @@ if HideUpgrade {
 body, /*Main background*/
 ytmusic-detail-header-renderer, /*Header background on an album page*/
 ytmusic-player-page, /*Player page background*/
-#nav-bar-background
+#nav-bar-background, .left-content.ytmusic-nav-bar /*Left navigation panel*/
 {
     background-color: var(--yt-music-background) !important;
 }
@@ -242,11 +242,16 @@ yt-page-navigation-progress {
 /*MENU ITEMS IN THE TOP NAV BAR*/
 /*Logo*/
 ytmusic-nav-bar .left-content [aria-label=Home] {
-    padding: 8px;
+    padding: 0px;
     border-radius: 5px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+}
+
+/*Search Box*/
+.ytmusic-search-box, ytmusic-search-suggestion, ytmusic-search-box:not([opened]) .search-container.ytmusic-search-box, ytmusic-search-box:not([opened]):not([has-query]) #placeholder.ytmusic-search-box {
+    background: var(--yt-music-background) !important;
 }
 
 /*Selected or hovered header item*/
@@ -258,8 +263,22 @@ ytmusic-pivot-bar-item-renderer, ytmusic-search-box {
     color: var(--yt-spec-text-secondary) !important;
 }
 /*Line to designate the position of the nav bar when scrolling*/
-#nav-bar-divider.ytmusic-app-layout{
+#nav-bar-background{
+    border-bottom: 1px solid var(--yt-music-border-color) !important;
+    /*box-shadow: 0 0px 6px rgba(0,0,0,1) !important;*/
+}
+
+/*MENU ITEMS IN THE SIDE BAR*/
+/*Background for the slideout side panel*/
+ytmusic-app[is-bauhaus-sidenav-enabled] #guide-wrapper.ytmusic-app {
+    background: var(--yt-music-background) !important;
+    border-right: 0px solid var(--yt-music-border-color) !important;
     box-shadow: 0 0px 6px rgba(0,0,0,1) !important;
+}
+
+/*Icons*/
+.yt-icon {
+    fill: var(--yt-spec-text-primary) !important;
 }
 
 /*PICK 5 ARTISTS YOU LIKE*/
