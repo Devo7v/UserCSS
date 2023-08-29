@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Bar - Dark Style
 @namespace   Devo7v
-@version     0.3.22
+@version     0.3.23
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css
@@ -197,12 +197,12 @@ if SystemTheme == "Always" {
 
 if IconColor == "White"{
     /*Logo Text Color*/
-    .gb_jd, .NkK3Fc span[role="heading"]{
+    .gb_fd, .NkK3Fc span[role="heading"]{
         color: var(--gbar-icon-color) !important;
     }
 
     /*Coloring for svg icons in new Google Bar*/
-    .gb_ud svg{
+    .gb_Ha svg{
         fill: var(--gbar-icon-color) !important;
         color: var(--gbar-button-color-2) !important;
     }
@@ -215,12 +215,12 @@ if IconColor == "White"{
         
 if IconColor == "Custom"{
     /*Logo Text Color*/
-    .gb_jd, .NkK3Fc span[role="heading"]{
+    .gb_fd, .NkK3Fc span[role="heading"]{
         color: var(--gbar-icon-color-custom) !important;
     }
 
     /*Coloring for svg icons in new Google Bar*/
-    .gb_ud svg{
+    .gb_Ha svg{
         fill: var(--gbar-icon-color-custom) !important;
         color: var(--gbar-button-color-2) !important;
     }
@@ -251,7 +251,7 @@ header#gb /*New Google Bar*/
 }
 
 /*Background color for Search box*/
-#gbqfqw, .gb_4d{
+#gbqfqw, .gb_Qd{
     /*background: var(--gbar-light-background-color) !important;*/
     background: none !important;
     background: rgba(255,255,255,0.16) !important;
@@ -262,14 +262,15 @@ header#gb /*New Google Bar*/
 }
 
 /*Text color for Search box*/
-.gbqfif, .gb_Ae, .gb_Ae::placeholder{
+.gbqfif, .gb_ne, .gb_ne::placeholder{
     color: var(--gbar-accent-color) !important;
 }
 
 /*Background color for Search box popup*/
-.gssb_m, .gssb_e, #\:0, #nngdp31, #nngdp12{
+.gssb_m, .gssb_e, #\:0, #nngdp31, #nngdp12, #contact-list {
     background: var(--gbar-light-background-color) !important;
     box-shadow: var(--gbar-box-shadow) !important;
+    background-color: var(--gbar-light-background-color) !important;
 }
 .oKubKe[aria-selected="true"], .VOEIyf .jBmls{
     background: var(--gbar-main-background-color) !important;
