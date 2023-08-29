@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Music - Light Style
 @namespace   Devo7v
-@version     0.1.27
+@version     0.1.28
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/YouTubeMusic-Light.user.css
@@ -23,7 +23,7 @@
 ]
 
 @var color ytmusic-black-background "Adjust Dark Theme Background Color" #000000
-@var checkbox HideUpgrade "Hide Upgrade Link" 0
+@var checkbox HideUpgrade "Hide Upgrade Links" 0
 
 ==/UserStyle== */
 
@@ -207,6 +207,7 @@ if SystemTheme == "Always" {
 /*=======RESTYLE PAGES=======*/
 /*Hide UPGRADE links*/
 if HideUpgrade {
+    div.ytmusic-guide-renderer:nth-child(3) > ytmusic-guide-section-renderer:nth-child(1) > div:nth-child(3) > ytmusic-guide-entry-renderer:nth-child(4), /*Upgrade link on the left slide-out nav panel*/
     ytmusic-pivot-bar-item-renderer.style-scope:nth-child(4), /*Upgrade link in the Header*/
     yt-multi-page-menu-section-renderer.style-scope:nth-child(1) > div:nth-child(2) > ytd-compact-link-renderer:nth-child(2) /*Get Music Premium link in the user menu popup*/
     {
@@ -268,12 +269,19 @@ ytmusic-pivot-bar-item-renderer, ytmusic-search-box {
     /*box-shadow: 0 0px 6px rgba(0,0,0,1) !important;*/
 }
 
+/*Background and radius of the user popup*/
+.ytmusic-popup-container {
+    background-color: var(--yt-music-background) !important;
+    border-radius: 0 !important;
+    border: 1px solid var(--yt-music-border-color) !important;
+}
+
 /*MENU ITEMS IN THE SIDE BAR*/
 /*Background for the slideout side panel*/
 ytmusic-app[is-bauhaus-sidenav-enabled] #guide-wrapper.ytmusic-app {
     background: var(--yt-music-background) !important;
     border-right: 0px solid var(--yt-music-border-color) !important;
-    box-shadow: 0 0px 6px rgba(0,0,0,1) !important;
+    box-shadow: 0 0px 6px 1px rgba(0,0,0,0.25) !important;
 }
 
 /*Icons*/
@@ -364,11 +372,6 @@ ytmusic-thumbnail-renderer[thumbnail-crop="MUSIC_THUMBNAIL_CROP_CIRCLE"], ytmusi
     color: var(--yt-endpoint-color) !important;
 }
 
-/*POPUP MENU BORDERS*/
-.ytmusic-popup-container {
-    border: 1px solid var(--yt-music-border-color) !important;
-}
-
 /*NEXT AND PREVIOUS ITEMS BUTTONS*/
 .previous-items-button.ytmusic-carousel, .next-items-button.ytmusic-carousel {
     background: var(--yt-spec-static-brand-white) !important;
@@ -405,15 +408,15 @@ ytmusic-chip-cloud-chip-renderer[chip-style="STYLE_PRIMARY"] a.ytmusic-chip-clou
 /*PLAY ALBUM BUTTON*/
 yt-button-renderer.watch-button.ytmusic-menu-renderer {
     color: var(--ytmusic-color-black1) !important;
-    background-color: var(--yt-spec-text-primary) !important;
+    background-color: transparent !important;
+}
+.watch-button path {
+    fill: var(--ytmusic-color-black1) !important;
 }
 /*Secondary Button*/
 .edit-playlist-button, ytmusic-toggle-button-renderer #button.ytmusic-toggle-button-renderer {
     --yt-button-color: var(--yt-spec-text-secondary) !important;
     border-color: var(--yt-spec-text-primary) !important;
-}
-yt-button-renderer.watch-button.ytmusic-menu-renderer {
-    background-color: transparent !important;
 }
 .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled {
     background-color: var(--yt-music-white-background) !important;
@@ -432,6 +435,11 @@ yt-button-renderer.watch-button.ytmusic-menu-renderer {
 /*QUEUE ITEMS*/
 tp-yt-paper-tabs.ytmusic-player-page, ytmusic-player-queue-item {
     border-bottom: 1px solid var(--yt-music-border-color) !important;
+}
+
+/*Background color on the album art when an items is playing or the cursor is hovering*/
+#background.ytmusic-item-thumbnail-overlay-renderer {
+    opacity: 0.5 !important;
 }
 
 /*PROGRESS BAR*/
