@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.2.40
+@version     0.2.41
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -142,7 +142,7 @@ if SystemTheme == "Always" {
 .rkljfb-H9tDt::before, /*selected items in a list*/
 .gvPageRoot .button, /*numpad numbers*/
 .call-button, /*call button next to the name/number in the dialer*/
-button.ng-tns-c287-29, /*end call button*/
+.mat-mdc-icon-button, .mat-mdc-icon-button .mat-mdc-button-persistent-ripple, /*end call button*/
 {
     border-radius: var(--gvoice-corner-radius) !important;
     /*2.0 is the default (rounded), 0 will make the edges completely square*/
@@ -174,7 +174,7 @@ a {
 }
 
 /*Google Voice Logo*/
-img.gb_Dc {
+img.gb_Hc {
     filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
     -webkit-filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
     -o-filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
@@ -870,14 +870,9 @@ input.ng-valid {
 
 
 /*Active Call Background*/
-.ng-tns-c315-1.ng-star-inserted, .gvPageRoot [_nghost-ng-c3032256006] .root[_ngcontent-ng-c3032256006]{
+.ng-tns-c315-1.ng-star-inserted, .gvPageRoot [_nghost-ng-c1449243267] .root[_ngcontent-ng-c1449243267]{
     background-color: var(--gvoice-background-color) !important;
     border: 0px solid var(--gvoice-border-color) !important;
-}
-
-/*End Call Button*/
-.mat-icon-button {
-    border-radius: var(--gvoice-corner-radius) !important;
 }
 
 /*Active Call - caller name*/
