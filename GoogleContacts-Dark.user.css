@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Contacts - Dark Style
 @namespace   Devo7v
-@version     0.2.12
+@version     0.2.13
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleContacts-Dark.user.css
@@ -134,7 +134,7 @@ if SystemTheme == "Always" {
 /*=======END Set the colors based on system theme option=======*/
 
 /*Search Bar Background*/
-.gb_2d{
+.gb_Td{
     background: none !important;
     background: rgba(255,255,255,0.16) !important;
     border: none !important;
@@ -174,7 +174,7 @@ body{
 }
 
 /*Link Color*/
-a, .lZOZW {
+a, .W7Nbnf, .mUIrbf-vQzf8d, .lZOZW {
     color: var(--gcontacts-accent-color) !important;
 }
 
@@ -461,7 +461,7 @@ color: #666666 !important;
 }
 
 /*Labels background color*/
-.jnnKcb, .KshDhe{
+.SsJGwb{
   background: var(--gcontacts-accent-color) !important;
   color: var(--gcontacts-text-color) !important;
   border: 1px solid var(--gcontacts-text-color) !important;
@@ -469,6 +469,11 @@ color: #666666 !important;
 }
 .GxALzd .VfPpkd-TfeOUb{
     color: var(--gcontacts-text-color) !important;
+}
+
+/*Background color for contact information*/
+.aHij0b-WsjYwc {
+    background-color: var(--gcontacts-background-color-2) !important;
 }
 
 /*Popup background color*/
