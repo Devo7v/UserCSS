@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.2.41
+@version     0.2.42
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -174,7 +174,7 @@ a {
 }
 
 /*Google Voice Logo*/
-img.gb_Hc {
+img.gb_Kc {
     filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
     -webkit-filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
     -o-filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
@@ -818,6 +818,11 @@ input.ng-valid {
     color: var(--gvoice-text-color) !important;
 }
 
+/**/
+input.ng-valid {
+    background-color: var(--gvoice-background-color) !important
+}
+
 /*Duration text*/
 .GHQeBe-jOfkMb{
     color: var(--gvoice-text-color) !important;
@@ -850,7 +855,8 @@ input.ng-valid {
 }
 
 /*Show keypad / hide keypad background*/
-.root.mat-button{
+.root.mat-button,
+.root[_ngcontent-ng-c1229966979]{
     background-color: var(--gvoice-background-color) !important;
     color: var(--gvoice-text-color) !important;
 }
