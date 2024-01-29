@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.2.42
+@version     0.2.43
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -236,8 +236,11 @@ div.content > div:nth-child(2) > gv-side-nav {
 }
 
 /*=======Selected Navigation Item=======*/
-.gmat-list-item-active {
+/*.gmat-list-item-active {
     color: var(--gvoice-accent-color) !important;
+}*/
+.gmat-mdc-list.mat-mdc-nav-list .mdc-list-item--activated {
+    background-color: rgba(#4284F4, 0.2) !important
 }
 
 /*=======Call List=======*/
@@ -818,7 +821,7 @@ input.ng-valid {
     color: var(--gvoice-text-color) !important;
 }
 
-/**/
+/*Enter Name or Number*/
 input.ng-valid {
     background-color: var(--gvoice-background-color) !important
 }
@@ -855,8 +858,7 @@ input.ng-valid {
 }
 
 /*Show keypad / hide keypad background*/
-.root.mat-button,
-.root[_ngcontent-ng-c1229966979]{
+.root.mat-button, .mat-mdc-button .mat-mdc-button-touch-target {
     background-color: var(--gvoice-background-color) !important;
     color: var(--gvoice-text-color) !important;
 }
