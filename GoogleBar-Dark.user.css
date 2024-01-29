@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Bar - Dark Style
 @namespace   Devo7v
-@version     0.3.25
+@version     0.3.26
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css
@@ -73,7 +73,8 @@ url-prefix("http://www.google.com/translate/"), url-prefix("https://www.google.c
 url-prefix("http://www.google.com/wallet/"), url-prefix("https://www.google.com/wallet/"),url-prefix("http://wallet.google.com/"),url-prefix("https://wallet.google.com/"),url-prefix("http://www.google.com/pay/"),url-prefix("https://www.google.com/pay/"),url-prefix("http://pay.google.com/"),url-prefix("https://pay.google.com/"),
 url-prefix("http://www.google.com/voice"), url-prefix("https://www.google.com/voice"),url-prefix("http://voice.google.com/"),url-prefix("https://voice.google.com/"),
 url-prefix("http://www.google.com/notifications/"), url-prefix("https://www.google.com/notifications/"),url-prefix("http://notifications.google.com/"),url-prefix("https://notifications.google.com/"),
-url-prefix("http://www.google.com/ogs/"), url-prefix("https://www.google.com/ogs/"),url-prefix("http://ogs.google.com/"),url-prefix("https://ogs.google.com/"),url-prefix("http://play.google.com/music/managemusic"), url-prefix("https://play.google.com/music/managemusic"),
+url-prefix("http://www.google.com/ogs/"), url-prefix("https://www.google.com/ogs/"),url-prefix("http://ogs.google.com/"),url-prefix("https://ogs.google.com/"),
+url-prefix("http://play.google.com/music/managemusic"), url-prefix("https://play.google.com/music/managemusic"),
 url-prefix("https://play.google.com/music/listen"), url-prefix("https://music.youtube.com/googleplaymusic"), url-prefix("https://example.com/"){
     
 /*=======Set the colors based on system theme options=======*/
@@ -197,7 +198,7 @@ if SystemTheme == "Always" {
 
 if IconColor == "White"{
     /*Logo Text Color*/
-    .gb_ld, .NkK3Fc span[role="heading"]{
+    .gb_md, .NkK3Fc span[role="heading"]{
         color: var(--gbar-icon-color) !important;
     }
 
@@ -215,7 +216,7 @@ if IconColor == "White"{
         
 if IconColor == "Custom"{
     /*Logo Text Color*/
-    .gb_ld, .NkK3Fc span[role="heading"]{
+    .gb_md, .NkK3Fc span[role="heading"]{
         color: var(--gbar-icon-color-custom) !important;
     }
 
@@ -251,7 +252,7 @@ header#gb /*New Google Bar*/
 }
 
 /*Background color for Search box*/
-#gbqfqw, .gb_Vd{
+#gbqfqw, .gb_Zd{
     /*background: var(--gbar-light-background-color) !important;*/
     background: none !important;
     background: rgba(255,255,255,0.16) !important;
@@ -262,7 +263,7 @@ header#gb /*New Google Bar*/
 }
 
 /*Text color for Search box*/
-.gbqfif, .gb_se, .gb_se::placeholder{
+.gbqfif, .gb_ve, .gb_ve::placeholder{
     color: var(--gbar-accent-color) !important;
 }
 
@@ -289,7 +290,8 @@ header#gb /*New Google Bar*/
 if AppsPopup {
     /*========================Apps Button Popup========================*/
     /*Main background color*/
-    .EHzcec, .LVal7b, .gb_J{
+    .EHzcec, .LVal7b, .gb_Jd{
+        background: var(--gbar-main-background-color) !important;
         background-color: var(--gbar-main-background-color) !important;
         /*border: 0px solid var(--gbar-border-color) !important;*/
         /*box-shadow: var(--gbar-box-shadow2) !important;*/
