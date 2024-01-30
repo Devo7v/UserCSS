@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.2.43
+@version     0.2.44
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -174,7 +174,7 @@ a {
 }
 
 /*Google Voice Logo*/
-img.gb_Kc {
+img.gb_Lc {
     filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
     -webkit-filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
     -o-filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
