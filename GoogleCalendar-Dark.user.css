@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Calendar - Dark Style
 @namespace   Devo7v
-@version     0.2.7
+@version     0.2.8
 @homepageURL https://github.com/Devo7v/UserCSS
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleCalendar-Dark.user.css
 @license     CC-BY-NC-SA-4.0
@@ -165,6 +165,11 @@ if SystemTheme == "Always" {
         border-color: var(--gcal-enhanced2-background-color) !important;
     }
 
+    /*+ symbol*/
+    #qJTzr > div:nth-child(3) {
+	    background-image: url(https://fonts.gstatic.com/s/i/googlematerialicons/add/v21/white-24dp/1x/gm_add_white_24dp.png) !important;
+    }
+    
     /*Background of the arrow at the bottom*/
     .Kk7lMc-QWPxkf-LgbsSe .DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf {
         background-color: var(--gcal-enhanced2-background-color) !important;
@@ -212,11 +217,11 @@ if SystemTheme == "Always" {
     }
 
     /*Month Title text color*/
-    .rSoRzd {
+    .UyW9db {
         color: var(--gcal-enhanced-text-color) !important;
     }
 
-    .gPMPbe {
+    .L4yjSd {
         color: var(--gcal-dull-text-color) !important;
     }
 
@@ -235,6 +240,14 @@ if SystemTheme == "Always" {
         opacity: 0.7 !important;
     }
 
+    /*Switch between calendar and tasks*/
+    .xg1yEb.xg1yEb, .KSkz4b.KSkz4b {
+        border-color: var(--gcal-primary-line-color) !important;
+    }
+    /*.VYBDae-Bz112c-LgbsSe :is(i, svg, img) {
+        color: var(--gcal-primary-text-color)
+    }
+    
     /*Border between Google Bar and Calendar/Left slide out menu*/
     .TOTjfb {
         border-top: 1px solid var(--gcal-primary-line-color) !important;
@@ -243,7 +256,7 @@ if SystemTheme == "Always" {
 
     /*=======Month popup when clicking the Month Title=======*/
     /*Background color*/
-    .q1j8lf {
+    .q1j8lf, .J4VNSd {
         background-color: var(--gcal-enhanced-background-color) !important;
         height: 95% !important;
     }
@@ -263,7 +276,7 @@ if SystemTheme == "Always" {
         color: var(--gcal-dull-text-color) !important;
     }
 
-    .W0m3G .r4nke {
+    .IOneve .r4nke {
         background: var(--gcal-enhanced-background-color) !important;
     }
 
@@ -320,7 +333,7 @@ if SystemTheme == "Always" {
     /*=======END=======*/
     /*========================Left slide out menu========================*/
     /*Background color*/
-    body {
+    .QQYuzf {
         background-color: var(--gcal-primary-background-color) !important;
     }
 
@@ -329,7 +342,7 @@ if SystemTheme == "Always" {
     }
 
     /*Border above mini calendar*/
-    .hEtGGf::after {
+    .sBn5T::before, .sBn5T::after {
         display: none !important;
     }
     
@@ -409,7 +422,7 @@ if SystemTheme == "Always" {
     /*========================Main Calendar View========================*/
     /*Hovering over items (events and dates)*/
     .QGRmIf:hover, .KCIIIb:hover, .yzYBvd:hover {
-        background-color: var(--gcal-primary-line-color) !important;
+        background-color: var(--gcal-dark-background-color) !important;
     }
 
     /*Dates text color*/
@@ -422,12 +435,14 @@ if SystemTheme == "Always" {
     }
 
     /*All day event background ends*/
-    .g3dbUc, .I7OXgf {
+    .QGRmIf {
         border-radius: 0px !important;
         /*2px is default, 9px is completely rounded*/
     }
-
-    .xHTz8b {
+    .KF4T6b{
+        margin-left: 0px !important;
+    }
+    .Po94xd {
         padding-left: 0px !important;
         /*0px is default*/
         padding-right: 1px !important;
@@ -533,7 +548,7 @@ if SystemTheme == "Always" {
 
     /*========================Month========================*/
     /*Background*/
-    .tNDBE {
+    .RAaXne, .K2fuAf {
         background-color: var(--gcal-primary-background-color) !important;
     }
 
@@ -565,8 +580,8 @@ if SystemTheme == "Always" {
   }
     
   /*Old Event text color*/
-    .g3dbUc.UflSff {
-        opacity: 0.38 !important;
+    .KF4T6b.UflSff {
+        color: rgba(125,125,125,0.38) !important;
     }
 
     /*Current and Future Events text color*/
