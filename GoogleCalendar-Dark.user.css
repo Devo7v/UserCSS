@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Calendar - Dark Style
 @namespace   Devo7v
-@version     0.2.8
+@version     0.2.9
 @homepageURL https://github.com/Devo7v/UserCSS
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleCalendar-Dark.user.css
 @license     CC-BY-NC-SA-4.0
@@ -546,6 +546,12 @@ if SystemTheme == "Always" {
     }
 
 
+    /*========================Year========================*/
+    /*Background*/
+    .lYYbjc {
+        background-color: var(--gcal-primary-background-color) !important;
+    }
+    
     /*========================Month========================*/
     /*Background*/
     .RAaXne, .K2fuAf {
@@ -558,18 +564,19 @@ if SystemTheme == "Always" {
     }
 
     /*Days of the Week*/
-    .wy3aMe {
+   .EeuFAf {
         color: var(--gcal-primary-text-color) !important;
     }
 
     /*Current Day Date*/
-    .yzYBvd.F262Ye {
+    .w48V4c.F262Ye {
         color: white !important;
         background-color: var(--gcal-accent-color) !important;
+        border-radius: 0% !important;
     }
 
     /*Current Month Dates*/
-    .YK7obe {
+    .YK7obe, .o5s4T .w48V4c {
         color: var(--gcal-primary-text-color) !important;
     }
 
@@ -577,25 +584,28 @@ if SystemTheme == "Always" {
     /*.yzYBvd{
     color: blue !important;
     opacity: 0.38 !important;
-  }
-    
-  /*Old Event text color*/
-    .KF4T6b.UflSff {
-        color: rgba(125,125,125,0.38) !important;
     }
-
+    
     /*Current and Future Events text color*/
-    .g3dbUc.smECzc {
+    .jKgTF {
         color: var(--gcal-primary-text-color) !important;
     }
 
+    /*Old Event text color*/
+    .UflSff, .KCIIIb {
+        color: rgb(125,125,125) !important;
+    }
+    
     /*Borders*/
-    .QIadxc {
+    .FLFkR {
         border-bottom: 1px solid var(--gcal-primary-line-color) !important;
     }
 
-    .PhLhOd, .t8qpF {
+    .w6FdBf, .MGaLHf {
         border-right: 1px solid var(--gcal-primary-line-color) !important;
+    }
+    .RAaXne:not(.Wyo4Qe) {
+        border-left: 1px solid var(--gcal-primary-line-color) !important;
     }
 
     /*========================Day========================*/
@@ -617,6 +627,11 @@ if SystemTheme == "Always" {
     /*Left side text*/
     .pCoqfc, .MANBAf {
         color: var(--gcal-dull-text-color) !important;
+    }
+    
+    /*Left side background*/
+    .R6TFwe, .sS0sZd {
+        background-color: var(--gcal-primary-background-color) !important;
     }
 
     /*Borders*/
@@ -659,10 +674,16 @@ if SystemTheme == "Always" {
 
     /*========================Week========================*/
     /*Background*/
-    .v83gc, .eADW5d {
+    .pbeTDb {
         background-color: var(--gcal-primary-background-color) !important;
     }
-
+    
+    /*Top border when scrolling down*/
+    .oXZ1yb.T8M5bd .lqYlwe::before, .oXZ1yb.T8M5bd .uEzZIb::after {
+        background-image: none !important;
+        box-shadow: inset 0 1px 1px 0 rgba(0,0,0,.14),inset 0 2px 1px -1px rgba(0,0,0,.12) !important;
+    }
+    
     /*Previous Days*/
     .pCcXPe {
         color: var(--gcal-dull-text-color) !important;
@@ -675,12 +696,12 @@ if SystemTheme == "Always" {
         opacity: 0.7 !important;
     }
 
-    /*Border*/
-    .eADW5d, .CIFHgc, .SU7tYb, .YvjgZe {
+    /*Borders*/
+    .EDDeke, .BiKU4b {
         border-right: 1px solid var(--gcal-primary-line-color) !important;
     }
-     .MVMVEe {
-        border-left: 1px solid var(--gcal-primary-line-color) !important;
+     .sJ9Raf::after {
+        border-bottom: 1px solid var(--gcal-primary-line-color) !important;
     }
 
 
