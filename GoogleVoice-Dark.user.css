@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.2.44
+@version     0.2.45
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -174,7 +174,7 @@ a {
 }
 
 /*Google Voice Logo*/
-img.gb_Lc {
+img.gb_Mc {
     filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
     -webkit-filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
     -o-filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
@@ -278,6 +278,12 @@ div.content > div:nth-child(2) > gv-side-nav {
 
 
 /*=======Text Messages=======*/
+/*Input box at the bottom*/
+.cdk-textarea-autosize {
+    color: var(--gvoice-white) !important;
+    background: var(--gvoice-background-color) !important;
+}
+
 /*Selected message phone number*/
 .gvMessageListHeader-subtitle {
     color: var(--gvoice-text-color) !important;
@@ -878,7 +884,7 @@ input.ng-valid {
 
 
 /*Active Call Background*/
-.ng-tns-c315-1.ng-star-inserted, .gvPageRoot [_nghost-ng-c1449243267] .root[_ngcontent-ng-c1449243267]{
+.ng-tns-c315-1.ng-star-inserted, .gvPageRoot [_nghost-ng-c1449243267] .root[_ngcontent-ng-c1449243267], .ng-tns-c244132661-2{
     background-color: var(--gvoice-background-color) !important;
     border: 0px solid var(--gvoice-border-color) !important;
 }
