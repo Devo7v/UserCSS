@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Bar - Dark Style
 @namespace   Devo7v
-@version     0.3.27
+@version     0.3.28
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css
@@ -198,12 +198,12 @@ if SystemTheme == "Always" {
 
 if IconColor == "White"{
     /*Logo Text Color*/
-    .gb_nd, .NkK3Fc span[role="heading"]{
+    .gb_od, .NkK3Fc span[role="heading"]{
         color: var(--gbar-icon-color) !important;
     }
 
     /*Coloring for svg icons in new Google Bar*/
-    .gb_Oa svg{
+    .gb_Pa svg{
         fill: var(--gbar-icon-color) !important;
         color: var(--gbar-button-color-2) !important;
     }
@@ -216,12 +216,12 @@ if IconColor == "White"{
         
 if IconColor == "Custom"{
     /*Logo Text Color*/
-    .gb_nd, .NkK3Fc span[role="heading"]{
+    .gb_od, .NkK3Fc span[role="heading"]{
         color: var(--gbar-icon-color-custom) !important;
     }
 
     /*Coloring for svg icons in new Google Bar*/
-    .gb_Oa svg{
+    .gb_Pa svg{
         fill: var(--gbar-icon-color-custom) !important;
         color: var(--gbar-button-color-2) !important;
     }
@@ -291,7 +291,6 @@ if AppsPopup {
     /*========================Apps Button Popup========================*/
     /*Main background color*/
     .EHzcec, .LVal7b, .gb_Jd{
-        background: var(--gbar-main-background-color) !important;
         background-color: var(--gbar-main-background-color) !important;
         /*border: 0px solid var(--gbar-border-color) !important;*/
         /*box-shadow: var(--gbar-box-shadow2) !important;*/
