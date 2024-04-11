@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Bar - Dark Style
 @namespace   Devo7v
-@version     0.3.29
+@version     0.3.30
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleBar-Dark.user.css
@@ -221,7 +221,7 @@ if IconColor == "Custom"{
     }
 
     /*Coloring for svg icons in new Google Bar*/
-    .gb_Pa svg{
+    .gb_Ra svg{
         fill: var(--gbar-icon-color-custom) !important;
         color: var(--gbar-button-color-2) !important;
     }
