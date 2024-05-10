@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Google Voice - Dark Style
 @namespace   Devo7v
-@version     0.2.47
+@version     0.2.48
 @homepageURL https://github.com/Devo7v/UserCSS
 @supportURL  https://github.com/Devo7v/UserCSS/issues
 @updateURL   https://raw.githubusercontent.com/Devo7v/UserCSS/master/GoogleVoice-Dark.user.css
@@ -129,7 +129,7 @@ if SystemTheme == "Always" {
 .gvPageRoot .container.batch-selected .batch-selection, /*selecting multiple icons on the call list*/
 .gvPageRoot .container::before, /*background of highlighted items when selecting multiple items on the call list*/
 .rkljfb-rVkNNe, /*Highlight when selecting multiple message items/threads*/
-.gvThreadItem-avatarBatchSelected .gvThreadItem-avatarCheckmark.gvThreadItem-avatarCheckmark.gvThreadItem-avatarCheckmark, /*checkbox when selecting multiple items on the message list*/
+.gvThreadItem-avatarBatchSelected .gvThreadItem-avatarCheckmark.gvThreadItem-avatarCheckmark.gvThreadItem-avatarCheckmark, .gvThreadItem-avatarCheckmark, /*checkbox when selecting multiple items on the message list*/
 .gvThreadItem-root::before, /*background of highlighted items when selecting multiple items on the message list*/
 .YxDDMd-MJZihc.YxDDMd-XLMwWc .YxDDMd-VCkuzd, /*bottom right corner of random pictures*/
 .gvThreadItem-selected, .gvThreadItem-root:hover, /*active thread from the message list*/
@@ -148,6 +148,11 @@ if SystemTheme == "Always" {
     /*2.0 is the default (rounded), 0 will make the edges completely square*/
 }
 
+/*Roundness of the highlight of the selected item on the left side bar*/
+.gmat-mdc-list.mat-mdc-nav-list.mat-mdc-list-base a.mat-mdc-list-item {
+    --mat-list-active-indicator-shape: 0 0 0 0 !important;
+}
+    
 /*General text color*/
 .gvPageRoot .grey-900, .thread-info{
     color: var(--gvoice-text-color) !important;
@@ -174,7 +179,7 @@ a {
 }
 
 /*Google Voice Logo*/
-img.gb_Oc {
+img.gb_Nc {
     filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
     -webkit-filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
     -o-filter: hue-rotate(var(--gvoice-accent-color-rotate)) !important;
@@ -208,9 +213,37 @@ img.gb_Oc {
     background-color: var(--gvoice-background-color-dark) !important;
 }
 .dnd-status:hover {
-    background-color: var(--gvoice-text-color) !important;
+    background-color: var(--gvoice-background-color-light) !important;
+}
+.mat-mdc-button:not(:disabled) {
+    color: var(--gvoice-text-color) !important;
 }
 
+/*===Audio settings popup===*/
+/*Background color*/
+div.mat-mdc-select-panel {
+    background-color: var(--gvoice-background-color-dark) !important;
+}
+/*Text color in dropdown boxes*/
+.mat-mdc-select-min-line {
+    color: var(--gvoice-text-color) !important;
+}
+/*Outline of item when not selected*/
+.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading, .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing {
+    border-color: var(--gvoice-text-color) !important;
+}
+/*Outline of item when selected*/
+.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__leading, .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__trailing {
+    border-color: var(--gvoice-accent-color) !important;
+}
+/*Checkmark for selected source*/
+.mat-pseudo-checkbox-minimal.mat-pseudo-checkbox-checked::after {
+    color: var(--gvoice-accent-color) !important;
+}
+/*Arrow next to text indicating a dropdown box*/
+.mat-mdc-select-arrow svg {
+    fill: var(--gvoice-accent-color)
+}
 /*Search box suggestion list*/
 /*li.ng-star-inserted:hover {
     background-color: red !important;
@@ -237,10 +270,18 @@ div.content > div:nth-child(2) > gv-side-nav {
     opacity: 0.5 !important;
 }
 
+/*=======Navigation Items=======*/
+.mdc-list-item__primary-text {
+    color var(--gvoice-text-color) !important;
+}
+.mdc-list-item:hover .mdc-list-item__primary-text {
+    color: var(--gvoice-white) !important;
+}
+
 /*=======Selected Navigation Item=======*/
-/*.gmat-list-item-active {
+.mat-mdc-list-base.mat-mdc-list-base .mdc-list-item--activated .mdc-list-item__primary-text {
     color: var(--gvoice-accent-color) !important;
-}*/
+}
 .gmat-mdc-list.mat-mdc-nav-list .mdc-list-item--activated {
     background-color: rgba(#4284F4, 0.2) !important
 }
@@ -284,6 +325,9 @@ div.content > div:nth-child(2) > gv-side-nav {
 .cdk-textarea-autosize {
     color: var(--gvoice-white) !important;
     background: var(--gvoice-background-color) !important;
+}
+.gvThreadDetails-messageEntryContainer {
+    background: initial !important;
 }
 
 /*Selected message phone number*/
